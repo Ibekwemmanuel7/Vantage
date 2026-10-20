@@ -1,0 +1,683 @@
+{
+  "schema_version": "area-evidence-1",
+  "producer": "Vantage",
+  "code_version": "0.2.0-area-prototype",
+  "config": {
+    "profile_id": "uganda-iganga-area-v1",
+    "title": "Iganga-area agricultural evidence",
+    "district_candidate": "Iganga, Uganda",
+    "boundary_status": "Analyst-selected study box; current district containment requires partner confirmation",
+    "bbox": [
+      33.4,
+      0.65,
+      33.5,
+      0.75
+    ],
+    "grid": 2,
+    "crop_focus": "Maize extension workflow; individual crop locations and planting dates unconfirmed",
+    "as_of": "2024-05-20T23:59:59Z",
+    "target_year": 2024,
+    "reference_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "month": 5,
+    "window_start_day": 1,
+    "window_end_day": 15,
+    "rain_pentad": 3,
+    "min_usable_fraction": 0.6,
+    "min_reference_years": 3,
+    "freshness_days": 14,
+    "max_scenes_per_year": 3,
+    "ndvi_change_trigger": -0.1,
+    "rain_ratio_trigger": 0.7,
+    "mode": "retrospective_reconstruction_not_operational_replay"
+  },
+  "units": [
+    {
+      "id": "IG-11",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4,
+              0.7
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.45,
+              0.75
+            ],
+            [
+              33.4,
+              0.75
+            ],
+            [
+              33.4,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "unit_id": "IG-11",
+          "year": 2024,
+          "acquired_at": "2024-05-13T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+          "ndvi": 0.6587304200098569,
+          "usable_fraction": 0.6963855421686747,
+          "valid_pixels": 2890,
+          "cropland_pixels": 4150
+        },
+        {
+          "unit_id": "IG-11",
+          "year": 2024,
+          "acquired_at": "2024-05-03T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+          "ndvi": null,
+          "usable_fraction": 0.0,
+          "valid_pixels": 0,
+          "cropland_pixels": 4150
+        }
+      ],
+      "status": "review",
+      "reasons": [
+        "Five-day rainfall 0.6 mm is 2.6% of reference median and below every reference year."
+      ],
+      "vegetation_state": "usable",
+      "rainfall_state": "usable",
+      "ndvi": 0.6587304200098569,
+      "ndvi_reference": 0.658952496954933,
+      "ndvi_delta": -0.00022207694507603293,
+      "reference_year_count": 3,
+      "trajectory": [
+        {
+          "year": 2020,
+          "ndvi": 0.6488224299739199,
+          "usable_dates": 1
+        },
+        {
+          "year": 2021,
+          "ndvi": null,
+          "usable_dates": 0
+        },
+        {
+          "year": 2022,
+          "ndvi": 0.658952496954933,
+          "usable_dates": 1
+        },
+        {
+          "year": 2023,
+          "ndvi": 0.6664626682986536,
+          "usable_dates": 1
+        },
+        {
+          "year": 2024,
+          "ndvi": 0.6587304200098569,
+          "usable_dates": 1
+        }
+      ],
+      "observation_dates": [
+        "2024-05-13T07:56:09.024000Z"
+      ],
+      "age_days": 7.669328425925926,
+      "median_usable_fraction": 0.6963855421686747,
+      "rainfall_mm": 0.6284512877464294,
+      "rainfall_reference_mm": 24.064861297607422,
+      "rainfall_ratio": 0.02611489341137035,
+      "rainfall_age_days": 5.0,
+      "rainfall_start": "2024-05-11",
+      "rainfall_end": "2024-05-15",
+      "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+      "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+    },
+    {
+      "id": "IG-12",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.5,
+              0.7
+            ],
+            [
+              33.5,
+              0.75
+            ],
+            [
+              33.45,
+              0.75
+            ],
+            [
+              33.45,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "unit_id": "IG-12",
+          "year": 2024,
+          "acquired_at": "2024-05-13T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+          "ndvi": 0.6224360509428898,
+          "usable_fraction": 0.5265476466496638,
+          "valid_pixels": 4542,
+          "cropland_pixels": 8626
+        },
+        {
+          "unit_id": "IG-12",
+          "year": 2024,
+          "acquired_at": "2024-05-03T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+          "ndvi": null,
+          "usable_fraction": 0.0,
+          "valid_pixels": 0,
+          "cropland_pixels": 8626
+        }
+      ],
+      "status": "review",
+      "reasons": [
+        "Five-day rainfall 0.3 mm is 1.4% of reference median and below every reference year."
+      ],
+      "vegetation_state": "insufficient_coverage",
+      "rainfall_state": "usable",
+      "ndvi": null,
+      "ndvi_reference": 0.6491812347740764,
+      "ndvi_delta": null,
+      "reference_year_count": 3,
+      "trajectory": [
+        {
+          "year": 2020,
+          "ndvi": 0.6323628977657414,
+          "usable_dates": 1
+        },
+        {
+          "year": 2021,
+          "ndvi": null,
+          "usable_dates": 0
+        },
+        {
+          "year": 2022,
+          "ndvi": 0.6563244773513287,
+          "usable_dates": 1
+        },
+        {
+          "year": 2023,
+          "ndvi": 0.6491812347740764,
+          "usable_dates": 2
+        },
+        {
+          "year": 2024,
+          "ndvi": null,
+          "usable_dates": 0
+        }
+      ],
+      "observation_dates": [],
+      "age_days": null,
+      "median_usable_fraction": null,
+      "rainfall_mm": 0.3128020167350769,
+      "rainfall_reference_mm": 22.083346366882324,
+      "rainfall_ratio": 0.01416461126580779,
+      "rainfall_age_days": 5.0,
+      "rainfall_start": "2024-05-11",
+      "rainfall_end": "2024-05-15",
+      "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+      "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+    },
+    {
+      "id": "IG-21",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4,
+              0.65
+            ],
+            [
+              33.45,
+              0.65
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.4,
+              0.7
+            ],
+            [
+              33.4,
+              0.65
+            ]
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "unit_id": "IG-21",
+          "year": 2024,
+          "acquired_at": "2024-05-13T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+          "ndvi": 0.6513195225095016,
+          "usable_fraction": 0.4065855404438082,
+          "valid_pixels": 568,
+          "cropland_pixels": 1397
+        },
+        {
+          "unit_id": "IG-21",
+          "year": 2024,
+          "acquired_at": "2024-05-03T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+          "ndvi": null,
+          "usable_fraction": 0.0,
+          "valid_pixels": 0,
+          "cropland_pixels": 1397
+        }
+      ],
+      "status": "review",
+      "reasons": [
+        "Five-day rainfall 0.7 mm is 2.7% of reference median and below every reference year."
+      ],
+      "vegetation_state": "insufficient_coverage",
+      "rainfall_state": "usable",
+      "ndvi": null,
+      "ndvi_reference": 0.6294974084773157,
+      "ndvi_delta": null,
+      "reference_year_count": 3,
+      "trajectory": [
+        {
+          "year": 2020,
+          "ndvi": 0.6294974084773157,
+          "usable_dates": 1
+        },
+        {
+          "year": 2021,
+          "ndvi": null,
+          "usable_dates": 0
+        },
+        {
+          "year": 2022,
+          "ndvi": 0.6217841630471098,
+          "usable_dates": 1
+        },
+        {
+          "year": 2023,
+          "ndvi": 0.6335212711430035,
+          "usable_dates": 1
+        },
+        {
+          "year": 2024,
+          "ndvi": null,
+          "usable_dates": 0
+        }
+      ],
+      "observation_dates": [],
+      "age_days": null,
+      "median_usable_fraction": null,
+      "rainfall_mm": 0.7477028369903564,
+      "rainfall_reference_mm": 27.30747699737549,
+      "rainfall_ratio": 0.027380883157467017,
+      "rainfall_age_days": 5.0,
+      "rainfall_start": "2024-05-11",
+      "rainfall_end": "2024-05-15",
+      "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+      "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+    },
+    {
+      "id": "IG-22",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.45,
+              0.65
+            ],
+            [
+              33.5,
+              0.65
+            ],
+            [
+              33.5,
+              0.7
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.45,
+              0.65
+            ]
+          ]
+        ]
+      },
+      "observations": [
+        {
+          "unit_id": "IG-22",
+          "year": 2024,
+          "acquired_at": "2024-05-13T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+          "ndvi": 0.6402502606882169,
+          "usable_fraction": 0.3714995483288166,
+          "valid_pixels": 1645,
+          "cropland_pixels": 4428
+        },
+        {
+          "unit_id": "IG-22",
+          "year": 2024,
+          "acquired_at": "2024-05-03T07:56:09.024000Z",
+          "source_id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+          "ndvi": null,
+          "usable_fraction": 0.0,
+          "valid_pixels": 0,
+          "cropland_pixels": 4428
+        }
+      ],
+      "status": "review",
+      "reasons": [
+        "Five-day rainfall 0.1 mm is 0.5% of reference median and below every reference year."
+      ],
+      "vegetation_state": "insufficient_coverage",
+      "rainfall_state": "usable",
+      "ndvi": null,
+      "ndvi_reference": 0.6358189081225033,
+      "ndvi_delta": null,
+      "reference_year_count": 3,
+      "trajectory": [
+        {
+          "year": 2020,
+          "ndvi": 0.6296156728850062,
+          "usable_dates": 1
+        },
+        {
+          "year": 2021,
+          "ndvi": null,
+          "usable_dates": 0
+        },
+        {
+          "year": 2022,
+          "ndvi": 0.6358189081225033,
+          "usable_dates": 1
+        },
+        {
+          "year": 2023,
+          "ndvi": 0.6445375869784754,
+          "usable_dates": 1
+        },
+        {
+          "year": 2024,
+          "ndvi": null,
+          "usable_dates": 0
+        }
+      ],
+      "observation_dates": [],
+      "age_days": null,
+      "median_usable_fraction": null,
+      "rainfall_mm": 0.10538196563720703,
+      "rainfall_reference_mm": 22.261235237121582,
+      "rainfall_ratio": 0.004733877725773186,
+      "rainfall_age_days": 5.0,
+      "rainfall_start": "2024-05-11",
+      "rainfall_end": "2024-05-15",
+      "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+      "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+    }
+  ],
+  "lineage": [
+    {
+      "source": "ESA WorldCover 2021 v200",
+      "id": "ESA_WorldCover_10m_2021_v200_N00E033",
+      "href": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_N00E033_Map.tif",
+      "interpretation": "Historical cropland class, not current crop identity",
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001",
+      "acquired_at": "2020-05-04T07:56:09.024000Z",
+      "baseline": "02.12",
+      "quantification": 10000.0,
+      "red_offset": 0,
+      "nir_offset": 0,
+      "metadata_sha256": "7075ddd68bfbc42748f553cd7a360ed134590e3027f383435b13782f05cc1879",
+      "masked_ndvi_sha256": "49937db6e6e4bdedbfc1e46645335ef80450a14837d996c007bf43de6c618404",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/04/S2B_MSIL2A_20200504T075609_N0212_R035_T36NWF_20200920T122001.SAFE/GRANULE/L2A_T36NWF_A016506_20200504T081104/IMG_DATA/R10m/T36NWF_20200504T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/04/S2B_MSIL2A_20200504T075609_N0212_R035_T36NWF_20200920T122001.SAFE/GRANULE/L2A_T36NWF_A016506_20200504T081104/IMG_DATA/R10m/T36NWF_20200504T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/04/S2B_MSIL2A_20200504T075609_N0212_R035_T36NWF_20200920T122001.SAFE/GRANULE/L2A_T36NWF_A016506_20200504T081104/IMG_DATA/R20m/T36NWF_20200504T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/04/S2B_MSIL2A_20200504T075609_N0212_R035_T36NWF_20200920T122001.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310",
+      "acquired_at": "2020-05-14T07:56:09.024000Z",
+      "baseline": "02.12",
+      "quantification": 10000.0,
+      "red_offset": 0,
+      "nir_offset": 0,
+      "metadata_sha256": "6f5b7f4cbab38dea54bf2126e24ea771ab39eeae112d5c832c6248d3cd0c07f9",
+      "masked_ndvi_sha256": "5dfd88f1f9ff553b1f6dc0040a1d3a9eef60daeefb862f5a5f55a32d2fdb77a7",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/14/S2B_MSIL2A_20200514T075609_N0212_R035_T36NWF_20200918T050310.SAFE/GRANULE/L2A_T36NWF_A016649_20200514T081142/IMG_DATA/R10m/T36NWF_20200514T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/14/S2B_MSIL2A_20200514T075609_N0212_R035_T36NWF_20200918T050310.SAFE/GRANULE/L2A_T36NWF_A016649_20200514T081142/IMG_DATA/R10m/T36NWF_20200514T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/14/S2B_MSIL2A_20200514T075609_N0212_R035_T36NWF_20200918T050310.SAFE/GRANULE/L2A_T36NWF_A016649_20200514T081142/IMG_DATA/R20m/T36NWF_20200514T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/14/S2B_MSIL2A_20200514T075609_N0212_R035_T36NWF_20200918T050310.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107",
+      "acquired_at": "2020-05-09T07:56:11.024000Z",
+      "baseline": "02.12",
+      "quantification": 10000.0,
+      "red_offset": 0,
+      "nir_offset": 0,
+      "metadata_sha256": "591102ed395c46fdd34decf39c9340e6af16c5701b8806b5919fba102e8a7c83",
+      "masked_ndvi_sha256": "d4250a733951162b6744ced6b147b0c4e9b30eb494afa53409e7e9c91df1b4b0",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/09/S2A_MSIL2A_20200509T075611_N0212_R035_T36NWF_20200921T030107.SAFE/GRANULE/L2A_T36NWF_A025486_20200509T080203/IMG_DATA/R10m/T36NWF_20200509T075611_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/09/S2A_MSIL2A_20200509T075611_N0212_R035_T36NWF_20200921T030107.SAFE/GRANULE/L2A_T36NWF_A025486_20200509T080203/IMG_DATA/R10m/T36NWF_20200509T075611_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/09/S2A_MSIL2A_20200509T075611_N0212_R035_T36NWF_20200921T030107.SAFE/GRANULE/L2A_T36NWF_A025486_20200509T080203/IMG_DATA/R20m/T36NWF_20200509T075611_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2020/05/09/S2A_MSIL2A_20200509T075611_N0212_R035_T36NWF_20200921T030107.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "CHIRPS v3 final pentad",
+      "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/pentads/africa/tifs/chirps-v3.0.2020.05.3.tif",
+      "sha256": "4e9262cffe44dbe183f0cf69e38d4c50842fa077931c01ed40790ca68e358bed",
+      "native_resolution_degrees": 0.05,
+      "unit": "mm / pentad",
+      "licence": "Public domain"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229",
+      "acquired_at": "2021-05-09T07:56:09.024000Z",
+      "baseline": "03.00",
+      "quantification": 10000.0,
+      "red_offset": 0,
+      "nir_offset": 0,
+      "metadata_sha256": "ba49b69edd47212a77989af9b96a5775435f9bb79b4edbe946f63aaec6fa4928",
+      "masked_ndvi_sha256": "41b73d684d57998bc34358f7c76cdd54655748aa700f967f21fe8a27362918ce",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2021/05/09/S2B_MSIL2A_20210509T075609_N0300_R035_T36NWF_20210605T170229.SAFE/GRANULE/L2A_T36NWF_A021797_20210509T081503/IMG_DATA/R10m/T36NWF_20210509T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2021/05/09/S2B_MSIL2A_20210509T075609_N0300_R035_T36NWF_20210605T170229.SAFE/GRANULE/L2A_T36NWF_A021797_20210509T081503/IMG_DATA/R10m/T36NWF_20210509T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2021/05/09/S2B_MSIL2A_20210509T075609_N0300_R035_T36NWF_20210605T170229.SAFE/GRANULE/L2A_T36NWF_A021797_20210509T081503/IMG_DATA/R20m/T36NWF_20210509T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2021/05/09/S2B_MSIL2A_20210509T075609_N0300_R035_T36NWF_20210605T170229.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "CHIRPS v3 final pentad",
+      "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/pentads/africa/tifs/chirps-v3.0.2021.05.3.tif",
+      "sha256": "374476169e99891c391f54c52dcd537819446b292ae2a89c1de59bbde6e9d3a9",
+      "native_resolution_degrees": 0.05,
+      "unit": "mm / pentad",
+      "licence": "Public domain"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144",
+      "acquired_at": "2022-05-14T07:56:09.024000Z",
+      "baseline": "05.10",
+      "quantification": 10000.0,
+      "red_offset": -1000.0,
+      "nir_offset": -1000.0,
+      "metadata_sha256": "6417fba410c13f8eeaab6802d6880129625b10f7482e93c33a68d1a687b0c3fb",
+      "masked_ndvi_sha256": "a315a4c3aea917fe1cbbf523bf54535640c2e32c5f37076fc9c99cb37b8bd85e",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2022/05/14/S2B_MSIL2A_20220514T075609_N0510_R035_T36NWF_20240611T144144.SAFE/GRANULE/L2A_T36NWF_A027088_20220514T081503/IMG_DATA/R10m/T36NWF_20220514T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2022/05/14/S2B_MSIL2A_20220514T075609_N0510_R035_T36NWF_20240611T144144.SAFE/GRANULE/L2A_T36NWF_A027088_20220514T081503/IMG_DATA/R10m/T36NWF_20220514T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2022/05/14/S2B_MSIL2A_20220514T075609_N0510_R035_T36NWF_20240611T144144.SAFE/GRANULE/L2A_T36NWF_A027088_20220514T081503/IMG_DATA/R20m/T36NWF_20220514T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2022/05/14/S2B_MSIL2A_20220514T075609_N0510_R035_T36NWF_20240611T144144.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "CHIRPS v3 final pentad",
+      "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/pentads/africa/tifs/chirps-v3.0.2022.05.3.tif",
+      "sha256": "86b518710cc25bb0fb81d834ff21ea4e94e9447fb79fe8153971924ad0cdad4a",
+      "native_resolution_degrees": 0.05,
+      "unit": "mm / pentad",
+      "licence": "Public domain"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740",
+      "acquired_at": "2023-05-14T07:56:11.024000Z",
+      "baseline": "05.09",
+      "quantification": 10000.0,
+      "red_offset": -1000.0,
+      "nir_offset": -1000.0,
+      "metadata_sha256": "192ac820ed61ac15cf34520cab17a217696677724620e11f2697f969b3a961a2",
+      "masked_ndvi_sha256": "b217fd4841903dc9cf50e6970b589c93426fff9e0812aef56f4dfe3af655f362",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/14/S2A_MSIL2A_20230514T075611_N0509_R035_T36NWF_20230514T212740.SAFE/GRANULE/L2A_T36NWF_A041216_20230514T081501/IMG_DATA/R10m/T36NWF_20230514T075611_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/14/S2A_MSIL2A_20230514T075611_N0509_R035_T36NWF_20230514T212740.SAFE/GRANULE/L2A_T36NWF_A041216_20230514T081501/IMG_DATA/R10m/T36NWF_20230514T075611_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/14/S2A_MSIL2A_20230514T075611_N0509_R035_T36NWF_20230514T212740.SAFE/GRANULE/L2A_T36NWF_A041216_20230514T081501/IMG_DATA/R20m/T36NWF_20230514T075611_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/14/S2A_MSIL2A_20230514T075611_N0509_R035_T36NWF_20230514T212740.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813",
+      "acquired_at": "2023-05-09T07:56:09.024000Z",
+      "baseline": "05.09",
+      "quantification": 10000.0,
+      "red_offset": -1000.0,
+      "nir_offset": -1000.0,
+      "metadata_sha256": "374567aa2782bd428a251aa085a4bcdfb29f299d4b79cd33089aed30e9bf3904",
+      "masked_ndvi_sha256": "4456a660d493ad58c243738f28dc3113fe3af6c51cba0f095269957f47ecff59",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/09/S2B_MSIL2A_20230509T075609_N0509_R035_T36NWF_20230509T131813.SAFE/GRANULE/L2A_T36NWF_A032236_20230509T081507/IMG_DATA/R10m/T36NWF_20230509T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/09/S2B_MSIL2A_20230509T075609_N0509_R035_T36NWF_20230509T131813.SAFE/GRANULE/L2A_T36NWF_A032236_20230509T081507/IMG_DATA/R10m/T36NWF_20230509T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/09/S2B_MSIL2A_20230509T075609_N0509_R035_T36NWF_20230509T131813.SAFE/GRANULE/L2A_T36NWF_A032236_20230509T081507/IMG_DATA/R20m/T36NWF_20230509T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2023/05/09/S2B_MSIL2A_20230509T075609_N0509_R035_T36NWF_20230509T131813.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "CHIRPS v3 final pentad",
+      "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/pentads/africa/tifs/chirps-v3.0.2023.05.3.tif",
+      "sha256": "8209ca0fafdd00841b520e4b08a56d19c220e7d572e52b883bfc3b20f745959b",
+      "native_resolution_degrees": 0.05,
+      "unit": "mm / pentad",
+      "licence": "Public domain"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+      "acquired_at": "2024-05-13T07:56:09.024000Z",
+      "baseline": "05.10",
+      "quantification": 10000.0,
+      "red_offset": -1000.0,
+      "nir_offset": -1000.0,
+      "metadata_sha256": "98036788088211f153194e085aa1bf74f2c02a1376026c830a4ea8e56a5b3a9c",
+      "masked_ndvi_sha256": "80df4c8cbf812e46c49646d7503830b7b6785e865832f16b8ad3a65cd6e1ac58",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/13/S2B_MSIL2A_20240513T075609_N0510_R035_T36NWF_20240513T130607.SAFE/GRANULE/L2A_T36NWF_A037527_20240513T081500/IMG_DATA/R10m/T36NWF_20240513T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/13/S2B_MSIL2A_20240513T075609_N0510_R035_T36NWF_20240513T130607.SAFE/GRANULE/L2A_T36NWF_A037527_20240513T081500/IMG_DATA/R10m/T36NWF_20240513T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/13/S2B_MSIL2A_20240513T075609_N0510_R035_T36NWF_20240513T130607.SAFE/GRANULE/L2A_T36NWF_A037527_20240513T081500/IMG_DATA/R20m/T36NWF_20240513T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/13/S2B_MSIL2A_20240513T075609_N0510_R035_T36NWF_20240513T130607.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "Sentinel-2 L2A",
+      "id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+      "acquired_at": "2024-05-03T07:56:09.024000Z",
+      "baseline": "05.10",
+      "quantification": 10000.0,
+      "red_offset": -1000.0,
+      "nir_offset": -1000.0,
+      "metadata_sha256": "99eea3b28d57223366222143778f68f1ab56a855cbe27280cefcf8aeeac27bdd",
+      "masked_ndvi_sha256": "3e846a6ee37add0c871b8d3b8968d8648b9923722fbf77f0986d88289159fd77",
+      "assets": {
+        "B04": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/03/S2B_MSIL2A_20240503T075609_N0510_R035_T36NWF_20240503T115846.SAFE/GRANULE/L2A_T36NWF_A037384_20240503T081501/IMG_DATA/R10m/T36NWF_20240503T075609_B04_10m.tif",
+        "B08": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/03/S2B_MSIL2A_20240503T075609_N0510_R035_T36NWF_20240503T115846.SAFE/GRANULE/L2A_T36NWF_A037384_20240503T081501/IMG_DATA/R10m/T36NWF_20240503T075609_B08_10m.tif",
+        "SCL": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/03/S2B_MSIL2A_20240503T075609_N0510_R035_T36NWF_20240503T115846.SAFE/GRANULE/L2A_T36NWF_A037384_20240503T081501/IMG_DATA/R20m/T36NWF_20240503T075609_SCL_20m.tif",
+        "product-metadata": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/36/N/WF/2024/05/03/S2B_MSIL2A_20240503T075609_N0510_R035_T36NWF_20240503T115846.SAFE/MTD_MSIL2A.xml"
+      },
+      "licence": "Copernicus Sentinel data terms"
+    },
+    {
+      "source": "CHIRPS v3 final pentad",
+      "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/pentads/africa/tifs/chirps-v3.0.2024.05.3.tif",
+      "sha256": "983ffb3c72d8489370cf7f68305444e298d7dee4b65efc7f3a0b4852c1be58d6",
+      "native_resolution_degrees": 0.05,
+      "unit": "mm / pentad",
+      "licence": "Public domain"
+    }
+  ],
+  "failures": [
+    {
+      "source_id": "S2A_MSIL2A_20210504T075611_R035_T36NWF_20210523T205505",
+      "error_type": "HTTPError"
+    },
+    {
+      "source_id": "S2A_MSIL2A_20210514T075611_R035_T36NWF_20210605T215514",
+      "error_type": "HTTPError"
+    },
+    {
+      "source_id": "S2B_MSIL2A_20220504T075609_R035_T36NWF_20220504T221342",
+      "error_type": "HTTPError"
+    },
+    {
+      "source_id": "S2A_MSIL2A_20220509T075611_R035_T36NWF_20240613T175040",
+      "error_type": "HTTPError"
+    },
+    {
+      "source_id": "S2A_MSIL2A_20230504T075611_R035_T36NWF_20240908T031532",
+      "error_type": "HTTPError"
+    },
+    {
+      "source_id": "S2A_MSIL2A_20240508T075611_R035_T36NWF_20240508T125602",
+      "error_type": "HTTPError"
+    }
+  ],
+  "retrieved_at": "2026-10-20T15:22:57.340368+00:00",
+  "limitation": "Retrospective public-data reconstruction. No customer results, diagnosis, prescription or independent performance validation. Historical cropland mask is not current maize location.",
+  "brief_id": "8076b31a15078c60",
+  "build_seconds": 196.0
+}

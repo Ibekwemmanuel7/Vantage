@@ -1,0 +1,4 @@
+zone_id,status,delta,score
+west,inspect,-0.25,0.25
+central,no_relative_flag,0.0,0
+east,no_relative_flag,0.0,0

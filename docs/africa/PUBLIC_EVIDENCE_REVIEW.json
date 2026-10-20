@@ -1,0 +1,172 @@
+{
+  "schema_version": "public-evidence-assessment-1",
+  "records": 9,
+  "distinct_origin_groups": 9,
+  "admissible_supervised_references": 0,
+  "assessments": [
+    {
+      "evidence_id": "UG-LIRA-20241201-VOICEOFLANGO",
+      "admissible_supervised_reference": false,
+      "evidence_use": "positive_case_and_management_confounder_lead",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-LIRA-20240517-NARO-BANANA",
+      "admissible_supervised_reference": false,
+      "evidence_use": "crop_diversity_and_reference_discovery",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-KWEEN-20230606-URN",
+      "admissible_supervised_reference": false,
+      "evidence_use": "historical_event_case_candidate",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-KASESE-IGANGA-20241003-MONITOR",
+      "admissible_supervised_reference": false,
+      "evidence_use": "historical_event_case_candidate",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-NORTH-202405-FEWS",
+      "admissible_supervised_reference": false,
+      "evidence_use": "regional_context_and_event_selection",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-IGANGA-202411-KYU",
+      "admissible_supervised_reference": false,
+      "evidence_use": "historical_data_discovery_lead",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-MAIZE-CROPLIFE-UNDATED",
+      "admissible_supervised_reference": false,
+      "evidence_use": "market_discovery_context",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-REDDIT-FARMING-LEAD",
+      "admissible_supervised_reference": false,
+      "evidence_use": "discovery_lead_only",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    },
+    {
+      "evidence_id": "UG-MASINDI-AGAGO-20240712-LEAD",
+      "admissible_supervised_reference": false,
+      "evidence_use": "discovery_lead_only",
+      "blockers": [
+        "original_reference_not_verified",
+        "no_verified_field_spatial_match",
+        "observation_date_not_precise",
+        "dated_observation_not_verified",
+        "crop_identity_not_verified",
+        "independence_unverified_or_shared_model_inputs",
+        "not_a_verified_scouting_outcome",
+        "sampling_design_unknown",
+        "reuse_review_incomplete",
+        "origin_or_independent_verification_reference_missing"
+      ],
+      "limitation": "Checks audit declarations, not truth. Syndicated copies are not independent evidence. No automatic conversion to training labels."
+    }
+  ],
+  "trained_model": false,
+  "registry_sha256": "7e16fbac3f8e5675b596aaa785fc7a14d19509af6ee7bb973ba8ddb0e488cf7b"
+}

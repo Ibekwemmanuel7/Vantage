@@ -1,0 +1,17 @@
+{
+  "case_id": "plainview-hail-20230623",
+  "status": "candidate_not_reproduced",
+  "event_date_local": "2023-06-23",
+  "event_source": "https://www.weather.gov/lub/events-2023-20230623-storms",
+  "reported_location": {"description": "4 W Plainview, Hale County, Texas", "longitude": -101.79, "latitude": 34.19, "reported_hail_inches": 1.0},
+  "aoi_bbox_wgs84": [-101.90, 34.10, -101.68, 34.28],
+  "aoi_status": "analyst_selected_exploration_box_not_damage_swath_or_confirmed_fields",
+  "pre_window": "2023-05-24T00:00:00Z/2023-06-23T00:00:00Z",
+  "post_window": "2023-06-24T00:00:00Z/2023-07-24T23:59:59Z",
+  "catalog": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "collection": "sentinel-2-l2a",
+  "required_assets": ["B04", "B08", "SCL"],
+  "reference_status": "weather_report_only_no_field_damage_labels",
+  "eligibility_status": "cotton_irrigation_crop_stage_and_consent_unconfirmed",
+  "claim_level": "event_documented_no_detection_or_value_claim"
+}

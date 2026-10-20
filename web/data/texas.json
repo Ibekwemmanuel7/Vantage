@@ -1,0 +1,274 @@
+{
+  "schema_version": "1",
+  "producer": "Vantage",
+  "code_version": "0.1.0",
+  "tenant_id": "demo",
+  "as_of": "2027-07-15T12:00:00Z",
+  "processed_at": "2026-10-20T15:18:25.756256+00:00",
+  "policy": {
+    "freshness_days": 5,
+    "min_coverage": 0.8,
+    "threshold": 0.1,
+    "max_pair_gap_days": 30,
+    "min_peer_zones": 3
+  },
+  "limitations": "Experimental scouting evidence. No diagnosis or irrigation prescription. No flag is not a healthy assessment. Common field-wide changes may be missed. Synthetic demo is not validation.",
+  "fields": [
+    {
+      "id": "demo-hale",
+      "boundary_version": "synthetic-v1",
+      "consent_ref": "synthetic-only",
+      "county": "Hale",
+      "state": "TX",
+      "crop": "upland_cotton",
+      "irrigation": "centre_pivot",
+      "records_confirmed": true,
+      "stage_eligible": true,
+      "due_for_scouting": true,
+      "planting_at": "2027-05-10T00:00:00Z",
+      "management_context": "Synthetic fixture; stage and management must be confirmed by adviser.",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.9,
+              34.0
+            ],
+            [
+              -101.87,
+              34.0
+            ],
+            [
+              -101.87,
+              34.01
+            ],
+            [
+              -101.9,
+              34.01
+            ],
+            [
+              -101.9,
+              34.0
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "zones": [
+    {
+      "zone_id": "west",
+      "field_id": "demo-hale",
+      "status": "inspect",
+      "latest": {
+        "id": "15-west",
+        "zone_id": "west",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.4,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "latest_seen": {
+        "id": "15-west",
+        "zone_id": "west",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.4,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "previous": {
+        "id": "10-west",
+        "zone_id": "west",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-10T10:00:00Z",
+        "processed_at": "2027-07-10T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-10",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "age_days": 0.08333333333333333,
+      "delta": -0.25,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.9,
+              34
+            ],
+            [
+              -101.89,
+              34
+            ],
+            [
+              -101.89,
+              34.01
+            ],
+            [
+              -101.9,
+              34.01
+            ],
+            [
+              -101.9,
+              34
+            ]
+          ]
+        ]
+      },
+      "management_context": "Synthetic fixture; stage and management must be confirmed by adviser.",
+      "score": 0.25,
+      "peer_median_delta": 0.0,
+      "explanation": "Relative NDVI change deficit versus same-field median; inspect to establish meaning."
+    },
+    {
+      "zone_id": "central",
+      "field_id": "demo-hale",
+      "status": "no_relative_flag",
+      "latest": {
+        "id": "15-central",
+        "zone_id": "central",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "latest_seen": {
+        "id": "15-central",
+        "zone_id": "central",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "previous": {
+        "id": "10-central",
+        "zone_id": "central",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-10T10:00:00Z",
+        "processed_at": "2027-07-10T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-10",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "age_days": 0.08333333333333333,
+      "delta": 0.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.89,
+              34
+            ],
+            [
+              -101.88000000000001,
+              34
+            ],
+            [
+              -101.88000000000001,
+              34.01
+            ],
+            [
+              -101.89,
+              34.01
+            ],
+            [
+              -101.89,
+              34
+            ]
+          ]
+        ]
+      },
+      "management_context": "Synthetic fixture; stage and management must be confirmed by adviser.",
+      "score": 0,
+      "peer_median_delta": 0.0,
+      "explanation": "Relative NDVI change deficit versus same-field median; inspect to establish meaning."
+    },
+    {
+      "zone_id": "east",
+      "field_id": "demo-hale",
+      "status": "no_relative_flag",
+      "latest": {
+        "id": "15-east",
+        "zone_id": "east",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "latest_seen": {
+        "id": "15-east",
+        "zone_id": "east",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-15T10:00:00Z",
+        "processed_at": "2027-07-15T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-15",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "previous": {
+        "id": "10-east",
+        "zone_id": "east",
+        "boundary_version": "synthetic-v1",
+        "acquired_at": "2027-07-10T10:00:00Z",
+        "processed_at": "2027-07-10T11:00:00Z",
+        "ndvi": 0.65,
+        "usable_fraction": 0.95,
+        "source_id": "synthetic-10",
+        "quality_method": "synthetic mask; not satellite-derived"
+      },
+      "age_days": 0.08333333333333333,
+      "delta": 0.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -101.88000000000001,
+              34
+            ],
+            [
+              -101.87,
+              34
+            ],
+            [
+              -101.87,
+              34.01
+            ],
+            [
+              -101.88000000000001,
+              34.01
+            ],
+            [
+              -101.88000000000001,
+              34
+            ]
+          ]
+        ]
+      },
+      "management_context": "Synthetic fixture; stage and management must be confirmed by adviser.",
+      "score": 0,
+      "peer_median_delta": 0.0,
+      "explanation": "Relative NDVI change deficit versus same-field median; inspect to establish meaning."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "brief_id": "8076b31a15078c60",
+  "mode": "retrospective_reconstruction_not_operational_replay",
+  "target_window": "2024-05-01/2024-05-15",
+  "rainfall_window": "2024-05-11/2024-05-15",
+  "reference_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "sources_processed": {
+    "Sentinel-2 L2A": 9,
+    "CHIRPS v3 final pentad": 5,
+    "ESA WorldCover 2021 v200": 1
+  },
+  "recorded_asset_failures": 6,
+  "review_units": 4,
+  "current_vegetation_usable_units": 1,
+  "rainfall_usable_units": 4,
+  "reference_not_climatology": true,
+  "independent_field_validation": false,
+  "build_seconds_partially_cached": 196.0,
+  "versions": {
+    "numpy": "2.2.6",
+    "rasterio": "1.5.0",
+    "scipy": "1.14.1",
+    "requests": "2.34.2"
+  }
+}

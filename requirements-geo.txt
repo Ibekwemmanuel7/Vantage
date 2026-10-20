@@ -1,0 +1,6 @@
+# Versions used for the local public-data reconstruction on 20 October 2026.
+# Python 3.12; independent environment recommended.
+numpy==2.2.6
+rasterio==1.5.0
+scipy==1.14.1
+requests==2.34.2

@@ -1,0 +1,12 @@
+{
+  "profile_id": "texas-cotton-v1",
+  "engine": "vantage.core.brief",
+  "state": "TX",
+  "counties": ["Hale", "Floyd"],
+  "crop": "upland_cotton",
+  "irrigation": "centre_pivot",
+  "freshness_days": 5,
+  "min_coverage": 0.8,
+  "relative_ndvi_deficit_trigger": 0.1,
+  "status": "Documentation of existing engine policy; the Texas CLI remains unchanged"
+}

@@ -1,0 +1,7 @@
+-r requirements-geo.txt
+# Scientific environment used in the executed research experiment.
+Pillow==12.3.0
+scikit-learn==1.7.2
+joblib==1.5.3
+pystac==1.15.2
+jsonschema==4.26.0

@@ -1,0 +1,58 @@
+{
+  "schema_version": "ml-experiment-1",
+  "mode": "supervised_research",
+  "features": [
+    "ndvi_median",
+    "ndvi_iqr",
+    "red_median",
+    "nir_median",
+    "rainfall_mm"
+  ],
+  "seed": 42,
+  "admitted_label_counts": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "status": "insufficient_independent_labels",
+  "model_trained": false,
+  "gates": [
+    "At least three training spatial groups are required",
+    "test requires at least 10 independently labeled usable samples (engineering gate, not a power calculation)",
+    "test requires both outcome classes",
+    "train requires at least 20 independently labeled usable samples (engineering gate, not a power calculation)",
+    "train requires both outcome classes",
+    "validation requires at least 10 independently labeled usable samples (engineering gate, not a power calculation)",
+    "validation requires both outcome classes"
+  ],
+  "limitation": "Minimum counts and buffers are engineering gates, not statistical validation. Retrospective results do not establish prospective scouting value.",
+  "label_template_note": "Blank independent-label template generated",
+  "run_id": "ff544e8f0e895af52e02",
+  "lineage": {
+    "mode": "supervised",
+    "datasets": [
+      {
+        "dataset_id": "13154e622c6a29026cf3",
+        "manifest_sha256": "ead84a177e487d7cdd3a293d7e46460fa3d2fde1532be9a03d833f855de33e3c",
+        "observations_sha256": "fc6ce4222b40f5629e98b61dac709cbc7ffc9dba89751d4686eeebcafaedc0ca"
+      }
+    ],
+    "features_sha256": "90dbb5a2f484103da7e9f7fb2ce63d9e16b6b6d512fa2de91a522c12c081bfb6",
+    "labels_sha256": null,
+    "code_hashes": {
+      "ml": "b1facb7697ac8c55f00a9a2cefb113442f59f8599584f03f3601510b41a2c613",
+      "runner": "cb72372e24e4dd07fcdccf0b8c09ddb2987eb70e9d90a1f6e48ffa63b0f463f9"
+    },
+    "seed": 42,
+    "software": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.3"
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.3"
+  }
+}

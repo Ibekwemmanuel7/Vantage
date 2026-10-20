@@ -1,0 +1,32 @@
+{
+  "dataset_id": "13154e622c6a29026cf3",
+  "novelty_run_id": "076c15c2f5d6493d7649",
+  "supervised_run_id": "ff544e8f0e895af52e02",
+  "scenes": 9,
+  "rgb_scenes": 8,
+  "cogs": 27,
+  "scene_unit_records": 36,
+  "area_season_samples": 20,
+  "training_samples": 12,
+  "target_samples": 1,
+  "independent_spatial_groups": 1,
+  "novelty_candidates": [
+    "IG-11"
+  ],
+  "unavailable_targets": [
+    "IG-12",
+    "IG-21",
+    "IG-22"
+  ],
+  "independent_labels": 0,
+  "supervised_model_trained": false,
+  "official_stac_schemas": "passed in separate schema-validation run",
+  "reproducibility": {
+    "dataset_id_equal": true,
+    "manifest_bytes_equal": true,
+    "model_hash_equal": true,
+    "novelty_report_equal": true
+  },
+  "cog_bytes": 25352706,
+  "preview_bytes": 18411360
+}

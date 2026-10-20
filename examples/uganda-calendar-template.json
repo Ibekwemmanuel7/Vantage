@@ -1,0 +1,28 @@
+[
+  {
+    "location_id": "iganga-study",
+    "year": 2023,
+    "crop": null,
+    "crop_identity_confirmed": false,
+    "planting_date": null,
+    "harvest_date": null,
+    "confirmation_kind": null,
+    "source_ref": null,
+    "reviewer_ref": null,
+    "reviewed_at": null,
+    "permission_status": "unconfirmed"
+  },
+  {
+    "location_id": "iganga-study",
+    "year": 2024,
+    "crop": null,
+    "crop_identity_confirmed": false,
+    "planting_date": null,
+    "harvest_date": null,
+    "confirmation_kind": null,
+    "source_ref": null,
+    "reviewer_ref": null,
+    "reviewed_at": null,
+    "permission_status": "unconfirmed"
+  }
+]

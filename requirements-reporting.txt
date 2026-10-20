@@ -1,0 +1,3 @@
+# Optional scientific figure export; not required by the cached browser desk.
+-r requirements-ml.txt
+matplotlib==3.9.2

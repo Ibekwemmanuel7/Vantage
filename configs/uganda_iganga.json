@@ -1,0 +1,23 @@
+{
+  "profile_id": "uganda-iganga-area-v1",
+  "title": "Iganga-area agricultural evidence",
+  "district_candidate": "Iganga, Uganda",
+  "boundary_status": "Analyst-selected study box; current district containment requires partner confirmation",
+  "bbox": [33.40, 0.65, 33.50, 0.75],
+  "grid": 2,
+  "crop_focus": "Maize extension workflow; individual crop locations and planting dates unconfirmed",
+  "as_of": "2024-05-20T23:59:59Z",
+  "target_year": 2024,
+  "reference_years": [2020, 2021, 2022, 2023],
+  "month": 5,
+  "window_start_day": 1,
+  "window_end_day": 15,
+  "rain_pentad": 3,
+  "min_usable_fraction": 0.6,
+  "min_reference_years": 3,
+  "freshness_days": 14,
+  "max_scenes_per_year": 3,
+  "ndvi_change_trigger": -0.1,
+  "rain_ratio_trigger": 0.7,
+  "mode": "retrospective_reconstruction_not_operational_replay"
+}

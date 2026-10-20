@@ -1,0 +1,16 @@
+{
+  "schema_version": "uganda-archive-plan-1",
+  "collection": "sentinel-2-l2a",
+  "years": [2022, 2023, 2024],
+  "months": [5, 11],
+  "window_interpretation": "Calendar comparison windows, not confirmed crop stages or district seasons",
+  "locations": [
+    {"id": "iganga-study", "bbox": [33.40, 0.65, 33.50, 0.75]},
+    {"id": "lira-study", "bbox": [32.85, 2.20, 32.95, 2.30]},
+    {"id": "kasese-study", "bbox": [30.05, 0.15, 30.15, 0.25]}
+  ],
+  "boundary_status": "Analyst-selected geographic study boxes; administrative containment, agriculture and crop identity unconfirmed",
+  "pixel_recipe": {"resolution_m": 20, "crs": "EPSG:32636", "accepted_scl": [4, 5], "rejection_buffer_pixels": 1},
+  "required_baseline_assets": ["B04", "B08", "SCL", "product-metadata"],
+  "candidate_multispectral_assets": ["B02", "B03", "B04", "B8A", "B11", "B12", "SCL", "product-metadata"]
+}

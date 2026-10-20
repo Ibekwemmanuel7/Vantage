@@ -8,13 +8,20 @@ Portfolio map: [Product responsibilities](https://github.com/Ibekwemmanuel7/Lill
 
 ## Domain and status
 
-**Domain:** Southern US agriculture
+**Active development:** African agriculture, initially a candidate Uganda extension pilot. Southern US agriculture is retained as a deferred, separate profile.
 
-**Status:** Design stage; no implementation or validated agriculture service.
+**Status:** Local executable public-imagery research prototype with synthetic regression tests; no independently validated agriculture service.
 
 ## Current baseline
 
-The initial market definition is documented. Vantage is a new product and does not copy CropSight or inherit its validation.
+20 October 2026 addition: an experimental Uganda area-level extension evidence
+profile and unpublished analyst interface now complement the original Texas
+synthetic slice. Real public-data retrospective measurements are implemented;
+independent field validation and partner engagement remain pending. See
+[IDEA assessment](../idea/ASSESSMENT.md). Neither scientific nor commercial claims
+transfer between profiles. No IDEA or LiveBeyond affiliation is implied.
+
+The initial market definition is documented. An independent offline slice imports rectangular boundaries and dated zone observations, produces quality-gated anomaly briefs and records scouting feedback. See [architecture](../mvp/ARCHITECTURE.md) and [evaluation](../mvp/EVALUATION.md). Vantage is a new product and does not copy CropSight or inherit its validation.
 
 ## Planned scope
 

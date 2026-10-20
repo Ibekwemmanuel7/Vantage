@@ -1,0 +1,227 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "IG-11",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4,
+              0.7
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.45,
+              0.75
+            ],
+            [
+              33.4,
+              0.75
+            ],
+            [
+              33.4,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "IG-11",
+        "status": "review",
+        "reasons": [
+          "Five-day rainfall 0.6 mm is 2.6% of reference median and below every reference year."
+        ],
+        "vegetation_state": "usable",
+        "rainfall_state": "usable",
+        "ndvi": 0.6587304200098569,
+        "ndvi_reference": 0.658952496954933,
+        "ndvi_delta": -0.00022207694507603293,
+        "reference_year_count": 3,
+        "observation_dates": [
+          "2024-05-13T07:56:09.024000Z"
+        ],
+        "age_days": 7.669328425925926,
+        "median_usable_fraction": 0.6963855421686747,
+        "rainfall_mm": 0.6284512877464294,
+        "rainfall_reference_mm": 24.064861297607422,
+        "rainfall_ratio": 0.02611489341137035,
+        "rainfall_age_days": 5.0,
+        "rainfall_start": "2024-05-11",
+        "rainfall_end": "2024-05-15",
+        "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+        "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IG-12",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.5,
+              0.7
+            ],
+            [
+              33.5,
+              0.75
+            ],
+            [
+              33.45,
+              0.75
+            ],
+            [
+              33.45,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "IG-12",
+        "status": "review",
+        "reasons": [
+          "Five-day rainfall 0.3 mm is 1.4% of reference median and below every reference year."
+        ],
+        "vegetation_state": "insufficient_coverage",
+        "rainfall_state": "usable",
+        "ndvi": null,
+        "ndvi_reference": 0.6491812347740764,
+        "ndvi_delta": null,
+        "reference_year_count": 3,
+        "observation_dates": [],
+        "age_days": null,
+        "median_usable_fraction": null,
+        "rainfall_mm": 0.3128020167350769,
+        "rainfall_reference_mm": 22.083346366882324,
+        "rainfall_ratio": 0.01416461126580779,
+        "rainfall_age_days": 5.0,
+        "rainfall_start": "2024-05-11",
+        "rainfall_end": "2024-05-15",
+        "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+        "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IG-21",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4,
+              0.65
+            ],
+            [
+              33.45,
+              0.65
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.4,
+              0.7
+            ],
+            [
+              33.4,
+              0.65
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "IG-21",
+        "status": "review",
+        "reasons": [
+          "Five-day rainfall 0.7 mm is 2.7% of reference median and below every reference year."
+        ],
+        "vegetation_state": "insufficient_coverage",
+        "rainfall_state": "usable",
+        "ndvi": null,
+        "ndvi_reference": 0.6294974084773157,
+        "ndvi_delta": null,
+        "reference_year_count": 3,
+        "observation_dates": [],
+        "age_days": null,
+        "median_usable_fraction": null,
+        "rainfall_mm": 0.7477028369903564,
+        "rainfall_reference_mm": 27.30747699737549,
+        "rainfall_ratio": 0.027380883157467017,
+        "rainfall_age_days": 5.0,
+        "rainfall_start": "2024-05-11",
+        "rainfall_end": "2024-05-15",
+        "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+        "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IG-22",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.45,
+              0.65
+            ],
+            [
+              33.5,
+              0.65
+            ],
+            [
+              33.5,
+              0.7
+            ],
+            [
+              33.45,
+              0.7
+            ],
+            [
+              33.45,
+              0.65
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "IG-22",
+        "status": "review",
+        "reasons": [
+          "Five-day rainfall 0.1 mm is 0.5% of reference median and below every reference year."
+        ],
+        "vegetation_state": "insufficient_coverage",
+        "rainfall_state": "usable",
+        "ndvi": null,
+        "ndvi_reference": 0.6358189081225033,
+        "ndvi_delta": null,
+        "reference_year_count": 3,
+        "observation_dates": [],
+        "age_days": null,
+        "median_usable_fraction": null,
+        "rainfall_mm": 0.10538196563720703,
+        "rainfall_reference_mm": 22.261235237121582,
+        "rainfall_ratio": 0.004733877725773186,
+        "rainfall_age_days": 5.0,
+        "rainfall_start": "2024-05-11",
+        "rainfall_end": "2024-05-15",
+        "question": "Which crops and growth stages are present here, and do field checks confirm unusual canopy development or recent rainfall conditions?",
+        "unknowns": "Current maize locations, planting dates, causes, management, yield effects and field outcomes are unconfirmed."
+      }
+    }
+  ]
+}

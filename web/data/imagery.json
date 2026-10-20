@@ -1,0 +1,358 @@
+{
+  "schema_version": "imagery-viewer-1",
+  "dataset_id": "13154e622c6a29026cf3",
+  "bbox": [
+    33.4,
+    0.65,
+    33.5,
+    0.75
+  ],
+  "crs": "EPSG:32636",
+  "width": 557,
+  "height": 553,
+  "transform": [
+    19.97859000535895,
+    0.0,
+    544506.5612906158,
+    0.0,
+    -19.98993893376707,
+    82900.75964449612,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "pixel_polygons": {
+    "IG-11": [
+      [
+        0.024436848725599702,
+        276.52864209693143
+      ],
+      [
+        278.4970378511316,
+        276.50342036401526
+      ],
+      [
+        278.4695460961666,
+        0.03020240193927748
+      ],
+      [
+        0.0,
+        0.05722529128615861
+      ],
+      [
+        0.024436848725599702,
+        276.52864209693143
+      ]
+    ],
+    "IG-12": [
+      [
+        278.4970378511316,
+        276.50342036401526
+      ],
+      [
+        556.9715598114126,
+        276.4752310425274
+      ],
+      [
+        556.9410130442666,
+        0.0
+      ],
+      [
+        278.4695460961666,
+        0.03020240193927748
+      ],
+      [
+        278.4970378511316,
+        276.50342036401526
+      ]
+    ],
+    "IG-21": [
+      [
+        0.04718847354888567,
+        553.0
+      ],
+      [
+        278.5226337085187,
+        552.9765794999676
+      ],
+      [
+        278.4970378511316,
+        276.50342036401526
+      ],
+      [
+        0.024436848725599702,
+        276.52864209693143
+      ],
+      [
+        0.04718847354888567,
+        553.0
+      ]
+    ],
+    "IG-22": [
+      [
+        278.5226337085187,
+        552.9765794999676
+      ],
+      [
+        557.0,
+        552.9504033443782
+      ],
+      [
+        556.9715598114126,
+        276.4752310425274
+      ],
+      [
+        278.4970378511316,
+        276.50342036401526
+      ],
+      [
+        278.5226337085187,
+        552.9765794999676
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001",
+      "acquired_at": "2020-05-04T07:56:09.024000Z",
+      "year": 2020,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001-ndvi.f32",
+      "hashes": {
+        "reflectance": "c11c05d06747ff875b6b15cc3224e9637b8d3949f73a4328e813ac54e1367934",
+        "ndvi": "f1f26622ef5d1dd8f83a4570f32268848a6cead3d37ad0ca63b48d074b364fc5",
+        "quality": "4434aaaa76fabafe4021b47a280a89ef5d01fc39de396efdb5e5e3c07a0eaf3c"
+      },
+      "accepted_fraction": 0.9762840845267043,
+      "offsets": {
+        "B02": 0.0,
+        "B03": 0.0,
+        "B04": 0.0,
+        "B08": 0.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200504T075609_R035_T36NWF_20200920T122001",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "7075ddd68bfbc42748f553cd7a360ed134590e3027f383435b13782f05cc1879"
+    },
+    {
+      "id": "S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107",
+      "acquired_at": "2020-05-09T07:56:11.024000Z",
+      "year": 2020,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107-ndvi.f32",
+      "hashes": {
+        "reflectance": "567ece0bcee9e399910269fced876fc3a25b8289379f903eaa0f0b518057de69",
+        "ndvi": "deecf797a50a2bed719d017b9a4b325c793ec3ee0c09b705ad239cf1df9388ec",
+        "quality": "f8d9011efd602ad9eb5208f7427cf5db5f72016db8ff537bfe0cda0fea020bcb"
+      },
+      "accepted_fraction": 0.4441190698036822,
+      "offsets": {
+        "B02": 0.0,
+        "B03": 0.0,
+        "B04": 0.0,
+        "B08": 0.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20200509T075611_R035_T36NWF_20200921T030107",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "591102ed395c46fdd34decf39c9340e6af16c5701b8806b5919fba102e8a7c83"
+    },
+    {
+      "id": "S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310",
+      "acquired_at": "2020-05-14T07:56:09.024000Z",
+      "year": 2020,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310-ndvi.f32",
+      "hashes": {
+        "reflectance": "8a054dc8cf7702645e990274869c7b6780367d870e5cd01fa1aa22d0731e2472",
+        "ndvi": "52e514d17fa1a070d6641df71aa26ceb8d9aa420d9c7d5e14ebd2951003e2a8b",
+        "quality": "30e3e17eff80a86089db30025a47b708c4ad34c817720f59658bc818f3ee9ca2"
+      },
+      "accepted_fraction": 0.4969498832871785,
+      "offsets": {
+        "B02": 0.0,
+        "B03": 0.0,
+        "B04": 0.0,
+        "B08": 0.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200514T075609_R035_T36NWF_20200918T050310",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "6f5b7f4cbab38dea54bf2126e24ea771ab39eeae112d5c832c6248d3cd0c07f9"
+    },
+    {
+      "id": "S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229",
+      "acquired_at": "2021-05-09T07:56:09.024000Z",
+      "year": 2021,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229-ndvi.f32",
+      "hashes": {
+        "reflectance": "9f55c026ff4c443f2b597b1874305fab8541d4a35c918a232671c592d93c18a8",
+        "ndvi": "672fb051df26b4260139152c5585ed7439fa1d43439b895b6557d458d5e6c983",
+        "quality": "02df2963e097703f9e46a7f82af5d0aa2b0c1dc554e0cf126a233999c2dd1c30"
+      },
+      "accepted_fraction": 0.0,
+      "offsets": {
+        "B02": 0.0,
+        "B03": 0.0,
+        "B04": 0.0,
+        "B08": 0.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20210509T075609_R035_T36NWF_20210605T170229",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "ba49b69edd47212a77989af9b96a5775435f9bb79b4edbe946f63aaec6fa4928"
+    },
+    {
+      "id": "S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144",
+      "acquired_at": "2022-05-14T07:56:09.024000Z",
+      "year": 2022,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144-ndvi.f32",
+      "hashes": {
+        "reflectance": "44f3b85eaf479e54af3f31448bfe2f876677ae8ed320b3632aa3a28996828be4",
+        "ndvi": "144890ec54281a141078d868c6ee3aa9f18c98728d14dba59786c2fab0cabc89",
+        "quality": "8e51edd5c0238fe7e07b589587e1533b74ccb16b1eb19f9f379a2bd9c718492b"
+      },
+      "accepted_fraction": 0.9949321637161103,
+      "offsets": {
+        "B02": -1000.0,
+        "B03": -1000.0,
+        "B04": -1000.0,
+        "B08": -1000.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20220514T075609_R035_T36NWF_20240611T144144",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "6417fba410c13f8eeaab6802d6880129625b10f7482e93c33a68d1a687b0c3fb"
+    },
+    {
+      "id": "S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813",
+      "acquired_at": "2023-05-09T07:56:09.024000Z",
+      "year": 2023,
+      "rgb": null,
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813-ndvi.f32",
+      "hashes": {
+        "reflectance": "bd3a7f60499b12a006c943c58e1b17fde7fe842272b08a288c5914ade22e06b2",
+        "ndvi": "382006160e85c941ef59b4629e2506f3794ee73df74e1bbff7d7166a91c434bd",
+        "quality": "00f1de4fdbfa2ea76ff2410c364802abbe48853e15da501a68a81fe7e28d377b"
+      },
+      "accepted_fraction": 0.9896208375402976,
+      "offsets": {
+        "B02": -1000.0,
+        "B03": -1000.0,
+        "B04": -1000.0,
+        "B08": -1000.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20230509T075609_R035_T36NWF_20230509T131813",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "374567aa2782bd428a251aa085a4bcdfb29f299d4b79cd33089aed30e9bf3904"
+    },
+    {
+      "id": "S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740",
+      "acquired_at": "2023-05-14T07:56:11.024000Z",
+      "year": 2023,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740-ndvi.f32",
+      "hashes": {
+        "reflectance": "40b654632e4c1ba1d1c90facb1d27aab15764e3450439fc300b8857e8bbdbf6f",
+        "ndvi": "d09a0c14fe4621bee61bd2d6ac8c74d01464eed8a6d80d3ae778f92bdc496462",
+        "quality": "d5e4d65ee0a52d90de7ac8707c5433e4b0c840d539b9506e3d0e6236eceb407c"
+      },
+      "accepted_fraction": 0.2653877495365576,
+      "offsets": {
+        "B02": -1000.0,
+        "B03": -1000.0,
+        "B04": -1000.0,
+        "B08": -1000.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20230514T075611_R035_T36NWF_20230514T212740",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "192ac820ed61ac15cf34520cab17a217696677724620e11f2697f969b3a961a2"
+    },
+    {
+      "id": "S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+      "acquired_at": "2024-05-03T07:56:09.024000Z",
+      "year": 2024,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846-ndvi.f32",
+      "hashes": {
+        "reflectance": "02a61361c99d21a4b5505186babacea60d7923b4d9b9f0492bd417540bdec9a1",
+        "ndvi": "de505f716877c89d5e42ce470ea1e0d56b2807233e8e90122ce6bb957c22e4b3",
+        "quality": "260bac25ad496db1a4054ef075d96363f6b2e028108825c4a51ad4cd006a0ecb"
+      },
+      "accepted_fraction": 3.571185081536649e-05,
+      "offsets": {
+        "B02": -1000.0,
+        "B03": -1000.0,
+        "B04": -1000.0,
+        "B08": -1000.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20240503T075609_R035_T36NWF_20240503T115846",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "99eea3b28d57223366222143778f68f1ab56a855cbe27280cefcf8aeeac27bdd"
+    },
+    {
+      "id": "S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+      "acquired_at": "2024-05-13T07:56:09.024000Z",
+      "year": 2024,
+      "rgb": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607-rgb.png",
+      "ndvi": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607-ndvi.png",
+      "quality": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607-quality.png",
+      "ndvi_values": "data/imagery/13154e622c6a29026cf3/S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607-ndvi.f32",
+      "hashes": {
+        "reflectance": "45e2bd4342f0a0b166e8cf54552997a3e66fa9b84d4baeabc87c8cdf3631124e",
+        "ndvi": "215825f2b02e4ad4a03c81798da86fc3cf8fb0412ca9845e120168757b6317e3",
+        "quality": "a7f2e328f37a1c110c8b7c3958b292323fe1c774c3252a3c4cbd76b6c433f2bd"
+      },
+      "accepted_fraction": 0.5184419244142445,
+      "offsets": {
+        "B02": -1000.0,
+        "B03": -1000.0,
+        "B04": -1000.0,
+        "B08": -1000.0
+      },
+      "quantification": 10000.0,
+      "source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20240513T075609_R035_T36NWF_20240513T130607",
+      "availability": "cached_retrospective",
+      "source_metadata_sha256": "98036788088211f153194e085aa1bf74f2c02a1376026c830a4ea8e56a5b3a9c"
+    }
+  ],
+  "target_year": 2024,
+  "reference_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "rgb_display": "Fixed 0\u20130.30 physical reflectance stretch; gamma 2.2; quality-rejected pixels transparent",
+  "ndvi_range": [
+    -0.2,
+    1
+  ],
+  "change_range": [
+    -0.3,
+    0.3
+  ],
+  "limitation": "Same-season comparisons from different years are not a damage before/after experiment. Clouds and rejected pixels are not reconstructed. Historical cropland is not confirmed maize."
+}

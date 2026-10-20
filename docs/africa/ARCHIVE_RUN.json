@@ -1,0 +1,201 @@
+{
+  "schema_version": "uganda-archive-1",
+  "plan_id": "d9c82747f42377f8ec84",
+  "windows_requested": 18,
+  "windows_archived": 18,
+  "catalog_complete": true,
+  "unique_catalog_items": 129,
+  "pixel_scenes_processed": 18,
+  "independent_field_labels": 0,
+  "scientific_status": "Retrospective data feasibility only; no new training, crop classification or field validation",
+  "implementation_sha256": "b3fd267cddf91832d7e3e1f24fc833ec5e8a9d404f988733674f9752b4ea7d60",
+  "report_sha256": "15d6ce1326620a50d4e3048ee5b4e72b8d107b44701c52ddcb6dfbace119897f",
+  "artifact_checksums_verified": 18,
+  "tests_passed": 45,
+  "failed_candidate_attempts": 12,
+  "zero_usable_windows": 1,
+  "below_60_percent_windows": 4,
+  "coverage_scope": "Whole geographic box, not crop-masked; 60 percent is a descriptive cutoff, not new eligibility validation",
+  "windows": [
+    {
+      "location_id": "iganga-study",
+      "year": 2022,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9949419033117872,
+      "valid_pixels": 306463,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2B_MSIL2A_20220514T075609_R035_T36NWF_20220517T080828"
+    },
+    {
+      "location_id": "iganga-study",
+      "year": 2022,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9971073400839553,
+      "valid_pixels": 307130,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2A_MSIL2A_20221105T080121_R035_T36NWF_20221105T184942"
+    },
+    {
+      "location_id": "iganga-study",
+      "year": 2023,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9207586495725941,
+      "valid_pixels": 283613,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2A_MSIL2A_20230524T075611_R035_T36NWF_20240906T054121"
+    },
+    {
+      "location_id": "iganga-study",
+      "year": 2023,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9644861876300642,
+      "valid_pixels": 297082,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2B_MSIL2A_20231125T080149_R035_T36NWF_20241023T040346"
+    },
+    {
+      "location_id": "iganga-study",
+      "year": 2024,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.8156651656867552,
+      "valid_pixels": 251242,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2A_MSIL2A_20240508T075611_R035_T36NWF_20240508T125602"
+    },
+    {
+      "location_id": "iganga-study",
+      "year": 2024,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9060908184831554,
+      "valid_pixels": 279095,
+      "total_pixels": 308021,
+      "processed_scene_id": "S2A_MSIL2A_20241114T080201_R035_T36NWF_20241114T111946"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2022,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.6500643969453732,
+      "valid_pixels": 199874,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2B_MSIL2A_20220514T075609_R035_T36NVH_20220517T065442"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2022,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.6569106378549963,
+      "valid_pixels": 201979,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2A_MSIL2A_20221115T080211_R035_T36NVH_20221116T012124"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2023,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9911307843417851,
+      "valid_pixels": 304741,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2A_MSIL2A_20230524T075611_R035_T36NVH_20230524T123920"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2023,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.5661174496207736,
+      "valid_pixels": 174063,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2A_MSIL2A_20231110T080141_R035_T36NVH_20241024T125627"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2024,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.951282735113898,
+      "valid_pixels": 292489,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2A_MSIL2A_20240528T075611_R035_T36NVH_20240528T141448"
+    },
+    {
+      "location_id": "lira-study",
+      "year": 2024,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.946036660725669,
+      "valid_pixels": 290876,
+      "total_pixels": 307468,
+      "processed_scene_id": "S2B_MSIL2A_20241129T080209_R035_T36NVH_20241129T101035"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2022,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9747098326928303,
+      "valid_pixels": 301314,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2B_MSIL2A_20220527T080609_R078_T35NRA_20240617T113845"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2022,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.01758795595409081,
+      "valid_pixels": 5437,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2B_MSIL2A_20221123T081149_R078_T35NRA_20221123T195622"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2023,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.9919678325116779,
+      "valid_pixels": 306649,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2B_MSIL2A_20230522T080609_R078_T35NRA_20230522T131557"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2023,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.5095266746891296,
+      "valid_pixels": 157511,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2B_MSIL2A_20231118T081129_R078_T35NRA_20231118T121246"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2024,
+      "month": 5,
+      "pixel_status": "processed",
+      "usable_fraction": 0.964435904403297,
+      "valid_pixels": 298138,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2A_MSIL2A_20240511T080611_R078_T35NRA_20240515T182940"
+    },
+    {
+      "location_id": "kasese-study",
+      "year": 2024,
+      "month": 11,
+      "pixel_status": "processed",
+      "usable_fraction": 0.0,
+      "valid_pixels": 0,
+      "total_pixels": 309132,
+      "processed_scene_id": "S2B_MSIL2A_20241112T081059_R078_T35NRA_20241112T101856"
+    }
+  ]
+}

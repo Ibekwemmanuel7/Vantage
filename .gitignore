@@ -1,12 +1,12 @@
-.venv/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-data/
+*.egg-info/
+.venv/
 outputs/
-models/
+*.sqlite
+
+# Generated browser failure-state fixture
+web/qa/
+
+# Rebuildable raster previews and masked pixel buffers; manifests stay in Git.
+web/data/imagery/

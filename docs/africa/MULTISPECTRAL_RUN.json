@@ -1,0 +1,47 @@
+{
+  "dataset_id": "0291a271bc34131db96c4f96",
+  "manifest_sha256": "cdd6fc2deed0bc83331c7cbb5d2563e60e25aca0419aa43173c7a23a3d145662",
+  "requested_scenes": 18,
+  "processed_scenes": 18,
+  "unavailable_scenes": 0,
+  "validated_cogs": 54,
+  "cog_bytes": 87390302,
+  "sequence_shapes_TCHW": {
+    "iganga-study": [
+      6,
+      6,
+      553,
+      557
+    ],
+    "kasese-study": [
+      6,
+      6,
+      554,
+      558
+    ],
+    "lira-study": [
+      6,
+      6,
+      553,
+      556
+    ]
+  },
+  "bands": [
+    "B02",
+    "B03",
+    "B04",
+    "B8A",
+    "B11",
+    "B12"
+  ],
+  "complete": true,
+  "tests_passed": 63,
+  "offline_replay_same_manifest": true,
+  "offline_exit_code": 0,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "foundation_ready": false,
+  "whole_box_not_crop_masked": true,
+  "features_sha256": "e47f18d500077464c9e6fb6b7aa08e22d2da9a6014a583d0b2159c0f90ce148d",
+  "unavailable_scene_ids": []
+}

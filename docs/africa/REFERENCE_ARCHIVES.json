@@ -1,0 +1,74 @@
+{
+  "schema_version": "public-reference-archive-inspection-1",
+  "archives": [
+    {
+      "source_url": "https://zenodo.org/records/17288873/files/WorldCereal_ReferenceData_2023_Africa_Version_20251008.zip?download=1",
+      "md5": "df4b29d2a5d92b15e68689625d82233e",
+      "sha256": "783be6ca3a60a3507edd3d62928a767a5eb080e59a754bece0ea6c03c561d191",
+      "bytes": 248108,
+      "entries": [
+        {
+          "name": "2023_mar_um6p_poly_111.zip",
+          "uncompressed_bytes": 247958
+        },
+        {
+          "name": "2023_mar_um6p_poly_111.zip/2023_MAR_UM6P_POLY_111.xlsx",
+          "uncompressed_bytes": 25458,
+          "metadata_country_mentions": [
+            "Morocco"
+          ]
+        },
+        {
+          "name": "2023_mar_um6p_poly_111.zip/2023_MAR_UM6P_POLY_111.pdf",
+          "uncompressed_bytes": 123635
+        },
+        {
+          "name": "2023_mar_um6p_poly_111.zip/2023_MAR_UM6P_POLY_111.csv",
+          "uncompressed_bytes": 1106
+        },
+        {
+          "name": "2023_mar_um6p_poly_111.zip/2023_MAR_UM6P_POLY_111.geoparquet",
+          "uncompressed_bytes": 97209
+        }
+      ],
+      "uganda_named_entries": [],
+      "content_status": "Archive filenames inspected only; per-dataset geography, dates, provenance and licences require review",
+      "admitted_training_labels": 0
+    },
+    {
+      "source_url": "https://zenodo.org/records/17288873/files/WorldCereal_ReferenceData_2024_Africa_Version_20251008.zip?download=1",
+      "md5": "10ea523428f0c5ba92d506884c99982a",
+      "sha256": "cb3e3c1e655da91663ddd7a9d31b93f65361895e0712c41e81ddd56afcdcee4a",
+      "bytes": 1097697,
+      "entries": [
+        {
+          "name": "2024_mar_um6p_poly_111.zip",
+          "uncompressed_bytes": 1097547
+        },
+        {
+          "name": "2024_mar_um6p_poly_111.zip/2024_MAR_UM6P_POLY_111.geoparquet",
+          "uncompressed_bytes": 944880
+        },
+        {
+          "name": "2024_mar_um6p_poly_111.zip/2024_MAR_UM6P_POLY_111.xlsx",
+          "uncompressed_bytes": 25480,
+          "metadata_country_mentions": [
+            "Morocco"
+          ]
+        },
+        {
+          "name": "2024_mar_um6p_poly_111.zip/2024_MAR_UM6P_POLY_111.pdf",
+          "uncompressed_bytes": 124040
+        },
+        {
+          "name": "2024_mar_um6p_poly_111.zip/2024_MAR_UM6P_POLY_111.csv",
+          "uncompressed_bytes": 2597
+        }
+      ],
+      "uganda_named_entries": [],
+      "content_status": "Archive filenames inspected only; per-dataset geography, dates, provenance and licences require review",
+      "admitted_training_labels": 0
+    }
+  ],
+  "limitation": "Crop-type reference data are not useful-scouting outcomes. Archive names alone do not prove country coverage or independence."
+}

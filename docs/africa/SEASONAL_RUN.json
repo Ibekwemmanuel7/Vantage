@@ -1,0 +1,45 @@
+{
+  "dataset_id": "07fa4c41a15602ce91679d68",
+  "manifest_sha256": "740a3ef9f50e4c63ade94241b0262938326fb1a7782418f2b6ec9097be710a91",
+  "requested_slots": 30,
+  "processed_slots": 30,
+  "validated_cogs": 90,
+  "historical_crop_coverage_sufficient": 17,
+  "withheld_slots": 13,
+  "per_year": {
+    "2023": {
+      "observed": 15,
+      "coverage_sufficient": 9
+    },
+    "2024": {
+      "observed": 15,
+      "coverage_sufficient": 8
+    }
+  },
+  "sequence_shapes_TCHW": {
+    "2023": [
+      15,
+      6,
+      553,
+      557
+    ],
+    "2024": [
+      15,
+      6,
+      553,
+      557
+    ]
+  },
+  "max_observation_gap_days": {
+    "2023": 14.999976851851851,
+    "2024": 15.000023148148149
+  },
+  "confirmed_crop_calendars": 0,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "foundation_ready": false,
+  "independent_spatial_groups": 1,
+  "offline_replay_same_manifest": true,
+  "tests_passed": 71,
+  "figure_sha256": "25beb956826accd14f492469c5c304299e9d5a9046b141eee2630c95d7560a55"
+}
