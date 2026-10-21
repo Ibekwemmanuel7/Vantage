@@ -129,3 +129,8 @@ viewing/orbit inputs, a documented local-incidence and layover/shadow method,
 adequate surrounding terrain for occlusion and comparison with a trusted
 processor. Independently dated crop outcomes and confirmed field/calendar data
 are still required before evaluating radar's value for scouting priorities.
+
+The [executed local viewing-geometry slice](KWEEN_VIEWING.md) now supplies
+annotation-derived viewing directions and local facet-risk checks. It retains
+the nonlocal-shadow and independent-processor gates; it does not certify complete
+radar illumination or agricultural eligibility.

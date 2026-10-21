@@ -49,6 +49,10 @@ An [independent surface-slope proxy](docs/africa/KWEEN_TERRAIN.md) now measures
 terrain-risk sensitivity on the same radar grid. It excludes 1.5% of historical
 cropland under the fixed primary rule; passing it does not certify radar
 illumination, remove the need for field outcomes or enable agricultural ranking.
+The [acquisition-specific local geometry slice](docs/africa/KWEEN_VIEWING.md)
+now verifies product annotations through SAFE checksums and derives approximate
+local incidence/facet risks. Distant-terrain shadow and trusted-processor
+agreement remain unchecked; locally unflagged cells are not healthy-crop labels.
 An offline sampling and paired baseline evaluation tool is now implemented;
 no actual field outcomes or new agricultural performance results are supplied.
 

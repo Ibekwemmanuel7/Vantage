@@ -1,0 +1,23 @@
+{
+  "case_id": "kween-2023-viewing-geometry-v1",
+  "parent_radar_run_id": "c193f0b7728d5ea5b8f36809",
+  "parent_terrain_run_id": "f087c0ca9dd977c4a3ae74d0",
+  "max_passes": 3,
+  "polarization_geometry": "VV",
+  "annotation_selection": "Use source GRD item derived_from links and SAFE-manifest product-annotation references; verify product XML identity, acquisition, orbit, polarization and geolocation support. Do not trust schema-product asset labels alone.",
+  "orbit_interpolation": "Cubic Hermite interpolation of annotated Earth-fixed position/velocity without extrapolation; geolocation-grid acquisition times and ellipsoidal heights define ground-to-sensor vectors",
+  "geometry_interpolation": "Linear interpolation of unit Earth-fixed viewing vectors within the annotation-grid convex hull, then normalization; no extrapolation",
+  "terrain_method": "Use the pinned 30m DSM grid and supported derivatives; account for grid-axis orientation in local east/north surface normals; compute approximate local incidence and local range-order reversal/back-facing facet risks",
+  "annotation_incidence_tolerance_degrees": 0.25,
+  "max_local_incidence_degrees": 85,
+  "min_local_incidence_degrees": 5,
+  "minimum_crop_retained_fraction": 0.6,
+  "minimum_comparable_pixels": 100,
+  "limitations": [
+    "Approximate local geometry, not a validated Range-Doppler processor or correction to provider RTC values",
+    "Surface model is not bare earth; orthometric slope gradients do not establish exact ellipsoidal surface normals",
+    "Local back-facing and range-reversal predicates are risk flags, not a complete nonlocal layover or shadow solution",
+    "No ray-traced nonlocal occlusion or trusted-processor agreement; passing local checks never certifies radar illumination",
+    "VV annotation supplies approximate dual-polarization geometry; no independent outcome, crop-condition, irrigation, model-training or operational-alert claim"
+  ]
+}

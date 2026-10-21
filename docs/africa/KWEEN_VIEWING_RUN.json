@@ -1,0 +1,270 @@
+{
+  "schema_version": "local-viewing-1",
+  "plan": {
+    "case_id": "kween-2023-viewing-geometry-v1",
+    "parent_radar_run_id": "c193f0b7728d5ea5b8f36809",
+    "parent_terrain_run_id": "f087c0ca9dd977c4a3ae74d0",
+    "max_passes": 3,
+    "polarization_geometry": "VV",
+    "annotation_selection": "Use source GRD item derived_from links and SAFE-manifest product-annotation references; verify product XML identity, acquisition, orbit, polarization and geolocation support. Do not trust schema-product asset labels alone.",
+    "orbit_interpolation": "Cubic Hermite interpolation of annotated Earth-fixed position/velocity without extrapolation; geolocation-grid acquisition times and ellipsoidal heights define ground-to-sensor vectors",
+    "geometry_interpolation": "Linear interpolation of unit Earth-fixed viewing vectors within the annotation-grid convex hull, then normalization; no extrapolation",
+    "terrain_method": "Use the pinned 30m DSM grid and supported derivatives; account for grid-axis orientation in local east/north surface normals; compute approximate local incidence and local range-order reversal/back-facing facet risks",
+    "annotation_incidence_tolerance_degrees": 0.25,
+    "max_local_incidence_degrees": 85,
+    "min_local_incidence_degrees": 5,
+    "minimum_crop_retained_fraction": 0.6,
+    "minimum_comparable_pixels": 100,
+    "limitations": [
+      "Approximate local geometry, not a validated Range-Doppler processor or correction to provider RTC values",
+      "Surface model is not bare earth; orthometric slope gradients do not establish exact ellipsoidal surface normals",
+      "Local back-facing and range-reversal predicates are risk flags, not a complete nonlocal layover or shadow solution",
+      "No ray-traced nonlocal occlusion or trusted-processor agreement; passing local checks never certifies radar illumination",
+      "VV annotation supplies approximate dual-polarization geometry; no independent outcome, crop-condition, irrigation, model-training or operational-alert claim"
+    ]
+  },
+  "plan_sha256": "830f1d46fafef782281a68728bf34015141426485cdf756069386fa83d92e95e",
+  "frozen_plan_sha256": "fce6881e01a0b0259af1d6564874eba98ddf9449cb7b6b91a45cb10fc28151b9",
+  "inputs_sha256": "c7cc85e3a9f429c2595bf2b3c49a72068f8930fb76486c37cebe7900167a712c",
+  "terrain_manifest_sha256": "1544123acda5c39829bf787ce900db6d04516633d1c51b4e2f7e18d0ad3c5ae1",
+  "radar_manifest_sha256": "045be31dcc1e75d0f7574bac71528ee69069d56aaebc9c8e4c508d04be4a794e",
+  "derivative_grid": {
+    "width": 384,
+    "height": 381,
+    "crs": "EPSG:32636",
+    "transform": [
+      30.0,
+      0.0,
+      661110.0,
+      0.0,
+      -30.0,
+      171570.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "observations": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "acquired_at": "2023-05-12T15:57:28.105240Z",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "annotation_sha256": "dd920578954777934b1a0872bf57ea686148dbd0fa1f0fe061040d1cb55dc1c8",
+      "annotation_check": {
+        "geolocation_points": 210,
+        "orbit_states": 16,
+        "incidence_residual_max_degrees": 0.003153166657973827,
+        "source_incidence_min_degrees": 30.91838311134255,
+        "source_incidence_max_degrees": 46.31463678261044,
+        "reference_frame": "Earth Fixed",
+        "annotation_polarization": "VV",
+        "orbit_extrapolated": false
+      },
+      "geometry_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "locally_unflagged": 105091,
+          "local_range_reversal_risk": 0,
+          "back_facing_facet_risk": 0,
+          "incidence_guard_risk": 0
+        },
+        "locally_unflagged_crop_fraction": 1.0,
+        "nominal_incidence_range_degrees": [
+          33.60907745361328,
+          34.45317077636719
+        ],
+        "approximate_local_incidence_range_degrees": [
+          18.75090217590332,
+          49.324684143066406
+        ],
+        "local_geometry_checks_applied": true,
+        "nonlocal_shadow_checked": false,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "numeric_evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -9.002153396606445,
+          "vh_db_median": -15.256987571716309,
+          "vh_minus_vv_db_median": -6.291421890258789
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "acquired_at": "2023-05-24T15:57:28.471119Z",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "annotation_sha256": "22d04c05f7cb02379138952302e9e186b5aba015f6523e44301a826bf676df9c",
+      "annotation_check": {
+        "geolocation_points": 210,
+        "orbit_states": 16,
+        "incidence_residual_max_degrees": 0.003152704349382418,
+        "source_incidence_min_degrees": 30.9166653223914,
+        "source_incidence_max_degrees": 46.31375157906781,
+        "reference_frame": "Earth Fixed",
+        "annotation_polarization": "VV",
+        "orbit_extrapolated": false
+      },
+      "geometry_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "locally_unflagged": 105091,
+          "local_range_reversal_risk": 0,
+          "back_facing_facet_risk": 0,
+          "incidence_guard_risk": 0
+        },
+        "locally_unflagged_crop_fraction": 1.0,
+        "nominal_incidence_range_degrees": [
+          33.599876403808594,
+          34.444190979003906
+        ],
+        "approximate_local_incidence_range_degrees": [
+          18.741722106933594,
+          49.31549072265625
+        ],
+        "local_geometry_checks_applied": true,
+        "nonlocal_shadow_checked": false,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "numeric_evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -8.15067195892334,
+          "vh_db_median": -14.231304168701172,
+          "vh_minus_vv_db_median": -6.121232032775879
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "acquired_at": "2023-06-05T15:57:29.103202Z",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "annotation_sha256": "5e10bfa95f4c9bc4ba147443217d063912ef0faea490041b3389db681d713918",
+      "annotation_check": {
+        "geolocation_points": 210,
+        "orbit_states": 16,
+        "incidence_residual_max_degrees": 0.0031526634151219923,
+        "source_incidence_min_degrees": 30.91879200779811,
+        "source_incidence_max_degrees": 46.31496934098175,
+        "reference_frame": "Earth Fixed",
+        "annotation_polarization": "VV",
+        "orbit_extrapolated": false
+      },
+      "geometry_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "locally_unflagged": 105091,
+          "local_range_reversal_risk": 0,
+          "back_facing_facet_risk": 0,
+          "incidence_guard_risk": 0
+        },
+        "locally_unflagged_crop_fraction": 1.0,
+        "nominal_incidence_range_degrees": [
+          33.60231018066406,
+          34.446571350097656
+        ],
+        "approximate_local_incidence_range_degrees": [
+          18.74415397644043,
+          49.31787109375
+        ],
+        "local_geometry_checks_applied": true,
+        "nonlocal_shadow_checked": false,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "numeric_evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -9.978578567504883,
+          "vh_db_median": -15.514303207397461,
+          "vh_minus_vv_db_median": -5.559426307678223
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    }
+  ],
+  "changes": [
+    {
+      "earlier_item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "later_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "asset": {
+        "href": "local-geometry-pair-0-change.tif",
+        "sha256": "23c88507f685e5d805a9ae6c41852a1b242615d2cbb5e2bd1ea7c385b5cfa25e"
+      },
+      "status": "descriptive_same_track_change",
+      "comparable_pixels": 105091,
+      "comparable_crop_fraction": 1.0,
+      "vv_median_delta_db": 0.7617311477661133,
+      "vh_median_delta_db": 0.9192399978637695,
+      "crop_condition_label": null,
+      "terrain_screen_verified": false,
+      "causal_attribution": false
+    },
+    {
+      "earlier_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "later_item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "asset": {
+        "href": "local-geometry-pair-1-change.tif",
+        "sha256": "cf2ffbe27c4dca97ba4807cc226bdea0ed39e38c06eb56b52d05ed6aa19ef267"
+      },
+      "status": "descriptive_same_track_change",
+      "comparable_pixels": 105091,
+      "comparable_crop_fraction": 1.0,
+      "vv_median_delta_db": -1.6275091171264648,
+      "vh_median_delta_db": -1.1098451614379883,
+      "crop_condition_label": null,
+      "terrain_screen_verified": false,
+      "causal_attribution": false
+    }
+  ],
+  "geometry_cogs": 12,
+  "change_cogs": 2,
+  "local_geometry_checks_applied": true,
+  "nonlocal_shadow_checked": false,
+  "terrain_screen_verified": false,
+  "radar_illumination_confirmed": false,
+  "agronomic_review_eligible": false,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "causal_attribution": false,
+  "optical_status_unchanged": "stale_research_context",
+  "software": {
+    "numpy": "2.2.6",
+    "scipy": "1.14.1",
+    "rasterio": "1.5.0",
+    "gdal": "3.12.1"
+  },
+  "run_id": "43d8ea585a445e8c941e5788",
+  "manifest_sha256": "3bb1780f1c409afe78dd469f72f6b5792efce8c77457d9762309e05ca3a072aa"
+}
