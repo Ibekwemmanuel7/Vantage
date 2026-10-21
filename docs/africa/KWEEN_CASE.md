@@ -108,6 +108,8 @@ before/after sequence. The result remains inconclusive about the reported
 farms: do not move the boxes, change thresholds or select a greener/browner
 acquisition after seeing these findings. A denser temporal follow-up must be
 identified as a separate analysis with its own fixed plan.
+The [executed temporal follow-up](KWEEN_TEMPORAL.md) now supplies that separate
+analysis; it preserves this original case and explicitly reports stale evidence.
 
 ## Reproduce and inspect
 

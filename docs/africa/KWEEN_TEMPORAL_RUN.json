@@ -1,0 +1,367 @@
+{
+  "run_id": "f304c87fc3a00d36966ab77f",
+  "manifest_sha256": "9e156d67acb07ab0ea217d5884f66286399e58b39be6fe40a7b3beab447054ae",
+  "plan": {
+    "case_id": "kween-2023-temporal-followup-v1",
+    "parent_run_id": "8bfc86ae343f196c7a188e60",
+    "area_id": "ngenge-core",
+    "bbox": [
+      34.45,
+      1.45,
+      34.55,
+      1.55
+    ],
+    "start": "2023-05-01",
+    "end": "2023-06-05",
+    "as_of": "2023-06-05T23:59:59Z",
+    "max_acquisitions": 12,
+    "max_observation_age_days": 7,
+    "comparison_epoch": "reported-period",
+    "selection": "All full-box six-band catalog acquisitions in the fixed interval; alternate versions deduplicated by acquisition time using scene-cloud/date/ID order, never observed NDVI. Fail if the fixed acquisition budget is exceeded.",
+    "interpretation": "Exploratory follow-up after inspecting the original case, not blinded validation. Reuse original earlier-year references only within their May 21\u00e2\u20ac\u201cJune 5 calendar window; other dates are absolute observations only.",
+    "limitations": [
+      "One locality proxy, not confirmed farm boundaries, crop identity or crop stage",
+      "Seven-day freshness is an unvalidated research policy, not an operational service guarantee",
+      "No interpolation or treating cloud gaps and absent reports as healthy crops",
+      "Original four-year reference is not climatology or verified unaffected controls",
+      "No independent field labels, trained model, causal attribution or historical delivery claim"
+    ]
+  },
+  "frozen_plan_sha256": "9974cdb807cb3af831963a712757b7fa3b5de954271d14d2d8f2bd059d13e670",
+  "summary": {
+    "status": "stale_research_context",
+    "as_of": "2023-06-05T23:59:59Z",
+    "max_observation_age_days": 7,
+    "catalog_acquisitions": 8,
+    "processed_observations": 8,
+    "coverage_qualified_observations": 4,
+    "latest_acquisition": "2023-06-05T07:46:19.024000Z",
+    "latest_quality_qualified_acquisition": "2023-05-26T07:46:19.024000Z",
+    "latest_quality_qualified_age_days": 10.67615712962963,
+    "quality_qualified_gaps_days": [
+      5.000092592592592,
+      4.999907407407408,
+      5.000092592592592
+    ],
+    "agronomic_review_eligible": false,
+    "independent_field_labels": 0,
+    "interpretation": "Acquisition-time research freshness only; no historical data-delivery, crop-stage or field-outcome validation"
+  },
+  "observations": [
+    {
+      "scene_id": "S2A_MSIL2A_20230501T074611_R135_T36NXG_20230711T221130",
+      "acquired_at": "2023-05-01T07:46:11.024000Z",
+      "age_at_cutoff_days": 35.67624972222222,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": false,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 0,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.0,
+        "evidence_status": "insufficient_coverage",
+        "exclusion_reasons": [
+          "insufficient_valid_historical_cropland_pixels",
+          "insufficient_historical_cropland_coverage"
+        ],
+        "features": null,
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "outside_reference_calendar_window"
+        ]
+      },
+      "artifact_id": "ffbfea8a21469c3affdfa31b"
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20230506T074619_R135_T36NXG_20230506T123222",
+      "acquired_at": "2023-05-06T07:46:19.024000Z",
+      "age_at_cutoff_days": 30.676157129629626,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": false,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 37629,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.3580611089436774,
+        "evidence_status": "insufficient_coverage",
+        "exclusion_reasons": [
+          "insufficient_historical_cropland_coverage"
+        ],
+        "features": null,
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "outside_reference_calendar_window"
+        ]
+      },
+      "artifact_id": "bf08b37f11ac28a09ce5dd61"
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20230511T074611_R135_T36NXG_20230511T132015",
+      "acquired_at": "2023-05-11T07:46:11.024000Z",
+      "age_at_cutoff_days": 25.67624972222222,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": true,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 80127,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.76245349268729,
+        "evidence_status": "sufficient_coverage_for_research",
+        "exclusion_reasons": [],
+        "features": {
+          "B02_median": 0.0406000018119812,
+          "B03_median": 0.06599999964237213,
+          "B04_median": 0.05660000070929527,
+          "B8A_median": 0.26820001006126404,
+          "B11_median": 0.19699999690055847,
+          "B12_median": 0.13050000369548798,
+          "ndvi_b8a_median": 0.6265342235565186,
+          "ndmi_b8a_b11_median": 0.13826261460781097
+        },
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "outside_reference_calendar_window"
+        ]
+      },
+      "artifact_id": "83047eeb1c8d823a11ddac61"
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20230516T074619_R135_T36NXG_20230516T131336",
+      "acquired_at": "2023-05-16T07:46:19.024000Z",
+      "age_at_cutoff_days": 20.67615712962963,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": true,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 103924,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.9888953383258319,
+        "evidence_status": "sufficient_coverage_for_research",
+        "exclusion_reasons": [],
+        "features": {
+          "B02_median": 0.03590000048279762,
+          "B03_median": 0.05700000002980232,
+          "B04_median": 0.046799998730421066,
+          "B8A_median": 0.2535000145435333,
+          "B11_median": 0.18000000715255737,
+          "B12_median": 0.11739999800920486,
+          "ndvi_b8a_median": 0.6690012216567993,
+          "ndmi_b8a_b11_median": 0.15037301182746887
+        },
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "outside_reference_calendar_window"
+        ]
+      },
+      "artifact_id": "37b30fa62dc708083c076230"
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20230521T074611_R135_T36NXG_20230521T131533",
+      "acquired_at": "2023-05-21T07:46:11.024000Z",
+      "age_at_cutoff_days": 15.676249722222222,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": true,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 103461,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.9844896327944354,
+        "evidence_status": "sufficient_coverage_for_research",
+        "exclusion_reasons": [],
+        "features": {
+          "B02_median": 0.031199999153614044,
+          "B03_median": 0.05590000003576279,
+          "B04_median": 0.04919999837875366,
+          "B8A_median": 0.24539999663829803,
+          "B11_median": 0.18170000612735748,
+          "B12_median": 0.12359999865293503,
+          "ndvi_b8a_median": 0.6457473635673523,
+          "ndmi_b8a_b11_median": 0.12714195251464844
+        },
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "research_comparison_available",
+        "reasons": [],
+        "historical_crop_pixels": 105091,
+        "comparable_pixels": 102933,
+        "comparable_crop_fraction": 0.9794654156873567,
+        "median_delta": 0.026172757148742676,
+        "lower_than_reference_fraction": 0.14849465186091923,
+        "independent_labels": 0,
+        "causal_attribution": false,
+        "asset": "602573e66e239915683f9074-anomaly.tif",
+        "sha256": "30e97081c87edfde702fed0b937c4933a8e8866c4257c4a9753641c0cc4e8fa5",
+        "reference_years": [
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "within_freshness_window": false
+      },
+      "artifact_id": "2695053cdc161c6e35f9f263"
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20230526T074619_R135_T36NXG_20230526T124328",
+      "acquired_at": "2023-05-26T07:46:19.024000Z",
+      "age_at_cutoff_days": 10.67615712962963,
+      "within_freshness_window": false,
+      "status": "processed",
+      "coverage_qualified": true,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 104192,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.9914455091301824,
+        "evidence_status": "sufficient_coverage_for_research",
+        "exclusion_reasons": [],
+        "features": {
+          "B02_median": 0.03440000116825104,
+          "B03_median": 0.05889999866485596,
+          "B04_median": 0.05169999971985817,
+          "B8A_median": 0.2493000030517578,
+          "B11_median": 0.18619999289512634,
+          "B12_median": 0.12540000677108765,
+          "ndvi_b8a_median": 0.633175253868103,
+          "ndmi_b8a_b11_median": 0.12496919929981232
+        },
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "research_comparison_available",
+        "reasons": [],
+        "historical_crop_pixels": 105091,
+        "comparable_pixels": 103661,
+        "comparable_crop_fraction": 0.9863927453349954,
+        "median_delta": 0.013648390769958496,
+        "lower_than_reference_fraction": 0.15151310521797012,
+        "independent_labels": 0,
+        "causal_attribution": false,
+        "asset": "c42d526d1cee06230af268fd-anomaly.tif",
+        "sha256": "8efe3357c09e6d60867ad798be24c7409623004f233467504290b035a6b21528",
+        "reference_years": [
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "within_freshness_window": false
+      },
+      "artifact_id": "49e3b053153eabba69ce2ef4"
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20230531T074621_R135_T36NXG_20230531T134803",
+      "acquired_at": "2023-05-31T07:46:21.024000Z",
+      "age_at_cutoff_days": 5.676133981481482,
+      "within_freshness_window": true,
+      "status": "processed",
+      "coverage_qualified": false,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 33950,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.3230533537600746,
+        "evidence_status": "insufficient_coverage",
+        "exclusion_reasons": [
+          "insufficient_historical_cropland_coverage"
+        ],
+        "features": null,
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "insufficient_target_or_reference_coverage"
+        ]
+      },
+      "artifact_id": "32649dbf34c056eb49d7e693"
+    },
+    {
+      "scene_id": "S2B_MSIL2A_20230605T074619_R135_T36NXG_20230605T124629",
+      "acquired_at": "2023-06-05T07:46:19.024000Z",
+      "age_at_cutoff_days": 0.6761571296296297,
+      "within_freshness_window": true,
+      "status": "processed",
+      "coverage_qualified": false,
+      "observation": {
+        "historical_cropland_pixels": 105091,
+        "valid_historical_cropland_pixels": 1257,
+        "known_landcover_pixels": 250494,
+        "total_pixels": 308578,
+        "historical_cropland_fraction": 0.34056543240282844,
+        "crop_usable_fraction": 0.01196106231742014,
+        "evidence_status": "insufficient_coverage",
+        "exclusion_reasons": [
+          "insufficient_historical_cropland_coverage"
+        ],
+        "features": null,
+        "current_crop_confirmed": false,
+        "crop_stage_confirmed": false,
+        "agronomic_review_eligible": false,
+        "interpretation": "Historical 2021 mapped cropland only. Crop identity, current cultivation and field outcomes unconfirmed."
+      },
+      "comparison": {
+        "status": "withheld",
+        "reasons": [
+          "insufficient_target_or_reference_coverage"
+        ]
+      },
+      "artifact_id": "9d779e486ac32f06b4c7c6bc"
+    }
+  ],
+  "scene_cogs": 24,
+  "anomaly_cogs": 2
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "kween-2023-temporal-followup-v1",
+  "parent_run_id": "8bfc86ae343f196c7a188e60",
+  "area_id": "ngenge-core",
+  "bbox": [34.45, 1.45, 34.55, 1.55],
+  "start": "2023-05-01",
+  "end": "2023-06-05",
+  "as_of": "2023-06-05T23:59:59Z",
+  "max_acquisitions": 12,
+  "max_observation_age_days": 7,
+  "comparison_epoch": "reported-period",
+  "selection": "All full-box six-band catalog acquisitions in the fixed interval; alternate versions deduplicated by acquisition time using scene-cloud/date/ID order, never observed NDVI. Fail if the fixed acquisition budget is exceeded.",
+  "interpretation": "Exploratory follow-up after inspecting the original case, not blinded validation. Reuse original earlier-year references only within their May 21–June 5 calendar window; other dates are absolute observations only.",
+  "limitations": [
+    "One locality proxy, not confirmed farm boundaries, crop identity or crop stage",
+    "Seven-day freshness is an unvalidated research policy, not an operational service guarantee",
+    "No interpolation or treating cloud gaps and absent reports as healthy crops",
+    "Original four-year reference is not climatology or verified unaffected controls",
+    "No independent field labels, trained model, causal attribution or historical delivery claim"
+  ]
+}

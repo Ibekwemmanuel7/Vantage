@@ -37,6 +37,10 @@ The [Kween 2023 reconstruction](docs/africa/KWEEN_CASE.md) adds a frozen public-
 case with six-band acquisitions, quality-gated pixel comparisons and native-grid
 rainfall context. It retains withheld results and does not turn news reports
 into field labels or claim historical warning performance.
+Its [denser temporal follow-up](docs/africa/KWEEN_TEMPORAL.md) processes all eight
+eligible May–early June acquisitions and separates recent acquisitions from
+usable observations. The final optical evidence remains stale despite two
+recent images; this limitation is retained rather than filled through clouds.
 An offline sampling and paired baseline evaluation tool is now implemented;
 no actual field outcomes or new agricultural performance results are supplied.
 
