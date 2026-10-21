@@ -128,6 +128,13 @@ are local generated artifacts, not an installed production service.
 
 ## Run the original Texas vertical slice
 
+Uganda radar research now includes [bounded terrain sightlines](docs/africa/KWEEN_VISIBILITY.md):
+three acquisition-specific passes, a larger 30 m elevation window and explicit
+unknown/obstruction/clearance-guard states. All 105,091 historical crop-mask pixels
+passed the sampled 5 km check on each pass. This does not certify radar illumination;
+optical evidence remains stale and independent field labels remain absent.
+The CLI artifacts and replay verifier are implemented; this is not a new dashboard panel.
+
 The original Texas CLI uses Python 3.11+ and the standard library. The full
 regression suite also needs `requirements-ml.txt`. From this repository:
 

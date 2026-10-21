@@ -1,0 +1,133 @@
+{
+  "schema_version": "bounded-visibility-1",
+  "plan": {
+    "case_id": "kween-2023-bounded-sightlines-v1",
+    "parent_viewing_run_id": "43d8ea585a445e8c941e5788",
+    "distance_m": 5000,
+    "step_m": 15,
+    "clearance_guard_m": 5,
+    "padding_cells": 169,
+    "method": "Bilinear 30m DSM samples along acquisition-specific sensor direction; flat tangent relative-height approximation; missing support cannot pass; obstruction takes precedence over incomplete support",
+    "limitations": [
+      "Sampled search from 15m to 5km only; no subcell or beyond-range guarantee",
+      "Engineering 5m guard is not calibrated DSM uncertainty",
+      "No curvature, refraction, geoid-variation correction or complete layover solution",
+      "No trusted-processor validation, radar illumination certification, field labels or agronomic diagnosis"
+    ]
+  },
+  "plan_sha256": "9f455a8903e8d1f40107946918b725e8848b7bf263b94101b1bbf5745659cba1",
+  "frozen_plan_sha256": "22db0e83cbc845d0431dd59450e4d3f87b9e400f0b630af69b0aa757765a16c8",
+  "parent_manifest_sha256": "3bb1780f1c409afe78dd469f72f6b5792efce8c77457d9762309e05ca3a072aa",
+  "elevation_catalog_sha256": "ce8cd954ad6c5a89f334726163e8be3beec2e2d50b238b075cb58c027229e890",
+  "elevation_lineage": {
+    "cache": "native-elevation.npz",
+    "sha256": "6069f8387326cf5377dc427e6900e3217a72145f1602c0506c0dc89709b07ce3",
+    "native_shape": [
+      707,
+      706
+    ],
+    "native_epsg": 4326,
+    "unsigned_href": "https://elevationeuwest.blob.core.windows.net/copernicus-dem/COP30_hh/Copernicus_DSM_COG_10_N01_00_E034_00_DEM.tif"
+  },
+  "expanded_grid": {
+    "width": 722,
+    "height": 719,
+    "crs": "EPSG:32636",
+    "transform": [
+      30.0,
+      0.0,
+      656040.0,
+      0.0,
+      -30.0,
+      176640.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "target_grid": {
+    "width": 384,
+    "height": 381,
+    "crs": "EPSG:32636",
+    "transform": [
+      30.0,
+      0.0,
+      661110.0,
+      0.0,
+      -30.0,
+      171570.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "observations": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "acquired_at": "2023-05-12T15:57:28.105240Z",
+      "historical_crop_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 105091,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "native_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 146304,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "sample_count": 334
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "acquired_at": "2023-05-24T15:57:28.471119Z",
+      "historical_crop_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 105091,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "native_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 146304,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "sample_count": 334
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "acquired_at": "2023-06-05T15:57:29.103202Z",
+      "historical_crop_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 105091,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "native_counts": {
+        "unknown": 0,
+        "clear_within_tested_distance": 146304,
+        "obstruction_risk": 0,
+        "clearance_guard": 0
+      },
+      "sample_count": 334
+    }
+  ],
+  "historical_crop_pixels": 105091,
+  "bounded_sampled_sightlines_checked": true,
+  "terrain_screen_verified": false,
+  "radar_illumination_confirmed": false,
+  "agronomic_review_eligible": false,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "optical_status_unchanged": "stale_research_context",
+  "software": {
+    "numpy": "2.2.6",
+    "scipy": "1.14.1",
+    "rasterio": "1.5.0",
+    "gdal": "3.12.1"
+  },
+  "run_id": "05151b97dd8fef9ee29b5670",
+  "manifest_sha256": "8f1051820c10c583f241fddda4b8cf910c6eb450e8b64d54f40156b91ab83e6d"
+}

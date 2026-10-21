@@ -1,0 +1,15 @@
+{
+  "case_id": "kween-2023-bounded-sightlines-v1",
+  "parent_viewing_run_id": "43d8ea585a445e8c941e5788",
+  "distance_m": 5000,
+  "step_m": 15,
+  "clearance_guard_m": 5,
+  "padding_cells": 169,
+  "method": "Bilinear 30m DSM samples along acquisition-specific sensor direction; flat tangent relative-height approximation; missing support cannot pass; obstruction takes precedence over incomplete support",
+  "limitations": [
+    "Sampled search from 15m to 5km only; no subcell or beyond-range guarantee",
+    "Engineering 5m guard is not calibrated DSM uncertainty",
+    "No curvature, refraction, geoid-variation correction or complete layover solution",
+    "No trusted-processor validation, radar illumination certification, field labels or agronomic diagnosis"
+  ]
+}
