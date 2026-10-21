@@ -1,0 +1,20 @@
+{
+  "case_id": "kween-2023-radar-pixels-v1",
+  "parent_optical_run_id": "f304c87fc3a00d36966ab77f",
+  "area_id": "ngenge-core",
+  "bbox": [34.45, 1.45, 34.55, 1.55],
+  "as_of": "2023-06-05T23:59:59Z",
+  "max_passes": 3,
+  "minimum_native_valid_fraction": 0.8,
+  "minimum_crop_numeric_fraction": 0.6,
+  "minimum_comparable_pixels": 100,
+  "units": "linear gamma0 intensity from the pinned Planetary Computer sentinel-1-rtc product; 10*log10 only after valid linear-domain averaging",
+  "comparison": "Consecutive acquisitions within exactly matching platform/relative-orbit/direction/mode/polarization tracks; no cross-orbit comparison or tuned crop-stress threshold",
+  "limitations": [
+    "No supplied independent layover/shadow/incidence-angle quality layers; numeric coverage is not terrain-screened usable agricultural evidence",
+    "No speckle filtering or field-scale inference; 20m analysis pixels do not imply 20m independent information",
+    "Positive gamma0 and historical-cropland support only; no crop identity, crop calendar, crop damage or soil moisture retrieval",
+    "Acquisition-time context, not verified historical product delivery",
+    "Radar remains separate; no optical-value imputation, fusion, causal attribution or supervised training"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "radar-feasibility-1",
+  "plan": {
+    "case_id": "kween-2023-radar-feasibility-v1",
+    "parent_run_id": "f304c87fc3a00d36966ab77f",
+    "collection": "sentinel-1-rtc",
+    "bbox": [
+      34.45,
+      1.45,
+      34.55,
+      1.55
+    ],
+    "start": "2023-05-01",
+    "end": "2023-06-05",
+    "as_of": "2023-06-05T23:59:59Z",
+    "max_catalog_items": 100,
+    "max_observation_age_days": 7,
+    "mode": "IW",
+    "polarizations": [
+      "VV",
+      "VH"
+    ],
+    "selection": "All geometrically full-box dual-polarization IW RTC candidates. Deduplicate same-platform absolute-orbit passes; keep platform, relative orbit and direction separate. No selection by radar return.",
+    "gap_comparison": "For each withheld optical acquisition, report latest radar catalog acquisition at or before that optical timestamp within each track; never use future radar scenes.",
+    "scope": "Catalog and anonymous-access feasibility only. No backscatter extraction, fusion, crop condition, soil moisture or model claim. A seven-day catalog match is not measured usable coverage."
+  },
+  "plan_sha256": "648ea126a995628c01b6dfa879097da43b22866b7ae55f18f2bbc7f45c5e93d3",
+  "frozen_plan_sha256": "04671403ab9edda14a1d6ace5c6119cfa85c3d8940c2d9fb3f2aed50ad8a7910",
+  "optical_summary_sha256": "ccf87830abbf5a778c2cc2002812dd4b87dea4246de62da8d8aaedd51bc1d3ec",
+  "collection_sha256": "d10d4aaffd9841022c10660e47e4db82e9c4d108a265e46ea640fa17e51a1f02",
+  "catalog_sha256": "cf07dd4bb1ff3ea921d41fc6b83e6ab41eaa16fc1e136f7f17c2186a3e761353",
+  "access_probe_sha256": "228c877db1019b5b1407498f0f345bbaefc3d27c1c98b2bf3e5fea0f1c381345",
+  "access": {
+    "endpoint": "https://planetarycomputer.microsoft.com/api/sas/v1/token/sentinel1euwestrtc/sentinel1-grd-rtc",
+    "observed_at": "2026-10-21T00:37:54.025787+00:00",
+    "http_status": 200,
+    "status": "anonymous_token_available",
+    "token_persisted": false,
+    "radar_pixels_downloaded": false
+  },
+  "collection_requires_account": true,
+  "raw_catalog_items": 3,
+  "distinct_eligible_passes": 3,
+  "candidates": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "acquired_at": "2023-05-12T15:57:28.105240Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48502,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "acquired_at": "2023-05-24T15:57:28.471119Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48677,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc"
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "acquired_at": "2023-06-05T15:57:29.103202Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48852,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc"
+    }
+  ],
+  "exclusions": [],
+  "tracks": [
+    {
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "catalog_passes": 3,
+      "latest_catalog_acquisition": "2023-06-05T15:57:29.103202Z",
+      "latest_catalog_age_days": 0.33506824997685186,
+      "catalog_fresh_at_cutoff": true,
+      "optical_gap_matches": [
+        {
+          "optical_acquired_at": "2023-05-01T07:46:11.024000Z",
+          "prior_radar_item_id": null,
+          "prior_radar_acquired_at": null,
+          "lag_days": null,
+          "catalog_match_within_age_window": false,
+          "measured_radar_coverage": null,
+          "usable_radar_evidence": false
+        },
+        {
+          "optical_acquired_at": "2023-05-06T07:46:19.024000Z",
+          "prior_radar_item_id": null,
+          "prior_radar_acquired_at": null,
+          "lag_days": null,
+          "catalog_match_within_age_window": false,
+          "measured_radar_coverage": null,
+          "usable_radar_evidence": false
+        },
+        {
+          "optical_acquired_at": "2023-05-31T07:46:21.024000Z",
+          "prior_radar_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "prior_radar_acquired_at": "2023-05-24T15:57:28.471119Z",
+          "lag_days": 6.658941584270833,
+          "catalog_match_within_age_window": true,
+          "measured_radar_coverage": null,
+          "usable_radar_evidence": false
+        },
+        {
+          "optical_acquired_at": "2023-06-05T07:46:19.024000Z",
+          "prior_radar_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "prior_radar_acquired_at": "2023-05-24T15:57:28.471119Z",
+          "lag_days": 11.658918436122685,
+          "catalog_match_within_age_window": false,
+          "measured_radar_coverage": null,
+          "usable_radar_evidence": false
+        }
+      ],
+      "usable_radar_evidence": false
+    }
+  ],
+  "radar_cogs": 0,
+  "measured_radar_coverage": null,
+  "usable_radar_evidence": false,
+  "optical_status_unchanged": "stale_research_context",
+  "trained_model": false,
+  "independent_field_labels": 0,
+  "causal_attribution": false,
+  "operational_replay": false,
+  "software": {
+    "shapely": "2.1.2"
+  },
+  "code": {
+    "scripts/inspect_radar_coverage.py": "1f64a0e2d9c3c8de95a95130f0abbe283d27ec6a2488258f634e421dee9956ba",
+    "vantage/radar.py": "d50b2bfaa6c80994e833ea89ae4b01ef0bab9c2414827b193411a05c2803d40f",
+    "vantage/event_series.py": "dd36ce6084e6dc1debe3aee89bacb4769c10d993c6c57b1e448fa2501084293a",
+    "scripts/build_kween_case.py": "b6e0aea4a5f972c545809706b7ba060ce51c2c73d6180d8f3c6dba53eb547dba"
+  },
+  "run_id": "fb0cf9322806ed8046aaa01c",
+  "manifest_sha256": "d963b5e2789b8c804d0e065d037a1d197eda11380526f786cad9d5b354afa6b8"
+}

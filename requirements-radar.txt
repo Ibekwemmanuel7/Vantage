@@ -1,0 +1,2 @@
+# Optional radar catalog geometry checks; other research dependencies are in requirements-geo.txt.
+shapely==2.1.2

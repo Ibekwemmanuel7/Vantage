@@ -118,8 +118,10 @@ add a live operational feed or a new dashboard panel.
 
 The next sensor investigation should assess whether radar observations can add
 independent usable information during these optical gaps. Sensor availability
-alone would not establish crop stress or validate fusion. Confirmed boundaries,
-crop identity and calendars, independent dated outcomes, unaffected/affected
+alone would not establish crop stress or validate fusion.
+The [executed radar investigation](KWEEN_RADAR.md) now provides three same-track
+numerical observations while retaining the terrain-quality and agricultural gates.
+Confirmed boundaries, crop identity and calendars, independent dated outcomes, unaffected/affected
 cohorts and additional independent events remain necessary for supervised
 training and performance claims. Public internet records can provide candidate
 evidence through the existing admissibility review; absent reports are not labels.

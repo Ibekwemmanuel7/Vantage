@@ -1,0 +1,169 @@
+{
+  "software": {
+    "numpy": "2.2.6",
+    "rasterio": "1.5.0",
+    "gdal": "3.12.1"
+  },
+  "schema_version": "radar-pixels-1",
+  "plan": {
+    "case_id": "kween-2023-radar-pixels-v1",
+    "parent_optical_run_id": "f304c87fc3a00d36966ab77f",
+    "area_id": "ngenge-core",
+    "bbox": [
+      34.45,
+      1.45,
+      34.55,
+      1.55
+    ],
+    "as_of": "2023-06-05T23:59:59Z",
+    "max_passes": 3,
+    "minimum_native_valid_fraction": 0.8,
+    "minimum_crop_numeric_fraction": 0.6,
+    "minimum_comparable_pixels": 100,
+    "units": "linear gamma0 intensity from the pinned Planetary Computer sentinel-1-rtc product; 10*log10 only after valid linear-domain averaging",
+    "comparison": "Consecutive acquisitions within exactly matching platform/relative-orbit/direction/mode/polarization tracks; no cross-orbit comparison or tuned crop-stress threshold",
+    "limitations": [
+      "No supplied independent layover/shadow/incidence-angle quality layers; numeric coverage is not terrain-screened usable agricultural evidence",
+      "No speckle filtering or field-scale inference; 20m analysis pixels do not imply 20m independent information",
+      "Positive gamma0 and historical-cropland support only; no crop identity, crop calendar, crop damage or soil moisture retrieval",
+      "Acquisition-time context, not verified historical product delivery",
+      "Radar remains separate; no optical-value imputation, fusion, causal attribution or supervised training"
+    ]
+  },
+  "plan_sha256": "aa0c1bfc5965a5a633652aee4ec7a355615cfd3bab189c68d20ffa5d5f611b5c",
+  "frozen_plan_sha256": "2b0df55a3c1af6bb725d2ab16176b73396f9c243346f923f84ac12d37a494e18",
+  "catalog_manifest_sha256": "d963b5e2789b8c804d0e065d037a1d197eda11380526f786cad9d5b354afa6b8",
+  "changes": [
+    {
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "earlier_item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "later_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "status": "descriptive_same_track_change",
+      "comparable_pixels": 105091,
+      "comparable_crop_fraction": 1.0,
+      "vv_median_delta_db": 0.7617311477661133,
+      "vh_median_delta_db": 0.9192399978637695,
+      "crop_condition_label": null,
+      "terrain_screen_verified": false,
+      "causal_attribution": false,
+      "asset": {
+        "href": "59523ae7d0bedba4ceedcd40-change.tif",
+        "sha256": "23c88507f685e5d805a9ae6c41852a1b242615d2cbb5e2bd1ea7c385b5cfa25e"
+      }
+    },
+    {
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "earlier_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "later_item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "status": "descriptive_same_track_change",
+      "comparable_pixels": 105091,
+      "comparable_crop_fraction": 1.0,
+      "vv_median_delta_db": -1.6275091171264648,
+      "vh_median_delta_db": -1.1098451614379883,
+      "crop_condition_label": null,
+      "terrain_screen_verified": false,
+      "causal_attribution": false,
+      "asset": {
+        "href": "c7c0c60933708768a1c65ad6-change.tif",
+        "sha256": "cf2ffbe27c4dca97ba4807cc226bdea0ed39e38c06eb56b52d05ed6aa19ef267"
+      }
+    }
+  ],
+  "source_collection": "sentinel-1-rtc",
+  "radar_cogs": 11,
+  "terrain_screen_verified": false,
+  "agronomic_review_eligible": false,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "causal_attribution": false,
+  "operational_replay": false,
+  "optical_status_unchanged": "stale_research_context",
+  "run_id": "c193f0b7728d5ea5b8f36809",
+  "manifest_sha256": "045be31dcc1e75d0f7574bac71528ee69069d56aaebc9c8e4c508d04be4a794e",
+  "observations": [
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "acquired_at": "2023-05-12T15:57:28.105240Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48502,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc",
+      "status": "processed",
+      "artifact_id": "4c905cc2ac805cd71d80b477",
+      "evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -9.002153396606445,
+          "vh_db_median": -15.256987571716309,
+          "vh_minus_vv_db_median": -6.291421890258789
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "acquired_at": "2023-05-24T15:57:28.471119Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48677,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc",
+      "status": "processed",
+      "artifact_id": "63f0e4a4093e000ebf42d3c8",
+      "evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -8.15067195892334,
+          "vh_db_median": -14.231304168701172,
+          "vh_minus_vv_db_median": -6.121232032775879
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    },
+    {
+      "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "acquired_at": "2023-06-05T15:57:29.103202Z",
+      "platform": "SENTINEL-1A",
+      "relative_orbit": 130,
+      "absolute_orbit": 48852,
+      "direction": "ascending",
+      "track_id": "SENTINEL-1A-130-ascending-IW-VV-VH",
+      "product": "sentinel-1-rtc",
+      "status": "processed",
+      "artifact_id": "948023a22ed894a462b064af",
+      "evidence": {
+        "status": "numeric_backscatter_only",
+        "historical_crop_pixels": 105091,
+        "numeric_crop_pixels": 105091,
+        "numeric_crop_fraction": 1.0,
+        "numeric_support_qualified": true,
+        "features": {
+          "vv_db_median": -9.978578567504883,
+          "vh_db_median": -15.514303207397461,
+          "vh_minus_vv_db_median": -5.559426307678223
+        },
+        "terrain_screen_verified": false,
+        "agronomic_review_eligible": false,
+        "current_crop_confirmed": false,
+        "independent_field_labels": 0
+      }
+    }
+  ]
+}

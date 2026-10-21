@@ -1,0 +1,16 @@
+{
+  "case_id": "kween-2023-radar-feasibility-v1",
+  "parent_run_id": "f304c87fc3a00d36966ab77f",
+  "collection": "sentinel-1-rtc",
+  "bbox": [34.45, 1.45, 34.55, 1.55],
+  "start": "2023-05-01",
+  "end": "2023-06-05",
+  "as_of": "2023-06-05T23:59:59Z",
+  "max_catalog_items": 100,
+  "max_observation_age_days": 7,
+  "mode": "IW",
+  "polarizations": ["VV", "VH"],
+  "selection": "All geometrically full-box dual-polarization IW RTC candidates. Deduplicate same-platform absolute-orbit passes; keep platform, relative orbit and direction separate. No selection by radar return.",
+  "gap_comparison": "For each withheld optical acquisition, report latest radar catalog acquisition at or before that optical timestamp within each track; never use future radar scenes.",
+  "scope": "Catalog and anonymous-access feasibility only. No backscatter extraction, fusion, crop condition, soil moisture or model claim. A seven-day catalog match is not measured usable coverage."
+}

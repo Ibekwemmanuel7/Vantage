@@ -41,6 +41,10 @@ Its [denser temporal follow-up](docs/africa/KWEEN_TEMPORAL.md) processes all eig
 eligible May–early June acquisitions and separates recent acquisitions from
 usable observations. The final optical evidence remains stale despite two
 recent images; this limitation is retained rather than filled through clouds.
+The [radar feasibility and numerical slice](docs/africa/KWEEN_RADAR.md) adds three
+same-track Sentinel-1 RTC observations and reproducible backscatter changes.
+Independent terrain screening remains absent; radar does not refresh the optical
+evidence or enter the scouting queue as a crop-condition score.
 An offline sampling and paired baseline evaluation tool is now implemented;
 no actual field outcomes or new agricultural performance results are supplied.
 
