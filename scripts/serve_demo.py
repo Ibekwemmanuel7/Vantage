@@ -1,5 +1,6 @@
 """Loopback-only local demonstration server. No production authentication."""
 import argparse
+import hashlib
 from contextlib import closing
 from datetime import date, datetime, timezone
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -13,6 +14,20 @@ from urllib.parse import parse_qs, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 DB = ROOT / "outputs/uganda/feedback.sqlite"
+
+
+def scouting_preview(query, root=ROOT):
+    """Only the fixed case/layer assets whose bytes match the published snapshot."""
+    if query.get("case") != ["kween-2023"] or query.get("layer") not in (["rgb"], ["change"]):
+        raise ValueError("Unknown scouting preview")
+    snapshot = json.loads((root / "web/data/scouting.json").read_text(encoding="utf-8"))
+    if query.get("snapshot") != [snapshot["snapshot_id"]]:
+        raise ValueError("Preview snapshot differs; reload evidence")
+    layer = query["layer"][0]
+    path = root / "outputs/africa/dashboard" / ("kween-" + layer + ".png")
+    if hashlib.sha256(path.read_bytes()).hexdigest() != snapshot["preview"]["assets"][layer]["sha256"]:
+        raise ValueError("Preview checksum differs")
+    return path
 
 
 def imagery_asset(query):
@@ -86,6 +101,8 @@ class Handler(SimpleHTTPRequestHandler):
         if not self.valid_host():
             return self.send_json(403, dict(error="Loopback host required"))
         parsed = urlparse(self.path)
+        if parsed.path == "/api/scouting-preview":
+            return self.send_scouting_preview(parse_qs(parsed.query))
         if parsed.path=="/api/imagery-asset":
             return self.send_imagery(parse_qs(parsed.query))
         if parsed.path == "/api/feedback":
@@ -99,9 +116,26 @@ class Handler(SimpleHTTPRequestHandler):
         parsed=urlparse(self.path)
         if not self.valid_host():
             return self.send_json(403,dict(error="Loopback host required"))
+        if parsed.path == "/api/scouting-preview":
+            return self.send_scouting_preview(parse_qs(parsed.query), head=True)
         if parsed.path=="/api/imagery-asset":
             return self.send_imagery(parse_qs(parsed.query),head=True)
         return super().do_HEAD()
+
+    def send_scouting_preview(self, query, head=False):
+        try:
+            path = scouting_preview(query)
+            raw = path.read_bytes()
+            self.send_response(200)
+            self.send_header("Content-Type", "image/png")
+            self.send_header("Content-Length", str(len(raw)))
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("X-Content-Type-Options", "nosniff")
+            self.end_headers()
+            if not head:
+                self.wfile.write(raw)
+        except (OSError, ValueError, KeyError):
+            return self.send_json(404, dict(error="Local scouting preview unavailable; no replacement imagery"))
 
     def send_imagery(self,query,head=False):
         try:

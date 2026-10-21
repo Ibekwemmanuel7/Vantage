@@ -11,6 +11,12 @@ The initial market definition is documented. Vantage is a new product and does n
 
 ## Current priority: Uganda
 
+The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
+now informs the default dashboard: a local field register, review plan, real dated
+satellite/anomaly previews, coverage history and unverified review notes. Importing
+a field never grants a satellite priority. The current Kween view is explicitly
+historical; live service and customer fit remain unvalidated.
+
 As of 20 October 2026, Uganda is the active development priority; Texas is
 retained for a later phase. Support an extension coordinator deciding which
 agricultural areas to investigate this week. The candidate Iganga-area study
@@ -97,10 +103,12 @@ choices requiring partner confirmation. No IDEA approval or engagement is implie
 python scripts/serve_demo.py --port 8917
 ```
 
-Open http://127.0.0.1:8917 for the analyst desk, separate Texas/Uganda profiles,
-review queue, source evidence, printable weekly brief, CSV/GeoJSON exports and
-local demonstration feedback. Cached operation uses only the Python standard
-library; scientific rebuilding needs `requirements-geo.txt`.
+Open http://127.0.0.1:8917 for the customer workspace. The preserved analyst desk
+with separate Texas/Uganda profiles, review queue, imagery and demonstration
+feedback is at http://127.0.0.1:8917/research.html. Cached serving uses only the
+Python standard library; scientific rebuilding needs `requirements-geo.txt`.
+Run `python scripts/build_dashboard.py` with the pinned Kween artifacts and
+`requirements-dashboard.txt` to rebuild the customer snapshot and local previews.
 
 - [IDEA fit assessment](docs/idea/ASSESSMENT.md)
 - [Bounded pilot proposal and cost assumptions](docs/idea/PILOT_PROPOSAL.md)
@@ -138,7 +146,8 @@ three acquisition-specific passes, a larger 30 m elevation window and explicit
 unknown/obstruction/clearance-guard states. All 105,091 historical crop-mask pixels
 passed the sampled 5 km check on each pass. This does not certify radar illumination;
 optical evidence remains stale and independent field labels remain absent.
-The CLI artifacts and replay verifier are implemented; this is not a new dashboard panel.
+The CLI artifacts and replay verifier are implemented. The customer workspace
+now summarizes this status; detailed terrain maps remain research artifacts.
 
 The original Texas CLI uses Python 3.11+ and the standard library. The full
 regression suite also needs `requirements-ml.txt`. From this repository:

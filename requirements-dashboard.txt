@@ -1,0 +1,2 @@
+# Optional real-pixel dashboard preview generation, in addition to requirements-geo.txt.
+Pillow==12.3.0

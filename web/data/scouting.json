@@ -1,0 +1,151 @@
+{
+  "schema_version": "scouting-workspace-1",
+  "case_id": "kween-2023",
+  "name": "Ngenge locality",
+  "district": "Kween",
+  "country": "Uganda",
+  "bbox": [
+    34.45,
+    1.45,
+    34.55,
+    1.55
+  ],
+  "as_of": "2023-06-05T23:59:59Z",
+  "mode": "historical_research",
+  "boundary_status": "Analyst-selected locality box, not verified fields",
+  "field_recommendations_available": false,
+  "independent_field_outcomes": 0,
+  "optical": {
+    "status": "stale_research_context",
+    "latest_acquisition": "2023-06-05T07:46:19.024000Z",
+    "latest_usable": "2023-05-26T07:46:19.024000Z",
+    "age_at_cutoff_days": 10.67615712962963,
+    "freshness_policy_days": 7,
+    "observations": [
+      {
+        "acquired_at": "2023-05-01T07:46:11.024000Z",
+        "coverage_qualified": false,
+        "usable_crop_fraction": 0.0
+      },
+      {
+        "acquired_at": "2023-05-06T07:46:19.024000Z",
+        "coverage_qualified": false,
+        "usable_crop_fraction": 0.3580611089436774
+      },
+      {
+        "acquired_at": "2023-05-11T07:46:11.024000Z",
+        "coverage_qualified": true,
+        "usable_crop_fraction": 0.76245349268729
+      },
+      {
+        "acquired_at": "2023-05-16T07:46:19.024000Z",
+        "coverage_qualified": true,
+        "usable_crop_fraction": 0.9888953383258319
+      },
+      {
+        "acquired_at": "2023-05-21T07:46:11.024000Z",
+        "coverage_qualified": true,
+        "usable_crop_fraction": 0.9844896327944354
+      },
+      {
+        "acquired_at": "2023-05-26T07:46:19.024000Z",
+        "coverage_qualified": true,
+        "usable_crop_fraction": 0.9914455091301824
+      },
+      {
+        "acquired_at": "2023-05-31T07:46:21.024000Z",
+        "coverage_qualified": false,
+        "usable_crop_fraction": 0.3230533537600746
+      },
+      {
+        "acquired_at": "2023-06-05T07:46:19.024000Z",
+        "coverage_qualified": false,
+        "usable_crop_fraction": 0.01196106231742014
+      }
+    ]
+  },
+  "radar": {
+    "acquisitions": 3,
+    "dates": [
+      "2023-05-12T15:57:28.105240Z",
+      "2023-05-24T15:57:28.471119Z",
+      "2023-06-05T15:57:29.103202Z"
+    ],
+    "bounded_sightlines_checked": true,
+    "illumination_confirmed": false
+  },
+  "benchmark": {
+    "status": "awaiting_provider_exports",
+    "evaluated_acquisitions": 0,
+    "compared_acquisitions": 0,
+    "metrics_available": false
+  },
+  "sources": [
+    {
+      "document": "KWEEN_TEMPORAL_RUN.json",
+      "run_id": "f304c87fc3a00d36966ab77f",
+      "sha256": "ccf87830abbf5a778c2cc2002812dd4b87dea4246de62da8d8aaedd51bc1d3ec"
+    },
+    {
+      "document": "KWEEN_RADAR_PIXELS_RUN.json",
+      "run_id": "c193f0b7728d5ea5b8f36809",
+      "sha256": "b89b2c20913086d7b80c756f24c8b792ae549a49424b12bdb9e9b744e7c64d5b"
+    },
+    {
+      "document": "KWEEN_VISIBILITY_RUN.json",
+      "run_id": "05151b97dd8fef9ee29b5670",
+      "sha256": "d9058aa986fce4e2a9e09a381a4d04c38c223149df8466efdcb497eae28d5b4e"
+    },
+    {
+      "document": "KWEEN_PROCESSOR_BENCHMARK_RUN.json",
+      "run_id": "25ec90a932fbfcb4eb94d5a1",
+      "sha256": "d36869e45463ee8d66e14f11904403064123a5771c3dafc366fc64ed3c84e922"
+    }
+  ],
+  "limitations": [
+    "Crop identity and planting dates are unconfirmed",
+    "No independent field outcomes",
+    "An observed vegetation change does not establish its cause",
+    "Imported fields are not analyzed automatically"
+  ],
+  "preview": {
+    "acquired_at": "2023-05-26T07:46:19.024000Z",
+    "scene_id": "S2B_MSIL2A_20230526T074619_R135_T36NXG_20230526T124328",
+    "reference_years": [
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "grid": {
+      "crs": "EPSG:32636",
+      "transform": [
+        19.99123638232771,
+        0.0,
+        661307.36401756,
+        0.0,
+        -19.97206093646219,
+        171385.09268770815,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "width": 557,
+      "height": 554
+    },
+    "rgb_scale": "0\u20130.30 reflectance; gamma 2.2, display only",
+    "change_scale": [
+      -0.3,
+      0.3
+    ],
+    "assets": {
+      "rgb": {
+        "sha256": "d0faab854518252911bc8933a211b29dc615030fe0e39a62ff1a943edf7aa69b"
+      },
+      "change": {
+        "sha256": "bdb6a1d25390e83dc37c854e8c7ed1b2dbd20ab38eb5d882bd2405139900edc7"
+      }
+    }
+  },
+  "snapshot_id": "91cc968f8d73a2b192d8f5e5"
+}

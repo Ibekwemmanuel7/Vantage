@@ -15,12 +15,19 @@ monitoring boundaries and a locally confirmed crop calendar. The present
 historical WorldCover cropland mask does not establish current maize location.
 Do not prescribe irrigation or infer cause from imagery alone.
 
+The default local interface now follows the researched
+[customer-workspace design](CUSTOMER_WORKSPACE.md): field register, evidence
+readiness, local review plan and unverified notes. It displays the separate
+Kween 2023 historical cohort without turning it into live field recommendations.
+The original Iganga analyst desk remains available at `research.html`.
+
 ## Architecture and implementation boundary
 
 Keep the existing modular pipeline: archived source metadata -> physical
 reflectance and quality masks -> immutable COG/STAC dataset -> seasonal features
 -> independent evidence queue and research model bench. Implemented locally.
-Current rasters are retrospective May 2024, not a live satellite feed.
+The original weekly brief uses retrospective May 2024 rasters; later research
+cohorts have their own dates and provenance. None is a live satellite feed.
 
 Later increments on 20 October 2026 added a separate three-location research
 archive spanning May/November 2022–2024, now 18 six-band observations with
