@@ -21,7 +21,10 @@ contacting prospective partners or publishing unsupported performance claims.
 
 ## Product boundary
 
-Uganda is the active development priority; Texas is deferred and separate.
+Vantage is the agriculture product; countries and pilot markets are subsets,
+not the product identity. Uganda is the first active pilot geography, not the
+limit of Vantage's scope. Keep product branding Vantage-first and show geography
+as selected context. Texas is deferred and requires separate validation.
 Vantage does not inherit CropSight code or validation. Forestry stays with
 Vepris. Maintain the Lillie US backlink. Do not diagnose causes from imagery
 alone or prescribe irrigation.

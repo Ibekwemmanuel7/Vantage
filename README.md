@@ -3,9 +3,14 @@
 <!-- LILLIE_US_PORTFOLIO_START -->
 **Part of [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US)** · [Portfolio map](https://github.com/Ibekwemmanuel7/Lillie_US/blob/main/docs/PORTFOLIO.md) · [Scope and boundaries](docs/portfolio/SCOPE.md)
 
-**Current development focus:** African agriculture, starting with a candidate Uganda extension pilot. **Status:** Local public-imagery research prototype; no independently validated agriculture service. Texas work is deferred.
+**Product:** Vantage, agricultural evidence and scouting support across separately configured markets. **First active pilot:** Uganda, within the current African agriculture development priority. **Status:** Local public-imagery research prototype; no independently validated agriculture service. Texas work is deferred.
 <!-- LILLIE_US_PORTFOLIO_END -->
 
+
+Vantage leads the product identity. Uganda is the first pilot geography within
+Vantage, not the boundary of the product. Geography, crops, calendars and
+validation belong to individual market profiles; entering another market does
+not transfer evidence or imply an implemented service there.
 
 The initial market definition is documented. Vantage is a new product and does not copy CropSight or inherit its validation.
 

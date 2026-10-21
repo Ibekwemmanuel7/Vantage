@@ -1,6 +1,6 @@
 # Vantage scope and portfolio boundary
 
-Updated 17 October 2026.
+Updated 21 October 2026.
 
 Portfolio hub: [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US)
 
@@ -8,7 +8,14 @@ Portfolio map: [Product responsibilities](https://github.com/Ibekwemmanuel7/Lill
 
 ## Domain and status
 
-**Active development:** African agriculture, initially a candidate Uganda extension pilot. Southern US agriculture is retained as a deferred, separate profile.
+**Product identity:** Vantage is an agricultural evidence and scouting-support
+product. Countries and pilot markets are subsets of Vantage, not its identity
+or permanent geographic boundary.
+
+**Active development:** African agriculture, with Uganda as the first active
+pilot geography. Southern US agriculture is retained as a deferred, separate
+market profile. Additional markets require their own customer, crop/calendar,
+data and validation work; support is not implied by the broader product scope.
 
 **Status:** Local executable public-imagery research prototype with synthetic regression tests; no independently validated agriculture service.
 

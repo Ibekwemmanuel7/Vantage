@@ -5,6 +5,11 @@ deferred. Part of [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US).
 Independent of CropSight; forestry remains with Vepris. No IDEA engagement is
 implied. Africa is an expansion direction, not one interchangeable market.
 
+21 October clarification: Vantage is the product; Uganda is its first active
+pilot geography. Product identity, workspace navigation and reusable scouting
+workflows remain Vantage-focused. Market-specific boundaries, calendars, data
+policies and validation are contextual subsets, not transferable claims.
+
 ## Product contract
 
 Proposed user: extension analyst/coordinator. Proposed buyer: program or

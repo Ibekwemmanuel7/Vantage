@@ -1,9 +1,14 @@
-# Uganda customer workspace: research, design and implementation
+# Vantage customer workspace: first-pilot research and implementation
 
 Researched 20 October 2026 (America/Chicago). Part of
 [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US).
 Uganda is the active market hypothesis; Texas is deferred. Vantage does not
 inherit CropSight code or validation. Forestry remains with Vepris.
+
+21 October clarification: the dashboard is Vantage's customer workspace.
+Uganda is the selected first pilot, not the product's identity or total scope.
+The current data and import extent remain Uganda-specific; broader branding
+does not add other markets' datasets or validated capabilities.
 
 ## Customer and market interpretation
 
