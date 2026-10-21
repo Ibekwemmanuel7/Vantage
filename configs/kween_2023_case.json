@@ -1,0 +1,33 @@
+{
+  "case_id": "kween-2023-dry-spell-v1",
+  "report_date": "2023-06-06",
+  "observation_cutoff": "2023-06-05T23:59:59Z",
+  "source_url": "https://ugandaradionetwork.net/story/prolonged-dry-spell-drying-up-crops-in-kween",
+  "origin_group": "urn-kween-20230606",
+  "source_claim": "Reporter describes farmer accounts of drying maize and beans in named lower-belt Kween localities; individual observation dates and plot boundaries are not verified.",
+  "geography_source": "https://api.openstreetmap.org/api/0.6/node/2229121548.json",
+  "geography_expected_point": [34.5, 1.5],
+  "administrative_context_source": "https://www.kween.go.ug/dept/natural-resources",
+  "boundary_status": "Analyst-selected Ngenge locality proxies, not official administrative boundaries or verified Makunga farm parcels",
+  "areas": [
+    {"id": "ngenge-core", "role": "locality_proxy", "bbox": [34.45, 1.45, 34.55, 1.55]},
+    {"id": "ngenge-shift", "role": "location_uncertainty_sensitivity", "bbox": [34.50, 1.50, 34.60, 1.60]},
+    {"id": "nearby-east", "role": "nearby_context_not_unaffected_control", "bbox": [34.55, 1.45, 34.65, 1.55]}
+  ],
+  "reference_years": [2019, 2020, 2021, 2022],
+  "target_year": 2023,
+  "epochs": [
+    {"id": "early", "start": "03-01", "end": "03-14", "interpretation": "Early-season context before the source's approximate mid-March onset; actual crop stages unknown"},
+    {"id": "reported-period", "start": "05-21", "end": "06-05", "interpretation": "Observation dates preceding publication; not proof of historical data delivery"}
+  ],
+  "selection": "One successful six-band acquisition per area/epoch/year; rank by scene cloud then timestamp and ID; at most three distinct acquisition attempts; do not select by observed NDVI",
+  "quality_policy": {"min_crop_usable_fraction": 0.6, "min_valid_pixels": 100, "min_reference_years": 3, "ndvi_drop_trigger": -0.1},
+  "rainfall": {"product": "CHIRPS v3 final monthly Africa", "months": [3, 4, 5], "comparison": "MAM total versus median of the four reference years; not climatology or drought diagnosis"},
+  "limitations": [
+    "All area boxes are correlated; sensitivity and nearby context are not independent controls",
+    "WorldCover 2021 is historical cropland context, including hindsight for earlier reference years",
+    "Calendar, current crop identity, management and exact farms unconfirmed",
+    "Retrospective reprocessing; no lead-time, causal attribution, yield-loss or irrigation claim",
+    "Published field accounts are not field-level supervised labels"
+  ]
+}

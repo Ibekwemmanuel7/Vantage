@@ -1,0 +1,448 @@
+{
+  "schema_version": "kween-run-1",
+  "run_id": "8bfc86ae343f196c7a188e60",
+  "manifest_sha256": "4b333d092264a0e2e557bd4f7b23da27c15691c6c4c0b71fb187e05477718ff2",
+  "plan_sha256": "e5cae4e7812a4b439781c7ee3c1e066d5631717147a3c075589910b814a33800",
+  "frozen_plan_sha256": "86d0e04f783505f42264331d1f6bf3c7ecef2b3859d692b01800adbd371dd47d",
+  "frozen_at": "2026-10-20T23:50:23.008426+00:00",
+  "source_url": "https://ugandaradionetwork.net/story/prolonged-dry-spell-drying-up-crops-in-kween",
+  "geography_source": "https://api.openstreetmap.org/api/0.6/node/2229121548.json",
+  "requested_observations": 30,
+  "processed_observations": 30,
+  "coverage_qualified_observations": 25,
+  "validated_scene_cogs": 90,
+  "validated_anomaly_cogs": 4,
+  "available_comparisons": 4,
+  "comparisons": [
+    {
+      "area_id": "ngenge-core",
+      "epoch": "early",
+      "reference_years": [
+        2019,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-03-02T07:48:31.024000Z",
+      "status": "withheld",
+      "reasons": [
+        "Target coverage or three eligible reference years unavailable"
+      ]
+    },
+    {
+      "area_id": "ngenge-core",
+      "epoch": "reported-period",
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-05-21T07:46:11.024000Z",
+      "status": "research_comparison_available",
+      "reasons": [],
+      "historical_crop_pixels": 105091,
+      "comparable_pixels": 102933,
+      "comparable_crop_fraction": 0.9794654156873567,
+      "median_delta": 0.026172757148742676,
+      "lower_than_reference_fraction": 0.14849465186091923,
+      "independent_labels": 0,
+      "causal_attribution": false,
+      "asset": "3064b28b4b5b93001ac86279-anomaly.tif",
+      "sha256": "30e97081c87edfde702fed0b937c4933a8e8866c4257c4a9753641c0cc4e8fa5"
+    },
+    {
+      "area_id": "ngenge-shift",
+      "epoch": "early",
+      "reference_years": [
+        2019,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-03-02T07:48:31.024000Z",
+      "status": "withheld",
+      "reasons": [
+        "Target coverage or three eligible reference years unavailable"
+      ]
+    },
+    {
+      "area_id": "ngenge-shift",
+      "epoch": "reported-period",
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-05-21T07:46:11.024000Z",
+      "status": "research_comparison_available",
+      "reasons": [],
+      "historical_crop_pixels": 51889,
+      "comparable_pixels": 51655,
+      "comparable_crop_fraction": 0.9954903736822833,
+      "median_delta": 0.06232208013534546,
+      "lower_than_reference_fraction": 0.11261252540896331,
+      "independent_labels": 0,
+      "causal_attribution": false,
+      "asset": "81416003766bf6d77234ee9b-anomaly.tif",
+      "sha256": "99e75f177806246ad9b0695e1e2b690cd5c72b4aebde90d852f8aa027d6b6fe0"
+    },
+    {
+      "area_id": "nearby-east",
+      "epoch": "early",
+      "reference_years": [
+        2019,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-03-02T07:48:31.024000Z",
+      "status": "research_comparison_available",
+      "reasons": [],
+      "historical_crop_pixels": 49417,
+      "comparable_pixels": 32261,
+      "comparable_crop_fraction": 0.6528320213691644,
+      "median_delta": 0.008997395634651184,
+      "lower_than_reference_fraction": 0.01943523139394315,
+      "independent_labels": 0,
+      "causal_attribution": false,
+      "asset": "4c1c21bcbf2afe735ce1350c-anomaly.tif",
+      "sha256": "528a8caae86b4f7378330f8cf1c09efd286526a5e08b1406bdb2aea8b43a5be9"
+    },
+    {
+      "area_id": "nearby-east",
+      "epoch": "reported-period",
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "target_acquired_at": "2023-05-21T07:46:11.024000Z",
+      "status": "research_comparison_available",
+      "reasons": [],
+      "historical_crop_pixels": 49417,
+      "comparable_pixels": 48683,
+      "comparable_crop_fraction": 0.9851468118258899,
+      "median_delta": 0.1160704493522644,
+      "lower_than_reference_fraction": 0.06782655136289875,
+      "independent_labels": 0,
+      "causal_attribution": false,
+      "asset": "247e8b32813d29cf147e1fdd-anomaly.tif",
+      "sha256": "1168861e8a0b226a3bbc2a68f37461187d74aa95fcae37c3dad3f6201d1de8c3"
+    }
+  ],
+  "rainfall": {
+    "ngenge-core": {
+      "status": "available",
+      "totals_mm": {
+        "2019": 408.26705169677734,
+        "2020": 586.0804595947266,
+        "2021": 445.71805572509766,
+        "2022": 422.5295715332031,
+        "2023": 413.2091979980469
+      },
+      "target_total_mm": 413.2091979980469,
+      "reference_median_mm": 434.1238136291504,
+      "ratio_to_reference_median": 0.9518233854617112,
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "interpretation": "Short-reference rainfall context, not climatological drought severity or soil moisture"
+    },
+    "ngenge-shift": {
+      "status": "available",
+      "totals_mm": {
+        "2019": 363.1917266845703,
+        "2020": 556.760498046875,
+        "2021": 417.0905246734619,
+        "2022": 389.1339569091797,
+        "2023": 363.07266998291016
+      },
+      "target_total_mm": 363.07266998291016,
+      "reference_median_mm": 403.1122407913208,
+      "ratio_to_reference_median": 0.900673889907655,
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "interpretation": "Short-reference rainfall context, not climatological drought severity or soil moisture"
+    },
+    "nearby-east": {
+      "status": "available",
+      "totals_mm": {
+        "2019": 339.5889434814453,
+        "2020": 544.6167755126953,
+        "2021": 387.572021484375,
+        "2022": 370.3129425048828,
+        "2023": 369.26793670654297
+      },
+      "target_total_mm": 369.26793670654297,
+      "reference_median_mm": 378.9424819946289,
+      "ratio_to_reference_median": 0.9744696207267068,
+      "reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "interpretation": "Short-reference rainfall context, not climatological drought severity or soil moisture"
+    }
+  },
+  "observations": [
+    {
+      "area_id": "ngenge-core",
+      "year": 2019,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2019-03-13T07:47:11.025000Z",
+      "crop_usable_fraction": 1.0
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2019,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2019-05-22T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9795605713143847
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2020,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2020-03-07T07:47:51.024000Z",
+      "crop_usable_fraction": 0.4622945827901533
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2020,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2020-05-26T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9953373742756277
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2021,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2021-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.9998001731832412
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2021,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2021-05-31T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9782664547868039
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2022,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2022-03-07T07:48:01.024000Z",
+      "crop_usable_fraction": 0.9999238754983776
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2022,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2022-05-21T07:46:09.024000Z",
+      "crop_usable_fraction": 0.99232094089884
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2023,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2023-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.13181909012189436
+    },
+    {
+      "area_id": "ngenge-core",
+      "year": 2023,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2023-05-21T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9844896327944354
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2019,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2019-03-13T07:47:11.025000Z",
+      "crop_usable_fraction": 0.9999807280926594
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2019,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2019-05-22T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9968394071961302
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2020,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2020-03-07T07:47:51.024000Z",
+      "crop_usable_fraction": 0.18566555532001003
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2020,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2020-05-26T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9697431054751489
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2021,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2021-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.9997687371119119
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2021,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2021-05-31T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9846595617568271
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2022,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2022-03-07T07:48:01.024000Z",
+      "crop_usable_fraction": 0.9998458247412746
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2022,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2022-05-21T07:46:09.024000Z",
+      "crop_usable_fraction": 0.9975910115824164
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2023,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2023-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.14430804216693327
+    },
+    {
+      "area_id": "ngenge-shift",
+      "year": 2023,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2023-05-21T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9978800901925263
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2019,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2019-03-13T07:47:11.025000Z",
+      "crop_usable_fraction": 0.9999797640488091
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2019,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2019-05-22T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9963170568832588
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2020,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2020-03-07T07:47:51.024000Z",
+      "crop_usable_fraction": 0.03539267863285914
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2020,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2020-05-26T07:46:21.024000Z",
+      "crop_usable_fraction": 0.9709614100410789
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2021,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2021-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.9996155169273732
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2021,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2021-05-31T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9818281158305846
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2022,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2022-03-07T07:48:01.024000Z",
+      "crop_usable_fraction": 1.0
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2022,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2022-05-21T07:46:09.024000Z",
+      "crop_usable_fraction": 0.9993119776595099
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2023,
+      "epoch": "early",
+      "status": "processed",
+      "acquired_at": "2023-03-02T07:48:31.024000Z",
+      "crop_usable_fraction": 0.6528927292227371
+    },
+    {
+      "area_id": "nearby-east",
+      "year": 2023,
+      "epoch": "reported-period",
+      "status": "processed",
+      "acquired_at": "2023-05-21T07:46:11.024000Z",
+      "crop_usable_fraction": 0.9887488111378675
+    }
+  ],
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "causal_attribution": false,
+  "operational_replay": false,
+  "limitations": [
+    "All area boxes are correlated; sensitivity and nearby context are not independent controls",
+    "WorldCover 2021 is historical cropland context, including hindsight for earlier reference years",
+    "Calendar, current crop identity, management and exact farms unconfirmed",
+    "Retrospective reprocessing; no lead-time, causal attribution, yield-loss or irrigation claim",
+    "Published field accounts are not field-level supervised labels"
+  ]
+}

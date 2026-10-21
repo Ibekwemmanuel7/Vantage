@@ -33,6 +33,10 @@ recovery. Current crop confirmation and independent field labels remain absent.
 The [seasonal series](docs/africa/SEASONAL.md) adds ten-day research observations
 through March–July 2023 and 2024 in Iganga. The [public-evidence program](docs/africa/PUBLIC_EVIDENCE.md)
 records internet-sourced event leads and rejects unverified automatic labels.
+The [Kween 2023 reconstruction](docs/africa/KWEEN_CASE.md) adds a frozen public-event
+case with six-band acquisitions, quality-gated pixel comparisons and native-grid
+rainfall context. It retains withheld results and does not turn news reports
+into field labels or claim historical warning performance.
 An offline sampling and paired baseline evaluation tool is now implemented;
 no actual field outcomes or new agricultural performance results are supplied.
 
