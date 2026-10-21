@@ -45,6 +45,10 @@ The [radar feasibility and numerical slice](docs/africa/KWEEN_RADAR.md) adds thr
 same-track Sentinel-1 RTC observations and reproducible backscatter changes.
 Independent terrain screening remains absent; radar does not refresh the optical
 evidence or enter the scouting queue as a crop-condition score.
+An [independent surface-slope proxy](docs/africa/KWEEN_TERRAIN.md) now measures
+terrain-risk sensitivity on the same radar grid. It excludes 1.5% of historical
+cropland under the fixed primary rule; passing it does not certify radar
+illumination, remove the need for field outcomes or enable agricultural ranking.
 An offline sampling and paired baseline evaluation tool is now implemented;
 no actual field outcomes or new agricultural performance results are supplied.
 

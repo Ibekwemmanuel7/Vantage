@@ -1,0 +1,24 @@
+{
+  "case_id": "kween-2023-terrain-proxy-v1",
+  "parent_radar_run_id": "c193f0b7728d5ea5b8f36809",
+  "area_id": "ngenge-core",
+  "bbox": [34.45, 1.45, 34.55, 1.55],
+  "elevation_collection": "cop-dem-glo-30",
+  "derivative_crs": "EPSG:32636",
+  "derivative_resolution_m": 30,
+  "padding_m": 180,
+  "native_support_required": 0.999,
+  "slope_neighborhood_pixels": 3,
+  "primary_max_slope_degrees": 10,
+  "sensitivity_max_slope_degrees": [5, 10, 15],
+  "minimum_crop_retained_fraction": 0.6,
+  "minimum_comparable_pixels": 100,
+  "interpretation": "Exploratory surface-slope risk proxy, independent of measured radar return. Fixed primary threshold and sensitivity settings before elevation inspection; none is a calibrated SAR artifact threshold.",
+  "limitations": [
+    "Surface model includes vegetation and structures; not surveyed bare earth or confirmed 2023 surface condition",
+    "30m derivative grid mapped by nearest neighbor to the radar grid does not create 20m elevation detail",
+    "Neighborhood maximum slope excludes steep or unknown support, but does not establish radar illumination, local incidence, layover, nonlocal shadow or processor stability",
+    "No threshold is selected from observed radar changes, crop outcomes or this sensitivity analysis",
+    "Radar stays separate from optical values and ineligible for agricultural ranking; no cause, irrigation, crop-loss or supervised-model claim"
+  ]
+}

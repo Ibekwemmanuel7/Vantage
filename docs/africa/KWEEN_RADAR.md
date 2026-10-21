@@ -147,3 +147,7 @@ dated outcomes before fitting or evaluating sensor fusion. Compare optical-only,
 radar-only and combined candidates on held-out regions/seasons and actual
 inspection capacity. This single event supplies no supervised labels, accuracy
 estimate, cause diagnosis, irrigation recommendation or operational early warning.
+
+The [executed surface-slope sensitivity](KWEEN_TERRAIN.md) now supplies a separate
+DSM-based risk proxy. It preserves the original radar results and does not mark
+illumination or agricultural eligibility as verified.

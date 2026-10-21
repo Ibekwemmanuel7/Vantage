@@ -1,0 +1,406 @@
+{
+  "schema_version": "terrain-proxy-1",
+  "plan": {
+    "case_id": "kween-2023-terrain-proxy-v1",
+    "parent_radar_run_id": "c193f0b7728d5ea5b8f36809",
+    "area_id": "ngenge-core",
+    "bbox": [
+      34.45,
+      1.45,
+      34.55,
+      1.55
+    ],
+    "elevation_collection": "cop-dem-glo-30",
+    "derivative_crs": "EPSG:32636",
+    "derivative_resolution_m": 30,
+    "padding_m": 180,
+    "native_support_required": 0.999,
+    "slope_neighborhood_pixels": 3,
+    "primary_max_slope_degrees": 10,
+    "sensitivity_max_slope_degrees": [
+      5,
+      10,
+      15
+    ],
+    "minimum_crop_retained_fraction": 0.6,
+    "minimum_comparable_pixels": 100,
+    "interpretation": "Exploratory surface-slope risk proxy, independent of measured radar return. Fixed primary threshold and sensitivity settings before elevation inspection; none is a calibrated SAR artifact threshold.",
+    "limitations": [
+      "Surface model includes vegetation and structures; not surveyed bare earth or confirmed 2023 surface condition",
+      "30m derivative grid mapped by nearest neighbor to the radar grid does not create 20m elevation detail",
+      "Neighborhood maximum slope excludes steep or unknown support, but does not establish radar illumination, local incidence, layover, nonlocal shadow or processor stability",
+      "No threshold is selected from observed radar changes, crop outcomes or this sensitivity analysis",
+      "Radar stays separate from optical values and ineligible for agricultural ranking; no cause, irrigation, crop-loss or supervised-model claim"
+    ]
+  },
+  "plan_sha256": "ae09bf56baca5f0a73c2e03c2ef2a952545794cd61885d001e4df7cfca3fa8e4",
+  "frozen_plan_sha256": "0dbb237990d7219aa53b51008ff39b511d3bbe2d6b0103d2a6995566d0bfc0ec",
+  "parent_manifest_sha256": "045be31dcc1e75d0f7574bac71528ee69069d56aaebc9c8e4c508d04be4a794e",
+  "derivative_grid": {
+    "width": 384,
+    "height": 381,
+    "crs": "EPSG:32636",
+    "transform": [
+      30.0,
+      0.0,
+      661110.0,
+      0.0,
+      -30.0,
+      171570.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "catalog_sha256": "ce8cd954ad6c5a89f334726163e8be3beec2e2d50b238b075cb58c027229e890",
+  "elevation_item_id": "Copernicus_DSM_COG_10_N01_00_E034_00_DEM",
+  "sensitivity": [
+    {
+      "threshold_degrees": 5,
+      "is_primary": false,
+      "proxy_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "lower_slope": 100388,
+          "elevated_slope": 4703
+        },
+        "retained_crop_fraction": 0.9552483086087296,
+        "terrain_risk_proxy_applied": true,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "observations": [
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 100388,
+            "numeric_crop_fraction": 0.9552483086087296,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -9.034963607788086,
+              "vh_db_median": -15.281841278076172,
+              "vh_minus_vv_db_median": -6.273777008056641
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 100388,
+            "numeric_crop_fraction": 0.9552483086087296,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -8.145037651062012,
+              "vh_db_median": -14.209856033325195,
+              "vh_minus_vv_db_median": -6.103902816772461
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 100388,
+            "numeric_crop_fraction": 0.9552483086087296,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -10.035138130187988,
+              "vh_db_median": -15.543498039245605,
+              "vh_minus_vv_db_median": -5.525463104248047
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        }
+      ],
+      "changes": [
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "asset": {
+            "href": "5-degrees-pair-0-change.tif",
+            "sha256": "42f2c3867e444c7d6f06691c724a06ffbd3ec50311bbd7adc8fb1b09da6b6aec"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 100388,
+          "comparable_crop_fraction": 0.9552483086087296,
+          "vv_median_delta_db": 0.805239200592041,
+          "vh_median_delta_db": 0.9583125114440918,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        },
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "asset": {
+            "href": "5-degrees-pair-1-change.tif",
+            "sha256": "b5a4ee8717ab45ee9e54ca74330e5793fbcda7422fef673102ef7d6f4fa1e4cf"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 100388,
+          "comparable_crop_fraction": 0.9552483086087296,
+          "vv_median_delta_db": -1.692979097366333,
+          "vh_median_delta_db": -1.153806209564209,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        }
+      ]
+    },
+    {
+      "threshold_degrees": 10,
+      "is_primary": true,
+      "proxy_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "lower_slope": 103508,
+          "elevated_slope": 1583
+        },
+        "retained_crop_fraction": 0.9849368642414669,
+        "terrain_risk_proxy_applied": true,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "observations": [
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 103508,
+            "numeric_crop_fraction": 0.9849368642414669,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -9.015109062194824,
+              "vh_db_median": -15.264324188232422,
+              "vh_minus_vv_db_median": -6.282832145690918
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 103508,
+            "numeric_crop_fraction": 0.9849368642414669,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -8.14915657043457,
+              "vh_db_median": -14.223518371582031,
+              "vh_minus_vv_db_median": -6.1141204833984375
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 103508,
+            "numeric_crop_fraction": 0.9849368642414669,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -9.998174667358398,
+              "vh_db_median": -15.523611068725586,
+              "vh_minus_vv_db_median": -5.546521186828613
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        }
+      ],
+      "changes": [
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "asset": {
+            "href": "10-degrees-pair-0-change.tif",
+            "sha256": "c16c86358babbde485561161be0ca9082a1a71401d3d5af96696e275f9f0b101"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 103508,
+          "comparable_crop_fraction": 0.9849368642414669,
+          "vv_median_delta_db": 0.7773969173431396,
+          "vh_median_delta_db": 0.9322853088378906,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        },
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "asset": {
+            "href": "10-degrees-pair-1-change.tif",
+            "sha256": "99f8558be35658eb6baf1cfe1a5f2fe29ccbf4a711dee5086f90cbd0503b6145"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 103508,
+          "comparable_crop_fraction": 0.9849368642414669,
+          "vv_median_delta_db": -1.6509451866149902,
+          "vh_median_delta_db": -1.1260099411010742,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        }
+      ]
+    },
+    {
+      "threshold_degrees": 15,
+      "is_primary": false,
+      "proxy_summary": {
+        "historical_crop_pixels": 105091,
+        "counts": {
+          "unknown": 0,
+          "lower_slope": 104648,
+          "elevated_slope": 443
+        },
+        "retained_crop_fraction": 0.9957846057226594,
+        "terrain_risk_proxy_applied": true,
+        "terrain_screen_verified": false,
+        "radar_illumination_confirmed": false,
+        "agronomic_review_eligible": false
+      },
+      "observations": [
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 104648,
+            "numeric_crop_fraction": 0.9957846057226594,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -9.004915237426758,
+              "vh_db_median": -15.2586669921875,
+              "vh_minus_vv_db_median": -6.288897514343262
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 104648,
+            "numeric_crop_fraction": 0.9957846057226594,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -8.148466110229492,
+              "vh_db_median": -14.228796005249023,
+              "vh_minus_vv_db_median": -6.120382308959961
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        },
+        {
+          "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "evidence": {
+            "status": "numeric_backscatter_only",
+            "historical_crop_pixels": 105091,
+            "numeric_crop_pixels": 104648,
+            "numeric_crop_fraction": 0.9957846057226594,
+            "numeric_support_qualified": true,
+            "features": {
+              "vv_db_median": -9.983400344848633,
+              "vh_db_median": -15.516023635864258,
+              "vh_minus_vv_db_median": -5.555996417999268
+            },
+            "terrain_screen_verified": false,
+            "agronomic_review_eligible": false,
+            "current_crop_confirmed": false,
+            "independent_field_labels": 0
+          }
+        }
+      ],
+      "changes": [
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "asset": {
+            "href": "15-degrees-pair-0-change.tif",
+            "sha256": "4ffdeb967aeab9580173d97a682aec31b5ebc2160622ab70a67076a91e08eedf"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 104648,
+          "comparable_crop_fraction": 0.9957846057226594,
+          "vv_median_delta_db": 0.7678031921386719,
+          "vh_median_delta_db": 0.923555850982666,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        },
+        {
+          "earlier_item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+          "later_item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+          "asset": {
+            "href": "15-degrees-pair-1-change.tif",
+            "sha256": "3f2a94b8c85608328dc3b51d795e347f413680d984f6d7ea254ea2bf8e743c1e"
+          },
+          "status": "descriptive_same_track_change",
+          "comparable_pixels": 104648,
+          "comparable_crop_fraction": 0.9957846057226594,
+          "vv_median_delta_db": -1.6350839138031006,
+          "vh_median_delta_db": -1.1139435768127441,
+          "crop_condition_label": null,
+          "terrain_screen_verified": false,
+          "causal_attribution": false
+        }
+      ]
+    }
+  ],
+  "terrain_cogs": 3,
+  "change_cogs": 6,
+  "terrain_risk_proxy_applied": true,
+  "terrain_screen_verified": false,
+  "radar_illumination_confirmed": false,
+  "agronomic_review_eligible": false,
+  "independent_field_labels": 0,
+  "trained_model": false,
+  "causal_attribution": false,
+  "optical_status_unchanged": "stale_research_context",
+  "software": {
+    "numpy": "2.2.6",
+    "rasterio": "1.5.0",
+    "gdal": "3.12.1"
+  },
+  "run_id": "f087c0ca9dd977c4a3ae74d0",
+  "manifest_sha256": "1544123acda5c39829bf787ce900db6d04516633d1c51b4e2f7e18d0ad3c5ae1"
+}
