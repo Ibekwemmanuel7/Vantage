@@ -128,6 +128,11 @@ are local generated artifacts, not an installed production service.
 
 ## Run the original Texas vertical slice
 
+The [independent processor comparison workflow](docs/africa/KWEEN_PROCESSOR_BENCHMARK.md)
+now prepares three exact Copernicus requests and checks exported scene identity,
+grid alignment, nodata and descriptive differences. Provider exports are still
+pending: zero independent acquisitions compared, with no agreement or accuracy claim.
+
 Uganda radar research now includes [bounded terrain sightlines](docs/africa/KWEEN_VISIBILITY.md):
 three acquisition-specific passes, a larger 30 m elevation window and explicit
 unknown/obstruction/clearance-guard states. All 105,091 historical crop-mask pixels

@@ -1,0 +1,13 @@
+{
+  "case_id": "kween-2023-processor-comparison-v1",
+  "parent_visibility_run_id": "05151b97dd8fef9ee29b5670",
+  "parent_viewing_run_id": "43d8ea585a445e8c941e5788",
+  "candidate": "CDSE Sentinel Hub Sentinel-1 GRD",
+  "process_endpoint": "https://sh.dataspace.copernicus.eu/process/v1",
+  "dem_instance": "COPERNICUS_30",
+  "shadow_definition": "Provider flag for in/near radar shadow based on scattering area; not equivalent to Vantage bounded ray obstruction",
+  "alignment": "Exact parent 20m radar grid and singleton SAFE scene inventory; reject implicit reprojection, mosaics, unknown version and invalid dataMask",
+  "evaluation": "Descriptive angle differences and directional shadow co-occurrence; full locality and historical crop mask reported separately; no accuracy or gate certification",
+  "challenge_status": "Kween bounded sightline outputs have zero obstruction positives; additional difficult-terrain locations are required before sensitivity evaluation",
+  "provider_dem_realization": "Instance selected, exact tile/version and internal processing realization unverified"
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "processor-benchmark-1",
+  "plan": {
+    "case_id": "kween-2023-processor-comparison-v1",
+    "parent_visibility_run_id": "05151b97dd8fef9ee29b5670",
+    "parent_viewing_run_id": "43d8ea585a445e8c941e5788",
+    "candidate": "CDSE Sentinel Hub Sentinel-1 GRD",
+    "process_endpoint": "https://sh.dataspace.copernicus.eu/process/v1",
+    "dem_instance": "COPERNICUS_30",
+    "shadow_definition": "Provider flag for in/near radar shadow based on scattering area; not equivalent to Vantage bounded ray obstruction",
+    "alignment": "Exact parent 20m radar grid and singleton SAFE scene inventory; reject implicit reprojection, mosaics, unknown version and invalid dataMask",
+    "evaluation": "Descriptive angle differences and directional shadow co-occurrence; full locality and historical crop mask reported separately; no accuracy or gate certification",
+    "challenge_status": "Kween bounded sightline outputs have zero obstruction positives; additional difficult-terrain locations are required before sensitivity evaluation",
+    "provider_dem_realization": "Instance selected, exact tile/version and internal processing realization unverified"
+  },
+  "plan_sha256": "206317b4fcc9df7197c528042db52b89dd3abce9ac4da4f9c1fd81b2bac66440",
+  "frozen_plan_sha256": "2e4c2cbee19fd0e652d54b9d2d869874b85050224a06f6eefe03b4779a176f46",
+  "parent_visibility_manifest_sha256": "8f1051820c10c583f241fddda4b8cf910c6eb450e8b64d54f40156b91ab83e6d",
+  "parent_viewing_manifest_sha256": "3bb1780f1c409afe78dd469f72f6b5792efce8c77457d9762309e05ca3a072aa",
+  "grid": {
+    "width": 557,
+    "height": 554,
+    "transform": [
+      19.99123638232771,
+      0.0,
+      661307.36401756,
+      0.0,
+      -19.97206093646219,
+      171385.09268770815,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "crs": "EPSG:32636"
+  },
+  "observations": [
+    {
+      "index": 0,
+      "item_id": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_rtc",
+      "safe_product": "S1A_IW_GRDH_1SDV_20230512T155715_20230512T155740_048502_05D599_FBDD",
+      "acquired_at": "2023-05-12T15:57:28.105240Z",
+      "request_sha256": "5289db312b0e9d0d672797e046a0744de3812ca6f6a6bf1e5a8a08a90d47f466",
+      "status": "awaiting_provider_export",
+      "metrics": null
+    },
+    {
+      "index": 1,
+      "item_id": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_rtc",
+      "safe_product": "S1A_IW_GRDH_1SDV_20230524T155715_20230524T155740_048677_05DAC9_05CC",
+      "acquired_at": "2023-05-24T15:57:28.471119Z",
+      "request_sha256": "99638e852ffaf7ba02d42c27b3e4b4737100cd6e477c0717e95c8c6b9cf24dea",
+      "status": "awaiting_provider_export",
+      "metrics": null
+    },
+    {
+      "index": 2,
+      "item_id": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_rtc",
+      "safe_product": "S1A_IW_GRDH_1SDV_20230605T155716_20230605T155741_048852_05E001_8A32",
+      "acquired_at": "2023-06-05T15:57:29.103202Z",
+      "request_sha256": "e14cb3b7e663caad5531292b7180d2bf89c052d9aaabaca2ca5b0579a2f3bf21",
+      "status": "awaiting_provider_export",
+      "metrics": null
+    }
+  ],
+  "exported_acquisitions_compared": 0,
+  "exported_acquisitions_evaluated": 0,
+  "status": "awaiting_provider_exports",
+  "metrics_available": false,
+  "external_processor_live_tested": false,
+  "exact_provider_dem_realization_verified": false,
+  "independent_field_labels": 0,
+  "agricultural_accuracy_measured": false,
+  "terrain_screen_verified": false,
+  "radar_illumination_confirmed": false,
+  "optical_status_unchanged": "stale_research_context",
+  "remaining_dependencies": [
+    "Authenticated provider exports with actual scene inventory and service version",
+    "Exact DEM realization/processing differences and difficult-terrain challenge cases",
+    "Independent field outcomes, field boundaries and confirmed calendars"
+  ],
+  "run_id": "25ec90a932fbfcb4eb94d5a1",
+  "manifest_sha256": "b417a31b9ce782e91aa281f5e4905cd9044c62514ca3df1fa7f8d99dcedc7b22"
+}
