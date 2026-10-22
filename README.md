@@ -16,6 +16,13 @@ The initial market definition is documented. Vantage is a new product and does n
 
 ## Current priority: Uganda
 
+The [partner-application integration brief](docs/integration/PARTNER_PLATFORM.md)
+defines the proposed Vantage maps/reporting component for David's broader
+application: Uganda first, with the Philippines and Nigeria as future candidate
+markets. It separates current research capabilities from proposed weather,
+climate, agricultural land-cover-change and government-reporting modules.
+The partner integration and government engagement are not yet established.
+
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
 satellite/anomaly previews, coverage history and unverified review notes. Importing

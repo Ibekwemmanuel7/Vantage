@@ -10,6 +10,13 @@ pilot geography. Product identity, workspace navigation and reusable scouting
 workflows remain Vantage-focused. Market-specific boundaries, calendars, data
 policies and validation are contextual subsets, not transferable claims.
 
+22 October integration direction: the owner wants Vantage maps and reviewed
+agricultural reports embedded in David's broader application, initially in
+Uganda, with possible government use. The Philippines and Nigeria are future
+candidates. See the [integration brief](../integration/PARTNER_PLATFORM.md) for
+module scope, standards, release gates and actual implementation status.
+No partner API or government agreement is established by this direction.
+
 ## Product contract
 
 Proposed user: extension analyst/coordinator. Proposed buyer: program or
@@ -60,9 +67,11 @@ Next increments, in order:
    encoder only with its exact bands, preprocessing, licensed pinned weights,
    and held-out regions/seasons. Evaluate performance per location and season,
    cloud coverage, field scale and delivery latency; report abstentions.
-4. Add Sentinel-1 only with orbit/polarization, calibration, terrain correction,
-   speckle and temporal-comparability contracts. Radar is not automatic ground
-   truth or an interchangeable optical replacement. No radar ingestion exists.
+4. Promote Sentinel-1 only with orbit/polarization, calibration, terrain,
+   speckle and temporal-comparability contracts. Same-track RTC ingestion and
+   bounded terrain research now exist; the independent processor comparison
+   remains awaiting provider exports. Radar is not automatic ground truth or
+   an interchangeable optical replacement. No operational partner service exists.
 5. Deploy modular API/workers with PostGIS and private object storage, tenant
    authorization, audit events, signed raster access, backups and monitoring.
    The loopback server remains a demonstration server, not public hosting.

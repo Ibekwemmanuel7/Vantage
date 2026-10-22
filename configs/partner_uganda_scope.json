@@ -1,0 +1,29 @@
+{
+  "schema_version": "partner-scope-proposal-1",
+  "documented_at": "2026-10-22",
+  "product": "Vantage",
+  "document_type": "design_and_capability_status_not_runtime_configuration",
+  "primary_market": "Uganda",
+  "future_candidate_markets": ["Philippines", "Nigeria"],
+  "deferred_market": "Texas, United States",
+  "partner_platform_stack": "unconfirmed",
+  "government_institution": "unconfirmed",
+  "government_engagement_status": "possible_proposal_reported_by_owner_no_approval_established",
+  "delivery_target": "maps_and_reviewed_agricultural_reports_embedded_in_partner_application",
+  "integration_implemented": false,
+  "operational_field_priorities_validated": false,
+  "modules": [
+    {"id": "maps_and_field_records", "phase": "first_integration", "status": "local_prototype", "blockers": ["partner_interface", "authorized_boundaries", "durable_private_team_records"]},
+    {"id": "crop_observation_and_scouting", "phase": "first_integration", "status": "historical_research", "blockers": ["current_observations", "confirmed_crop_calendars", "independent_field_outcomes", "prospective_evaluation"]},
+    {"id": "weather_and_official_advisories", "phase": "pilot_before_operational_release", "status": "limited_historical_rainfall_only", "blockers": ["approved_operational_provider", "feed_and_reuse_contract", "issue_and_valid_time_contract", "local_verification"]},
+    {"id": "climate_and_seasonal_context", "phase": "subsequent_release", "status": "limited_historical_rainfall_only", "blockers": ["long_reference_record", "baseline_and_completeness_policy", "seasonal_provider", "locally_reviewed_interpretation"]},
+    {"id": "agricultural_land_cover_change", "phase": "subsequent_release", "status": "historical_cropland_context_only", "blockers": ["consistent_change_method", "seasonal_alignment", "independent_reference_samples", "area_uncertainty"]},
+    {"id": "terrain_and_environmental_context", "phase": "research_and_optional_context", "status": "bounded_radar_terrain_research", "blockers": ["independent_processor_outputs", "external_water_flood_interfaces", "hazard_validation"]},
+    {"id": "soil_temperature_and_water_use", "phase": "research_only_until_validated", "status": "not_operationally_integrated", "blockers": ["decision_fit", "native_resolution_fit", "retrieval_or_model_contract", "independent_reference_measurements"]},
+    {"id": "reviewed_reports", "phase": "first_integration", "status": "local_reports_and_draft_notes", "blockers": ["agreed_audience_templates", "named_reviewer", "partner_report_api", "authorized_publication_workflow"]}
+  ],
+  "audiences": ["farmer_or_assisted_group", "extension_team", "government_or_program_team"],
+  "mandatory_evidence_fields": ["boundary_version", "mode", "decision_cutoff", "source_ids", "event_or_acquisition_time", "first_known_available_time_or_unknown", "processing_time", "forecast_issue_and_valid_time_if_applicable", "native_resolution", "analysis_resolution", "units", "usable_fraction", "quality_state", "limitations", "license_and_attribution", "run_version", "review_status"],
+  "product_boundaries": ["no_imagery_only_cause_diagnosis", "no_irrigation_prescription", "forestry_with_Vepris", "no_CropSight_validation_transfer", "no_automatic_clinical_or_household_outcome_inference"],
+  "reference_document": "docs/integration/PARTNER_PLATFORM.md"
+}
