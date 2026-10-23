@@ -41,6 +41,10 @@ The [bounded recent pixel processor](docs/integration/RECENT_PIXELS.md) now
 processes the latest eligible scene per study box using physical reflectance
 decoding and buffered quality masks. The 20 October acquisitions produced zero
 accepted pixels in all three boxes; crop-condition assessments remain withheld.
+An offline quality audit now attributes these exclusions to source SCL classes
+8/9/10, retaining per-class counts and exclusive rejection accounting. Run
+`python scripts/audit_recent_quality.py --inventory outputs/africa/recent/a013b10c8db819241036/inventory.json`.
+See the [audit and cloud-gap gates](docs/integration/CLOUD_GAPS.md).
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
