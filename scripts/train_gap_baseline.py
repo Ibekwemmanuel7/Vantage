@@ -28,6 +28,8 @@ def main():
         for row in json.loads(sequence.read_text())["observations"]:
             if row["status"]=="processed":lookup[(digest,row["scene_id"])]=(sequence.parent,row)
     samples={}
+    isolated_samples={}
+    clear_samples={}
     transferred_training_support=0
     for partition,scenes in manifest["splits"].items():
         groups={}
@@ -51,16 +53,23 @@ def main():
                 groups.setdefault(location,[]).append(dict(acquired_at=scene["acquired_at"],ndvi=ndvi))
         samples[partition]=[sample for series in groups.values()
                             for sample in causal_samples(series,transferred_masks=partition!="train")]
+        isolated_samples[partition]=[sample for series in groups.values()
+            for sample in causal_samples(series,isolated_gaps=True)]
+        clear_samples[partition]=[sample for series in groups.values()
+            for sample in causal_samples(series,transferred_masks=False)]
         if partition=="train":
             transferred_training_support=sum(len(sample["target"]) for series in groups.values()
                 for sample in causal_samples(series,transferred_masks=True))
     model=fit_residual(samples["train"])
     scores={k:score_samples(v,model) for k,v in samples.items()}
-    result=dict(schema_version="gap-learned-baseline-1",model=model,
+    result=dict(schema_version="gap-protocol-comparison-1",model=model,
         implementation_sha256={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
                                for name in ["scripts/train_gap_baseline.py","vantage/gap_learning.py"]},
         manifest_sha256=hashlib.sha256(args.manifest.read_bytes()).hexdigest(),
         numpy_version=np.__version__,results=scores,
+        isolated_gap_results={k:score_samples(v,model) for k,v in isolated_samples.items()},
+        clear_transition_diagnostics={k:score_samples(v,model) for k,v in clear_samples.items()},
+        comparison_policy="Same fitted model, grids, masks and seven-day limit; only simulated-history availability differs",
         transferred_mask_training_pixel_date_pairs=transferred_training_support,
         supported_validation_dates=sum(r["predicted_pixels"]>0 for r in scores["validation"]["dates"]),
         promotion_status="blocked_no_supported_validation_predictions" if not scores["validation"]["predicted_pixel_date_pairs"] else "research_only_requires_independent_evaluation",
@@ -72,9 +81,11 @@ def main():
                      "Transferred quality masks, not actual-cloud truth",
                      "No uncertainty calibration, crop diagnosis or independent field validation",
                      "Development test already inspected; no final performance claim"])
-    target=args.manifest.parent/"learned-baseline.json"
+    target=args.manifest.parent/"protocol-comparison.json"
     target.write_text(json.dumps(result,indent=2,allow_nan=False),encoding="utf-8")
-    print(json.dumps(dict(report=str(target),model=model,results={k:{a:b for a,b in v.items() if a!="dates"} for k,v in result["results"].items()}),indent=2))
+    print(json.dumps(dict(report=str(target),model=model,
+        protocols={name:{k:{a:b for a,b in v.items() if a!="dates"} for k,v in result[name].items()}
+                   for name in ["results","isolated_gap_results","clear_transition_diagnostics"]}),indent=2))
 
 
 if __name__=="__main__":main()

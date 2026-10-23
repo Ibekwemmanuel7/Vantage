@@ -36,6 +36,8 @@ successful fitting does not demonstrate performance through persistent clouds.
 The following is the initial May-only run. The
 [May–June expansion](GAP_JUNE_EXPANSION.md) supersedes it as the latest experiment;
 its validation gate also remains blocked.
+The latest [protocol comparison](GAP_PROTOCOL_COMPARISON.md) additionally reports
+isolated gaps and clear-transition diagnostics in a separate artifact.
 
 | Cohort/protocol | Supported pixel-date pairs | Supported fraction | Learned MAE | Persistence MAE |
 | --- | ---: | ---: | ---: | ---: |

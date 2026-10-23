@@ -66,6 +66,10 @@ The [May–June expansion](docs/integration/GAP_JUNE_EXPANSION.md) now contains 
 training and 12 validation scenes. The rerun fitted 61,415 samples from eight
 target dates, but still has zero supported transferred-mask validation targets;
 the learned model is not promoted and uncertainty calibration remains pending.
+The [isolated-versus-sequential gap comparison](docs/integration/GAP_PROTOCOL_COMPARISON.md)
+confirms zero supported Lira gap predictions in either protocol. On available
+clear-transition validation pairs, regression MAE is 0.0708 versus persistence
+0.0606; the learned baseline is not promoted.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
