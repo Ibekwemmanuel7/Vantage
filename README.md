@@ -74,6 +74,10 @@ The [radar availability check](docs/integration/GAP_RADAR_AVAILABILITY.md) finds
 causal <=7-day Sentinel-1 RTC catalog matches for 8/9 Lira optical coverage-gap
 dates and 2/6 Iganga dates in May–June. No radar pixels or terrain validity are
 established by these catalog matches; no radar model is trained.
+The [bounded Lira radar sample](docs/integration/LIRA_RADAR_PIXELS.md) now extracts
+two same-track June passes on the optical grid. Both have 100% positive numerical
+VV/VH support; terrain and agricultural validity remain withheld. No optical
+values are reconstructed and no radar-assisted model is trained.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

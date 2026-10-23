@@ -1,0 +1,27 @@
+"""Provider raster metadata checks and whole-box numeric summaries."""
+import numpy as np
+from vantage.radar_values import decibels
+
+
+def validate_asset(asset):
+    bands=asset.get("raster:bands",[])
+    if len(bands)!=1 or bands[0].get("nodata")!=-32768 or bands[0].get("data_type")!="float32":
+        raise ValueError("Unsupported RTC raster band contract")
+    if bands[0].get("scale",1)!=1 or bands[0].get("offset",0)!=0:
+        raise ValueError("Unimplemented RTC scale/offset")
+    if "gamma naught" not in asset.get("description","").lower():
+        raise ValueError("Expected provider gamma-naught metadata")
+
+
+def whole_box_summary(power,support,minimum_support=.8):
+    if power.ndim!=3 or power.shape[0]!=2 or power.shape!=support.shape:
+        raise ValueError("Exactly aligned VV/VH power and support required")
+    if not 0<minimum_support<=1:raise ValueError("Invalid support threshold")
+    valid=np.isfinite(power).all(axis=0)&(power>0).all(axis=0)&(support>=minimum_support).all(axis=0)
+    db=decibels(np.where(valid[None,...],power,np.nan))
+    return dict(analysis_pixels=int(valid.size),numeric_pixels=int(valid.sum()),
+        numeric_fraction=float(valid.mean()),
+        vv_db_median=float(np.median(db[0][valid])) if valid.any() else None,
+        vh_db_median=float(np.median(db[1][valid])) if valid.any() else None,
+        terrain_screen_verified=False,usable_agricultural_evidence=False,
+        spatial_scope="Whole optical study grid, not crop-masked or confirmed fields")
