@@ -52,6 +52,10 @@ NDVI benchmark is implemented; no ML cloud-gap model or operational infill exist
 The [transferred-mask evaluation](docs/integration/MASKED_GAP_EVALUATION.md) now
 tests prior quality-mask footprints against known clear targets, reports
 prediction coverage/abstentions and prevents hidden targets from updating history.
+The [cloud-gap dataset split gate](docs/integration/GAP_DATASET.md) now freezes
+disjoint location/year assignments and verifies numerical inputs. The current
+recent sequence supplies six development-test scenes but no designated training
+or validation sequences; the training-data gate correctly remains failed.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

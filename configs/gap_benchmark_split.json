@@ -1,0 +1,12 @@
+{
+  "schema_version": "gap-split-plan-1",
+  "purpose": "Research reconstruction benchmark, not confirmed crop seasons",
+  "splits": {
+    "train": {"locations": ["iganga-study"], "years": [2023]},
+    "validation": {"locations": ["lira-study"], "years": [2024]},
+    "test": {"locations": ["kasese-study"], "years": [2026]}
+  },
+  "minimum_distinct_dates_per_cohort": 3,
+  "maximum_causal_gap_days": 7,
+  "limitations": ["Calendar years are research partitions, not confirmed crop seasons", "Recent 2026 data have already been inspected; test partition is development-only, not an untouched final test"]
+}
