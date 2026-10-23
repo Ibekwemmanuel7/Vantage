@@ -7,7 +7,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 import numpy as np
-from vantage.gap_baseline import evaluate_persistence
+from vantage.gap_baseline import evaluate_persistence, evaluate_masked_persistence
 
 
 def main():
@@ -31,12 +31,14 @@ def main():
                 ndvi=artifact["ndvi"].copy()
                 ndvi[~artifact["valid"]]=np.nan
                 series.append(dict(acquired_at=row["acquired_at"],ndvi=ndvi))
-        results.append(dict(location_id=location,dates=evaluate_persistence(series)))
-    output=dict(schema_version="gap-persistence-benchmark-1",locations=results,
+        results.append(dict(location_id=location,dates=evaluate_persistence(series),
+                            transferred_mask_dates=evaluate_masked_persistence(series)))
+    output=dict(schema_version="gap-persistence-benchmark-2",locations=results,
+        mask_protocol="Previous-date rejected-pixel footprint transferred to clear targets; hidden values never update history",
         source_sequence_sha256=hashlib.sha256(args.sequence.read_bytes()).hexdigest(),
         model_trained=False,operational_infill=False,
         limitation="No actual-cloud ground truth, spatial-season holdout or independent field validation")
-    path=args.sequence.parent/"gap-baseline.json"
+    path=args.sequence.parent/"gap-mask-baseline.json"
     path.write_text(json.dumps(output,indent=2,allow_nan=False),encoding="utf-8")
     print(json.dumps(output,indent=2))
 

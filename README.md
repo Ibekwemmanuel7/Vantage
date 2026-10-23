@@ -49,6 +49,9 @@ The [recent multi-date sequence and persistence benchmark](docs/integration/RECE
 now process 18 scenes across the three boxes. Five pass the whole-box coverage
 rule, but the latest qualifying observations remain stale. A causal last-clear
 NDVI benchmark is implemented; no ML cloud-gap model or operational infill exists.
+The [transferred-mask evaluation](docs/integration/MASKED_GAP_EVALUATION.md) now
+tests prior quality-mask footprints against known clear targets, reports
+prediction coverage/abstentions and prevents hidden targets from updating history.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
