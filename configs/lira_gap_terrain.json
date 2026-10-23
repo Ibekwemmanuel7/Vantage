@@ -1,0 +1,11 @@
+{
+  "schema_version": "lira-slope-proxy-plan-1",
+  "parent_radar_directory": "b9e3ac527f496525a5d7",
+  "elevation_collection": "cop-dem-glo-30",
+  "derivative_resolution_m": 30,
+  "padding_m": 180,
+  "native_support_required": 0.999,
+  "primary_max_slope_degrees": 10,
+  "sensitivity_max_slope_degrees": [5, 10, 15],
+  "scope": "Independent surface-slope proxy, not verified acquisition-specific radar illumination"
+}

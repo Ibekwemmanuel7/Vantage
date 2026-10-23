@@ -78,6 +78,10 @@ The [bounded Lira radar sample](docs/integration/LIRA_RADAR_PIXELS.md) now extra
 two same-track June passes on the optical grid. Both have 100% positive numerical
 VV/VH support; terrain and agricultural validity remain withheld. No optical
 values are reconstructed and no radar-assisted model is trained.
+An [independent Lira surface-slope proxy](docs/integration/LIRA_TERRAIN.md) now
+excludes 0.73% of the whole-box grid at the fixed 10-degree rule. This is not
+acquisition-specific terrain validity; radar illumination and agricultural
+eligibility remain unverified.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

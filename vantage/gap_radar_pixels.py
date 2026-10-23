@@ -25,3 +25,14 @@ def whole_box_summary(power,support,minimum_support=.8):
         vh_db_median=float(np.median(db[1][valid])) if valid.any() else None,
         terrain_screen_verified=False,usable_agricultural_evidence=False,
         spatial_scope="Whole optical study grid, not crop-masked or confirmed fields")
+
+
+def slope_screen_summary(classes,numeric_mask):
+    if classes.shape!=numeric_mask.shape or numeric_mask.dtype.kind!="b" or not np.isin(classes,[0,1,2]).all():
+        raise ValueError("Aligned slope classes and Boolean numerical support required")
+    counts={name:int((classes==value).sum()) for value,name in [(0,"unknown"),(1,"lower_slope"),(2,"elevated_slope")]}
+    return dict(whole_box_pixels=int(classes.size),class_counts=counts,
+        numeric_pixels_before=int(numeric_mask.sum()),
+        numeric_lower_slope_pixels=int((numeric_mask & (classes==1)).sum()),
+        terrain_screen_verified=False,radar_illumination_confirmed=False,
+        usable_agricultural_evidence=False)

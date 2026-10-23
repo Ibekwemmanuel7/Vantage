@@ -1,9 +1,17 @@
 import unittest
 import numpy as np
-from vantage.gap_radar_pixels import validate_asset,whole_box_summary
+from vantage.gap_radar_pixels import validate_asset,whole_box_summary,slope_screen_summary
 
 
 class GapRadarPixelsTests(unittest.TestCase):
+    def test_slope_proxy_keeps_unknown_and_numeric_denominators_separate(self):
+        classes=np.array([[0,1],[2,1]],dtype="uint8")
+        numeric=np.array([[True,True],[True,False]])
+        result=slope_screen_summary(classes,numeric)
+        self.assertEqual(sum(result["class_counts"].values()),4)
+        self.assertEqual(result["numeric_pixels_before"],3)
+        self.assertEqual(result["numeric_lower_slope_pixels"],1)
+        self.assertFalse(result["radar_illumination_confirmed"])
     def test_provider_units_and_scale_contract(self):
         asset={"description":"Terrain-corrected gamma naught values", "raster:bands":[dict(nodata=-32768,data_type="float32")]}
         validate_asset(asset)
