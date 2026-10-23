@@ -70,6 +70,10 @@ The [isolated-versus-sequential gap comparison](docs/integration/GAP_PROTOCOL_CO
 confirms zero supported Lira gap predictions in either protocol. On available
 clear-transition validation pairs, regression MAE is 0.0708 versus persistence
 0.0606; the learned baseline is not promoted.
+The [radar availability check](docs/integration/GAP_RADAR_AVAILABILITY.md) finds
+causal <=7-day Sentinel-1 RTC catalog matches for 8/9 Lira optical coverage-gap
+dates and 2/6 Iganga dates in May–June. No radar pixels or terrain validity are
+established by these catalog matches; no radar model is trained.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
