@@ -23,6 +23,14 @@ markets. It separates current research capabilities from proposed weather,
 climate, agricultural land-cover-change and government-reporting modules.
 The partner integration and government engagement are not yet established.
 
+A portable, unreviewed historical partner example can now be exported with
+`python scripts/export_partner_bundle.py`. It writes `evidence.json` and
+`report.html` under `outputs/partner-example`, retaining source lineage,
+recomputed freshness at the frozen cutoff and withheld field priorities.
+It supplies no live API, preview imagery, yield forecast, input prescription,
+water allocation or validated farmland-change result. See the
+[example contract](docs/integration/HISTORICAL_BUNDLE.md).
+
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
 satellite/anomaly previews, coverage history and unverified review notes. Importing
