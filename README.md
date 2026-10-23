@@ -62,6 +62,10 @@ An [exploratory learned cloud-gap baseline](docs/integration/GAP_LEARNED_BASELIN
 is now fitted on causal training transitions. It has no supported transferred-mask
 validation predictions and is blocked from promotion; no operational infill or
 agricultural accuracy claim is enabled.
+The [May–June expansion](docs/integration/GAP_JUNE_EXPANSION.md) now contains 11
+training and 12 validation scenes. The rerun fitted 61,415 samples from eight
+target dates, but still has zero supported transferred-mask validation targets;
+the learned model is not promoted and uncertainty calibration remains pending.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

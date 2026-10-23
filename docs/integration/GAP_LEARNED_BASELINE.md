@@ -33,6 +33,10 @@ successful fitting does not demonstrate performance through persistent clouds.
 
 ## Actual evaluation
 
+The following is the initial May-only run. The
+[May–June expansion](GAP_JUNE_EXPANSION.md) supersedes it as the latest experiment;
+its validation gate also remains blocked.
+
 | Cohort/protocol | Supported pixel-date pairs | Supported fraction | Learned MAE | Persistence MAE |
 | --- | ---: | ---: | ---: | ---: |
 | Iganga training, clear transitions | 200,531 | 25.1% | 0.0336 | 0.0379 |

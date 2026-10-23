@@ -1,0 +1,11 @@
+{
+  "schema_version": "gap-acquisition-plan-1",
+  "calendar_status": "Adjacent June extension fixed before inspecting outcomes; crop seasons unconfirmed",
+  "cohorts": [
+    {"partition": "train", "location_id": "iganga-study", "as_of": "2023-07-01T00:00:00Z", "days": 30, "scenes_per_location": 6},
+    {"partition": "validation", "location_id": "lira-study", "as_of": "2024-07-01T00:00:00Z", "days": 30, "scenes_per_location": 6}
+  ],
+  "selection": "Latest six distinct eligible acquisitions per cohort, not cloud ranked",
+  "maximum_scenes_total": 12,
+  "split_plan": "gap_benchmark_split.json"
+}

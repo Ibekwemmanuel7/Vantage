@@ -14,8 +14,9 @@ from vantage.recent_inventory import recent_window
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--online",action="store_true",help="Execute catalog and raster acquisition; otherwise print plan")
+    parser.add_argument("--plan",type=Path,default=ROOT/"configs/gap_acquisition.json")
     args=parser.parse_args()
-    plan=json.loads((ROOT/"configs/gap_acquisition.json").read_text())
+    plan=json.loads(args.plan.read_text())
     config=json.loads((ROOT/"configs/uganda_archive.json").read_text())
     for cohort in plan["cohorts"]:
         location=next(l for l in config["locations"] if l["id"]==cohort["location_id"])

@@ -28,6 +28,7 @@ def main():
         for row in json.loads(sequence.read_text())["observations"]:
             if row["status"]=="processed":lookup[(digest,row["scene_id"])]=(sequence.parent,row)
     samples={}
+    transferred_training_support=0
     for partition,scenes in manifest["splits"].items():
         groups={}
         grids={}
@@ -50,6 +51,9 @@ def main():
                 groups.setdefault(location,[]).append(dict(acquired_at=scene["acquired_at"],ndvi=ndvi))
         samples[partition]=[sample for series in groups.values()
                             for sample in causal_samples(series,transferred_masks=partition!="train")]
+        if partition=="train":
+            transferred_training_support=sum(len(sample["target"]) for series in groups.values()
+                for sample in causal_samples(series,transferred_masks=True))
     model=fit_residual(samples["train"])
     scores={k:score_samples(v,model) for k,v in samples.items()}
     result=dict(schema_version="gap-learned-baseline-1",model=model,
@@ -57,12 +61,14 @@ def main():
                                for name in ["scripts/train_gap_baseline.py","vantage/gap_learning.py"]},
         manifest_sha256=hashlib.sha256(args.manifest.read_bytes()).hexdigest(),
         numpy_version=np.__version__,results=scores,
+        transferred_mask_training_pixel_date_pairs=transferred_training_support,
+        supported_validation_dates=sum(r["predicted_pixels"]>0 for r in scores["validation"]["dates"]),
         promotion_status="blocked_no_supported_validation_predictions" if not scores["validation"]["predicted_pixel_date_pairs"] else "research_only_requires_independent_evaluation",
         training_protocol="Prior clear-pixel transitions, current targets enter history only after sample construction",
         evaluation_protocol="Transferred prior rejection masks, hidden targets never update history",
         operational_infill=False,untouched_final_test=False,
         limitations=["Small correlated whole-box cohorts", "Training on clear transitions differs from simulated evaluation gaps",
-                     "No supported transferred-mask training targets under seven-day limit",
+                     "Clear-transition training protocol retained across sequence expansion; transferred-mask support reported separately",
                      "Transferred quality masks, not actual-cloud truth",
                      "No uncertainty calibration, crop diagnosis or independent field validation",
                      "Development test already inspected; no final performance claim"])
