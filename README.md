@@ -82,6 +82,10 @@ An [independent Lira surface-slope proxy](docs/integration/LIRA_TERRAIN.md) now
 excludes 0.73% of the whole-box grid at the fixed 10-degree rule. This is not
 acquisition-specific terrain validity; radar illumination and agricultural
 eligibility remain unverified.
+The [Lira acquisition-specific local geometry check](docs/integration/LIRA_VIEWING.md)
+now verifies both source annotations against SAFE references and flags 18 of
+307,468 pixels per pass for local geometry risk. Locally unflagged pixels remain
+uncertified: nonlocal shadow and trusted-processor agreement are still absent.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

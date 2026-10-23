@@ -1,0 +1,10 @@
+{
+  "schema_version": "lira-local-viewing-plan-1",
+  "parent_radar_directory": "b9e3ac527f496525a5d7",
+  "parent_terrain_directory": "35b6e4f23a945db5119a",
+  "max_passes": 2,
+  "annotation_incidence_tolerance_degrees": 0.25,
+  "min_local_incidence_degrees": 5,
+  "max_local_incidence_degrees": 85,
+  "scope": "Verified SAFE annotations and approximate local facet geometry; no nonlocal shadow or processor certification"
+}
