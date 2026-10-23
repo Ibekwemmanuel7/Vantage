@@ -1,8 +1,25 @@
 import unittest
-from vantage.recent_pixels import select_latest, observation_quality
+from vantage.recent_pixels import select_latest, select_sequence, observation_quality, summarize_sequence
 
 
 class RecentPixelsTests(unittest.TestCase):
+    def test_sequence_deduplicates_acquisitions_and_enforces_budget(self):
+        base = dict(bbox_covers_study=True, baseline_assets_present=True)
+        rows = [dict(base,id="a",acquired_at="2026-10-10T00:00:00Z"),
+                dict(base,id="b",acquired_at="2026-10-10T00:00:00Z"),
+                dict(base,id="c",acquired_at="2026-10-20T00:00:00Z")]
+        self.assertEqual([r["id"] for r in select_sequence({"candidates":rows},6)], ["c","b"])
+        with self.assertRaises(ValueError): select_sequence({"candidates":rows},7)
+
+    def test_sequence_missing_and_stale_do_not_become_live_priorities(self):
+        row = dict(location_id="a",status="processed",acquired_at="2026-10-10T00:00:00Z",
+                   quality=dict(coverage_qualified=True,age_at_cutoff_days=13,state="stale"))
+        result = summarize_sequence([row])[0]
+        self.assertEqual(result["status"],"stale")
+        self.assertFalse(result["field_priorities_available"])
+        row["quality"]["coverage_qualified"] = False
+        self.assertIsNone(summarize_sequence([row])[0]["latest_qualified_acquisition"])
+
     def test_latest_selection_not_lowest_cloud_and_requires_assets(self):
         old = dict(id="old", acquired_at="2026-10-10T00:00:00Z", bbox_covers_study=True,
                    baseline_assets_present=True, scene_cloud_cover=0)

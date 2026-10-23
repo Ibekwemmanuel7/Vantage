@@ -45,6 +45,10 @@ An offline quality audit now attributes these exclusions to source SCL classes
 8/9/10, retaining per-class counts and exclusive rejection accounting. Run
 `python scripts/audit_recent_quality.py --inventory outputs/africa/recent/a013b10c8db819241036/inventory.json`.
 See the [audit and cloud-gap gates](docs/integration/CLOUD_GAPS.md).
+The [recent multi-date sequence and persistence benchmark](docs/integration/RECENT_SEQUENCE.md)
+now process 18 scenes across the three boxes. Five pass the whole-box coverage
+rule, but the latest qualifying observations remain stale. A causal last-clear
+NDVI benchmark is implemented; no ML cloud-gap model or operational infill exists.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
