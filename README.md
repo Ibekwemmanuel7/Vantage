@@ -31,6 +31,12 @@ It supplies no live API, preview imagery, yield forecast, input prescription,
 water allocation or validated farmland-change result. See the
 [example contract](docs/integration/HISTORICAL_BUNDLE.md).
 
+The [recent catalog inventory](docs/integration/RECENT_INVENTORY.md) now archives
+and replays bounded Sentinel-2 searches over the three Uganda study boxes.
+The 23 October 2026 cutoff run found six catalog items per box; usable pixels,
+crop condition and field priorities remain unassessed. This inventory does not
+refresh the historical dashboard or connect a live monitoring service.
+
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
 satellite/anomaly previews, coverage history and unverified review notes. Importing
