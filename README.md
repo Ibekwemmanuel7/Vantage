@@ -54,8 +54,10 @@ tests prior quality-mask footprints against known clear targets, reports
 prediction coverage/abstentions and prevents hidden targets from updating history.
 The [cloud-gap dataset split gate](docs/integration/GAP_DATASET.md) now freezes
 disjoint location/year assignments and verifies numerical inputs. The current
-recent sequence supplies six development-test scenes but no designated training
-or validation sequences; the training-data gate correctly remains failed.
+historical acquisition follow-up now supplies five training, six validation and
+six development-test scenes. The minimum date-count gate passes; causal sample
+support, model training and independent validation remain pending. See the
+[historical acquisition results](docs/integration/GAP_ACQUISITION.md).
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

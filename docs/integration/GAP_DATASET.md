@@ -28,13 +28,18 @@ sufficient for training: exact grids, causal overlap within seven days, mask
 diversity and sufficient independent examples still need checking at sample
 construction. Calendar years are research partitions, not confirmed crop seasons.
 
-Actual current run: train 0, validation 0, development test 6 assigned scenes.
+Initial recent-only run: train 0, validation 0, development test 6 assigned scenes.
 The missing historical cohorts produce explicit blockers and
 `training_data_gate_passed=false`. Other 2026 Iganga/Lira observations are excluded
 by the frozen plan rather than silently reassigned. Existing historical data
 elsewhere in the repository have not been silently adapted or counted as these
 compatible sequence inputs. Successful manifest generation does not imply that
 training is authorized by the gate; no trainer is implemented in this release.
+
+Update: the [historical acquisition follow-up](GAP_ACQUISITION.md) now supplies
+compatible sequences. Its combined manifest assigns train 5, validation 6 and
+development test 6, passing the minimum date-count gate. Causal sample support
+and independent evaluation remain separate requirements.
 
 The 2026 scenes and baseline errors were already inspected during development.
 Consequently Kasese 2026 is not an untouched final test. An independent future

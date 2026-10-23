@@ -19,13 +19,16 @@ def main():
     parser.add_argument("--as-of", required=True, help="Explicit UTC cutoff, e.g. 2026-10-23T00:00:00Z")
     parser.add_argument("--days", type=int, default=21)
     parser.add_argument("--online", action="store_true")
+    parser.add_argument("--location", choices=["iganga-study", "lira-study", "kasese-study"],
+                        help="Restrict acquisition to one existing study box")
     parser.add_argument("--out", type=Path, default=ROOT / "outputs/africa/recent")
     args = parser.parse_args()
     cutoff = datetime.fromisoformat(args.as_of.replace("Z", "+00:00"))
     if cutoff.tzinfo is None or cutoff > datetime.now(timezone.utc):
         parser.error("Cutoff must be timezone-aware and not in the future")
     config = json.loads((ROOT / "configs/uganda_archive.json").read_text())
-    plan = [recent_window(config, location, cutoff, args.days) for location in config["locations"]]
+    plan = [recent_window(config, location, cutoff, args.days) for location in config["locations"]
+            if args.location is None or location["id"] == args.location]
     directory = args.out / fingerprint(dict(plan=plan, collection=config["collection"]))[:20]
     directory.mkdir(parents=True, exist_ok=True)
     records, failures = [], []
