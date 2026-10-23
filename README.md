@@ -37,6 +37,11 @@ The 23 October 2026 cutoff run found six catalog items per box; usable pixels,
 crop condition and field priorities remain unassessed. This inventory does not
 refresh the historical dashboard or connect a live monitoring service.
 
+The [bounded recent pixel processor](docs/integration/RECENT_PIXELS.md) now
+processes the latest eligible scene per study box using physical reflectance
+decoding and buffered quality masks. The 20 October acquisitions produced zero
+accepted pixels in all three boxes; crop-condition assessments remain withheld.
+
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
 satellite/anomaly previews, coverage history and unverified review notes. Importing
