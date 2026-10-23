@@ -48,16 +48,20 @@ See the [audit and cloud-gap gates](docs/integration/CLOUD_GAPS.md).
 The [recent multi-date sequence and persistence benchmark](docs/integration/RECENT_SEQUENCE.md)
 now process 18 scenes across the three boxes. Five pass the whole-box coverage
 rule, but the latest qualifying observations remain stale. A causal last-clear
-NDVI benchmark is implemented; no ML cloud-gap model or operational infill exists.
+NDVI benchmark is implemented; operational infill remains unavailable.
 The [transferred-mask evaluation](docs/integration/MASKED_GAP_EVALUATION.md) now
 tests prior quality-mask footprints against known clear targets, reports
 prediction coverage/abstentions and prevents hidden targets from updating history.
 The [cloud-gap dataset split gate](docs/integration/GAP_DATASET.md) now freezes
 disjoint location/year assignments and verifies numerical inputs. The current
 historical acquisition follow-up now supplies five training, six validation and
-six development-test scenes. The minimum date-count gate passes; causal sample
-support, model training and independent validation remain pending. See the
+six development-test scenes. The minimum date-count gate passes; independent
+validation remains pending. See the
 [historical acquisition results](docs/integration/GAP_ACQUISITION.md).
+An [exploratory learned cloud-gap baseline](docs/integration/GAP_LEARNED_BASELINE.md)
+is now fitted on causal training transitions. It has no supported transferred-mask
+validation predictions and is blocked from promotion; no operational infill or
+agricultural accuracy claim is enabled.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
