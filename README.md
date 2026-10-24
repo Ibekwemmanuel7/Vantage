@@ -4,6 +4,10 @@
 explains the work, architecture, satellite/ML findings, field tools, dashboard,
 run order, tests and remaining data dependencies in one place.
 
+[Uganda gap-closure research](docs/strategy/UGANDA_GAP_CLOSURE_RESEARCH.md)
+records the 24 October public-source investigation, inspected datasets,
+historical-event candidates and limits on what internet evidence can establish.
+
 <!-- LILLIE_US_PORTFOLIO_START -->
 **Part of [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US)** · [Portfolio map](https://github.com/Ibekwemmanuel7/Lillie_US/blob/main/docs/PORTFOLIO.md) · [Scope and boundaries](docs/portfolio/SCOPE.md)
 
