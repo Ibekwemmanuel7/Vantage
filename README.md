@@ -94,6 +94,10 @@ The [Lira comparison requests and causal pairing table](docs/integration/LIRA_PA
 are now prepared. Three of six June optical dates match one of the two processed
 ascending passes within seven days. No external provider exports were supplied:
 zero independent comparisons and no radar-assisted model or gap-filled imagery.
+The [local CDSE export fetcher](docs/integration/CDSE_EXPORT_FETCH.md) is now
+implemented and dry-run tested. Authenticated processing is explicit, validates
+outputs before publishing local export folders and never saves OAuth secrets.
+No real provider request was submitted in this implementation run.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
