@@ -16,6 +16,12 @@ The initial market definition is documented. Vantage is a new product and does n
 
 ## Current priority: Uganda
 
+The [private field evidence intake](docs/integration/FIELD_EVIDENCE_INTAKE.md)
+now checks dated scouting, planting and harvest submissions, boundary references,
+provenance and harvest units. Public reports remain investigation leads; no
+submitted record automatically becomes a training or evaluation label. Actual
+independently verified field outcomes remain zero.
+
 The [partner-application integration brief](docs/integration/PARTNER_PLATFORM.md)
 defines the proposed Vantage maps/reporting component for David's broader
 application: Uganda first, with the Philippines and Nigeria as future candidate
