@@ -28,6 +28,11 @@ scouting intake. Missing visits, duplicate records and changed field boundaries
 remain explicit. This private research workflow admits no labels and does not
 make the stratified sample compatible with the complete-cohort evaluator.
 
+The [scouting ranking bounds](docs/integration/SCOUTING_BOUNDS.md) now compare
+frozen model and baseline visit sets while unresolved outcomes remain unknown.
+They use linked adjudication declarations, account for shared ranked units and
+report conditional bounds rather than confidence intervals or validated accuracy.
+
 The [partner-application integration brief](docs/integration/PARTNER_PLATFORM.md)
 defines the proposed Vantage maps/reporting component for David's broader
 application: Uganda first, with the Philippines and Nigeria as future candidate

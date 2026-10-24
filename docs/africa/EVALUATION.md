@@ -32,6 +32,11 @@ partially visited stratified sample is not compatible with this estimator.
 Do not filter to completed visits and claim full-cohort precision. Future
 partial-sample analysis requires design-based weighting and uncertainty.
 
+The [conditional scouting ranking bounds](../integration/SCOUTING_BOUNDS.md)
+now provide a separate exact range calculation for incomplete outcomes. These
+are finite-cohort identification bounds, not a weighted sampling estimator,
+confidence interval or independently validated agricultural performance result.
+
 Each JSON record requires:
 
 | Key | Meaning |

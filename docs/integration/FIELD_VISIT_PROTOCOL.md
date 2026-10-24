@@ -98,6 +98,10 @@ The stratified sample must not be sent to the existing complete-cohort capacity
 estimator; design-based weighting and uncertainty analysis are not implemented.
 See the [evaluation protocol](../africa/EVALUATION.md).
 
+An [exact ranking-bounds analysis](SCOUTING_BOUNDS.md) is now available for
+incomplete outcomes, conditional on linked adjudication declarations. It is not
+a sampling-weighted estimator or an independently validated performance result.
+
 Before an agricultural performance study we still need consented, versioned field
 boundaries; locally confirmed crops/calendars; a useful-finding rubric; genuinely
 pre-visit predictions; independent field observations and adjudication; and a
