@@ -1,5 +1,9 @@
 # Vantage
 
+**Start here:** [Vantage step-by-step walkthrough](docs/VANTAGE_WALKTHROUGH.md)
+explains the work, architecture, satellite/ML findings, field tools, dashboard,
+run order, tests and remaining data dependencies in one place.
+
 <!-- LILLIE_US_PORTFOLIO_START -->
 **Part of [Lillie US](https://github.com/Ibekwemmanuel7/Lillie_US)** · [Portfolio map](https://github.com/Ibekwemmanuel7/Lillie_US/blob/main/docs/PORTFOLIO.md) · [Scope and boundaries](docs/portfolio/SCOPE.md)
 
