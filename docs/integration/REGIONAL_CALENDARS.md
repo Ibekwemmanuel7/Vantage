@@ -92,9 +92,10 @@ the separate seasonal contract. No new training or evaluation label is admitted.
 
 ## Remaining work
 
-The next integration step is a version-matched zone geometry and reviewed spatial
-join, followed by clearly labeled calendar context in reports. Field confirmation
-must stay separate. Prospective evaluation still needs consented boundaries,
+The separate zone-join follow-up now supplies pinned provisional study-box
+context with source-ID coverage checks. Independent positional evaluation and
+use with real field records remain pending; field confirmation must stay
+separate. Prospective evaluation still needs consented boundaries,
 actual crops/calendars and independent findings. This increment adds neither a
 dashboard layer nor a new model, and makes no disease, yield or irrigation claim.
 
@@ -105,3 +106,7 @@ field-confirmation rejection, CLI source hashes and overwrite refusal. The real
 cached source imported successfully: 44 rows, nine zones and 16 cross-year
 contexts at the 2024 planting anchor. `git diff --check` passed. No agricultural
 accuracy or current field-calendar claim is made.
+
+Follow-up: a [pinned regional zone join](REGIONAL_ZONE_JOIN.md) now checks
+source-ID coverage and attaches provisional context to the three study boxes.
+It does not certify historical boundary equivalence or confirm field dates.

@@ -27,7 +27,12 @@ The initial market definition is documented. Vantage is a new product and does n
 The [regional calendar import](docs/integration/REGIONAL_CALENDARS.md) now pins
 and replays 44 JRC Uganda crop/season contexts across nine zones. Date conversion
 handles leap years and cross-year seasons; these regional priors cannot pass
-the independent field-calendar confirmation gate. Spatial joins remain pending.
+the independent field-calendar confirmation gate. Field confirmation remains pending.
+
+The [provisional regional zone join](docs/integration/REGIONAL_ZONE_JOIN.md) now
+checks pinned Uganda monitoring geometries against the calendar IDs and joins
+the three research boxes conservatively. Cross-zone, near-border and unmatched
+units remain unresolved; no farmer calendar or operational priority is confirmed.
 
 The [field-pixel adapter](docs/integration/FIELD_PIXELS.md) now summarizes existing
 observed NDVI artifacts within declared Polygon/MultiPolygon field boundaries,

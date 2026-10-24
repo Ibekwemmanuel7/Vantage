@@ -1,0 +1,11 @@
+{
+  "schema_version": "vantage-regional-zone-source-1",
+  "source_url": "https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=public%3Awarning_crop&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=asap0_id%3D209&count=1000",
+  "documentation_url": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+  "source_observed_on": "2026-10-24",
+  "response_sha256": "2583008495f10162ae9c5be5e03faf128e25d731dc1c0b761c8776da764347cd",
+  "expected_zone_count": 13,
+  "border_guard_m": 1000,
+  "attribution": "European Commission, Joint Research Centre ASAP; adapted and simplified FAO GAUL-derived monitoring geometries. Consult provider reuse notice and underlying rights.",
+  "usage": "Pinned monitoring geometry for provisional regional context, not certified field or current administrative membership. Provider warning values are discarded."
+}
