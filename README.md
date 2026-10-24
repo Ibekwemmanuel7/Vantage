@@ -3,6 +3,9 @@
 [Platform design direction](docs/strategy/PLATFORM_DESIGN.md): refreshed imagery-led
 workspace, responsive fieldwork navigation and a consistent evidence-review interface.
 
+[Local report workspace](docs/integration/REPORT_WORKSPACE.md): preview and export
+dated historical evidence with an optional, clearly separated local-draft appendix.
+
 **Start here:** [Vantage step-by-step walkthrough](docs/VANTAGE_WALKTHROUGH.md)
 explains the work, architecture, satellite/ML findings, field tools, dashboard,
 run order, tests and remaining data dependencies in one place.
