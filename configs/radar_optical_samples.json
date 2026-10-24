@@ -1,0 +1,28 @@
+{
+  "schema_version": "radar-optical-sample-plan-1",
+  "split_plan": "configs/gap_benchmark_split.json",
+  "primary_slope_threshold_degrees": 10,
+  "maximum_radar_age_days": 7,
+  "minimum_native_support": 0.8,
+  "cohorts": [
+    {
+      "location_id": "iganga-study",
+      "partition": "train",
+      "track_id": "SENTINEL-1A-028-ascending-IW-VV-VH",
+      "radar_report": "outputs/africa/gap-radar-pixels/e2ad309edd56e682d17d/report.json",
+      "quality_kind": "combined",
+      "quality_report": "outputs/africa/gap-quality/eafa754ab92ade35e4c4/report.json"
+    },
+    {
+      "location_id": "lira-study",
+      "partition": "validation",
+      "track_id": "SENTINEL-1A-029-ascending-IW-VV-VH",
+      "radar_report": "outputs/africa/gap-radar-pixels/b9e3ac527f496525a5d7/report.json",
+      "quality_kind": "separate",
+      "viewing_report": "outputs/africa/gap-viewing/82fd966dcc318d43362f/report.json",
+      "visibility_report": "outputs/africa/gap-visibility/727b09efd2cac9dbfae2/report.json",
+      "terrain_report": "outputs/africa/gap-terrain/35b6e4f23a945db5119a/report.json"
+    }
+  ],
+  "scope": "Versioned research samples only; independent processors and untouched final test absent"
+}

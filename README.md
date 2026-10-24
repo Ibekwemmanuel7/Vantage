@@ -107,6 +107,11 @@ The [Iganga-specific quality follow-up](docs/integration/IGANGA_RADAR_QUALITY.md
 now verifies all three SAFE annotations and applies independent slope, local
 geometry and bounded 5km sightlines. All study pixels pass the local/bounded
 checks; independent processor agreement and agricultural eligibility remain absent.
+The [versioned radar–optical research samples](docs/integration/RADAR_OPTICAL_SAMPLES.md)
+now contain four Iganga training-reference dates and three Lira validation-reference
+dates. Radar features, observed optical references and unlabeled gaps are separate;
+the manifest explicitly keeps training ineligible pending external processor
+outputs and independent evaluation. No optical values are imputed.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
