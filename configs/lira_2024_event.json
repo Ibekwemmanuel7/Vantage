@@ -1,0 +1,22 @@
+{
+  "schema_version": "vantage-event-plan-1",
+  "event_id": "lira-mam-2024-exploratory",
+  "event_source": "https://fews.net/east-africa/uganda/key-message-update/may-2024",
+  "source_issue_precision": "May 2024; exact publication day not established",
+  "bbox": [32.85, 2.20, 32.95, 2.30],
+  "location_id": "lira-study",
+  "scope": "Analyst-selected box, not confirmed farm boundaries or a representative district sample",
+  "target_year": 2024,
+  "rain_months": [3, 4, 5],
+  "rain_baseline_years": [1981, 2020],
+  "rain_product": "CHIRPS v3 final monthly global COG",
+  "rain_base_url": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/monthly/global/cogs/",
+  "optical_reference_year": 2023,
+  "optical_month": 5,
+  "optical_min_common_fraction": 0.70,
+  "archive_report": "outputs/africa/archive/d9c82747f42377f8ec84/pixels-report.json",
+  "archive_report_sha256": "15d6ce1326620a50d4e3048ee5b4e72b8d107b44701c52ddcb6dfbace119897f",
+  "historical_operational_availability_confirmed": false,
+  "independent_field_outcomes": 0,
+  "design": "Exploratory choices made after archive and event inspection; not a blinded or prospective evaluation. No matched control or crop-loss attribution."
+}

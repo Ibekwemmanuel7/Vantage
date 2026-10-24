@@ -1,0 +1,39 @@
+{
+  "schema_version": "vantage-event-run-summary-1",
+  "event_id": "lira-mam-2024-exploratory",
+  "report_path": "outputs/africa/lira-event/9f44e162ae146a528bb6/report.json",
+  "report_sha256": "812afb1465d26a79fdfd036abda0318d72b5136235d2015e32bc2aa3d525f18f",
+  "plan_sha256": "9f44e162ae146a528bb6f824ddc44aa28aff6618c54278bba3483b217ba2a45c",
+  "optical": {
+    "common_pixels": 290317,
+    "total_pixels": 307468,
+    "common_fraction": 0.9442185853487192,
+    "coverage_qualified": true,
+    "median_ndvi_difference": -0.01085159182548523,
+    "interpretation": "Single-date interannual difference on identical observed pixels, not a climatological anomaly, crop-health diagnosis or loss estimate"
+  },
+  "optical_sources": [
+    {
+      "scene_id": "S2A_MSIL2A_20230524T075611_R035_T36NVH_20230524T123920",
+      "acquired_at": "2023-05-24T07:56:11.024000Z",
+      "artifact_sha256": "211277479793225208baef709c9c7dd7846909bf69e36fd6e698f72e31cc70ce",
+      "catalog_sha256": "06d96305f92717d0455a20f07970ff661eae9b6e0d306ebb900b40a1880634c2"
+    },
+    {
+      "scene_id": "S2A_MSIL2A_20240528T075611_R035_T36NVH_20240528T141448",
+      "acquired_at": "2024-05-28T07:56:11.024000Z",
+      "artifact_sha256": "d33cdef5553c996a9ca732b87afeb2ae8bc0021067475ea8c87b4c97b69440d3",
+      "catalog_sha256": "43f7f59a5f0edbb8c9393813c7f4f492925a69047064cd0f5db30a14b8667d67"
+    }
+  ],
+  "difference_sha256": "0dafd0b18e1c66df30a94b6a7b3dbbac6961cbe9eabfe05a1c07c81311e67494",
+  "plot_sha256": "4f4e371c8c73e894ef1c9757ab02f899f49a6f7f1da95bc51e4535f291a0b320",
+  "rainfall_status": "unavailable",
+  "rainfall_cached_months": 0,
+  "independent_field_outcomes": 0,
+  "crop_loss_attribution_available": false,
+  "implementation_sha256": {
+    "vantage/event_reconstruction.py": "5f7d1fcf3a32d35ff06ee6199816f1480b7545285a13bb9588eb77f0693f8500",
+    "scripts/reconstruct_lira_event.py": "495cdc50a12ffcd5c24cd62f6c53740b3aece468ca828313c5538ff0b952a382"
+  }
+}

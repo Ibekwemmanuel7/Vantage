@@ -11,6 +11,10 @@ crop-season windows for three Uganda study boxes, separate from confirmed field 
 repeatable quality checks for the pinned Uganda maize-survey subset without
 admitting it as training or scouting-validation data.
 
+[Lira 2024 event reconstruction](docs/integration/LIRA_2024_EVENT.md) now replays
+an observed optical comparison and maps common usable pixels. Rainfall remains
+explicitly unavailable pending a complete permitted source acquisition.
+
 [Uganda gap-closure research](docs/strategy/UGANDA_GAP_CLOSURE_RESEARCH.md)
 records the 24 October public-source investigation, inspected datasets,
 historical-event candidates and limits on what internet evidence can establish.
