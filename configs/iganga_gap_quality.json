@@ -1,0 +1,19 @@
+{
+  "schema_version": "gap-radar-quality-plan-1",
+  "parent_radar_directory": "e2ad309edd56e682d17d",
+  "track_id": "SENTINEL-1A-028-ascending-IW-VV-VH",
+  "max_passes": 3,
+  "elevation_collection": "cop-dem-glo-30",
+  "derivative_resolution_m": 30,
+  "padding_m": 180,
+  "native_support_required": 0.999,
+  "slope_thresholds": [5, 10, 15],
+  "annotation_incidence_tolerance_degrees": 0.25,
+  "min_local_incidence_degrees": 5,
+  "max_local_incidence_degrees": 85,
+  "distance_m": 5000,
+  "step_m": 15,
+  "clearance_guard_m": 5,
+  "visibility_padding_cells": 169,
+  "scope": "Iganga-specific terrain, verified annotations and bounded visibility research; not agricultural certification"
+}

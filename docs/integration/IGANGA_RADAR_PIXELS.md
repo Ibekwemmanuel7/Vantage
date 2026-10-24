@@ -58,6 +58,11 @@ retains `historical_delivery_time_verified=false`.
 
 ## Remaining checks
 
+Update: the [Iganga-specific quality workflow](IGANGA_RADAR_QUALITY.md) has now
+completed DSM, annotation, local geometry and bounded sightline checks for all
+three passes. The following original numerical-release requirements are retained
+as history; independent processor agreement remains unresolved.
+
 Iganga requires its own independent DSM, verified product viewing annotations,
 local geometry and bounded visibility screening. Lira checks do not transfer
 across geography or orbit. Independent provider exports remain outstanding;

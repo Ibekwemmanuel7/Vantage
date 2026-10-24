@@ -101,8 +101,12 @@ No real provider request was submitted in this implementation run.
 The [Iganga radar training-cohort numerical sample](docs/integration/IGANGA_RADAR_PIXELS.md)
 now processes three fixed ascending passes with full numerical support. Four
 of six June optical dates have causal <=7-day pairs. These remain unverified
-research references; Iganga terrain/viewing checks and processor comparisons
-are pending, and no radar-assisted model is trained.
+research references; independent processor comparisons remain pending,
+and no radar-assisted model is trained.
+The [Iganga-specific quality follow-up](docs/integration/IGANGA_RADAR_QUALITY.md)
+now verifies all three SAFE annotations and applies independent slope, local
+geometry and bounded 5km sightlines. All study pixels pass the local/bounded
+checks; independent processor agreement and agricultural eligibility remain absent.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
