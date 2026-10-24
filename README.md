@@ -7,6 +7,10 @@ run order, tests and remaining data dependencies in one place.
 [Dashboard regional context](docs/integration/REGIONAL_DASHBOARD.md) adds published
 crop-season windows for three Uganda study boxes, separate from confirmed field dates.
 
+[Historical survey audit](docs/integration/SURVEY_REFERENCE_AUDIT.md) provides
+repeatable quality checks for the pinned Uganda maize-survey subset without
+admitting it as training or scouting-validation data.
+
 [Uganda gap-closure research](docs/strategy/UGANDA_GAP_CLOSURE_RESEARCH.md)
 records the 24 October public-source investigation, inspected datasets,
 historical-event candidates and limits on what internet evidence can establish.
