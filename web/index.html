@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173f35"><title>Vantage · Scouting workspace</title>
-  <link rel="stylesheet" href="dashboard.css"><script defer src="workspace-model.js"></script><script defer src="dashboard.js"></script>
+  <link rel="stylesheet" href="dashboard.css?v=regional-1"><script defer src="workspace-model.js"></script><script defer src="dashboard.js"></script><script defer src="regional-context.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to workspace</a>
@@ -18,6 +18,7 @@
     <a href="#observations" class="nav-link" data-nav="observations"><span aria-hidden="true">◷</span> Observation history</a>
   </nav>
   <a class="nav-link" href="field-review.html"><span aria-hidden="true">▧</span> Field evidence review</a>
+  <a class="nav-link" href="#regional-context"><span aria-hidden="true">◴</span> Regional seasons</a>
   <p class="nav-caption second-nav">EXPLORE</p>
   <nav aria-label="Research navigation"><a class="nav-link" href="research.html"><span aria-hidden="true">⌁</span> Research desk <span aria-hidden="true">↗</span></a><a class="nav-link" href="#data-status"><span aria-hidden="true">◇</span> Data &amp; sources</a></nav>
   <div class="rail-bottom"><div class="local-dot">On this device</div><p>Drafts stay in this browser.<br>Export a copy before switching devices.</p><a href="https://github.com/Ibekwemmanuel7/Lillie_US">Part of Lillie US ↗</a></div>
@@ -53,6 +54,14 @@
       </div>
       <section class="panel data-panel" id="data-status"><div><p class="eyebrow">KNOW WHAT SUPPORTS THE VIEW</p><h2>Transparent evidence. Clear limits.</h2><p id="benchmark-summary">Independent radar comparison is awaiting provider exports.</p><p class="subtle">No imagery-only diagnosis, irrigation prescription or confirmed radar illumination.</p></div><div class="data-links"><a href="data/scouting.json" download class="text-link">Download evidence snapshot ↓</a><a href="research.html" class="text-link">Open the full research desk ↗</a><button class="button quiet" id="sources-open">View sources &amp; run IDs</button></div></section>
     </div>
+    <section class="panel regional-panel" id="regional-context" aria-labelledby="regional-title">
+      <div class="panel-header"><div><p class="eyebrow">UGANDA PILOT · STUDY-AREA CONTEXT</p><h2 id="regional-title">Understand the regional season.</h2></div><span class="pill amber">Regional prior only</span></div>
+      <p>Explore published crop-season windows for three separate study boxes. These are not Kween calendars, confirmed field dates or a current forecast. Imported fields do not inherit this context.</p>
+      <p id="regional-state" role="status">Loading regional context…</p>
+      <div id="regional-controls" hidden><div class="regional-selectors"><label>Study area<select id="regional-study"></select></label><label>Published crop / season<select id="regional-season"></select></label></div><p id="regional-zone" class="subtle"></p><div id="regional-windows" class="regional-windows"></div><p id="regional-year-note"></p></div>
+      <details><summary>Sources and interpretation</summary><p>European Commission Joint Research Centre ASAP crop calendars and adapted, simplified FAO GAUL-derived monitoring geometries. Zone names retain provider spelling. Broad-scale membership is provisional; matching IDs do not prove historical geometries were unchanged. A 1 km engineering border guard is not certified source accuracy. Phase boundary dekads overlap.</p><p>Retrieved in October 2026; availability at a historical decision date is not established. Published crop names do not identify a crop growing in a field. Confirm boundaries, crop and dated field observations before field decisions.</p><a href="https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003">Calendar catalogue ↗</a> · <a href="https://agricultural-production-hotspots.ec.europa.eu/download.php">Zone source and reuse notice ↗</a> · <a href="data/regional-context.json" download>Download public context and source hashes ↓</a></details>
+      <button id="regional-retry" class="button quiet">Reload regional context</button>
+    </section>
     <footer class="page-footer"><span>Vantage · Agriculture, grounded in evidence.</span><span>Local prototype · No affiliation or endorsement by IDEA · Forestry remains with Vepris</span></footer>
   </main>
 </div>

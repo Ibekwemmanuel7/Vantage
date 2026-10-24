@@ -1,0 +1,567 @@
+{
+  "schema_version": "vantage-public-regional-context-1",
+  "anchor_year": 2024,
+  "source_observed_on": "2026-10-24",
+  "field_priorities_available": false,
+  "field_calendars_confirmed": 0,
+  "sources": [
+    {
+      "schema_version": "vantage-regional-zone-source-1",
+      "source_url": "https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=public%3Awarning_crop&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=asap0_id%3D209&count=1000",
+      "documentation_url": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+      "source_observed_on": "2026-10-24",
+      "response_sha256": "2583008495f10162ae9c5be5e03faf128e25d731dc1c0b761c8776da764347cd",
+      "expected_zone_count": 13,
+      "border_guard_m": 1000,
+      "attribution": "European Commission, Joint Research Centre ASAP; adapted and simplified FAO GAUL-derived monitoring geometries. Consult provider reuse notice and underlying rights.",
+      "usage": "Pinned monitoring geometry for provisional regional context, not certified field or current administrative membership. Provider warning values are discarded."
+    },
+    {
+      "schema_version": "vantage-regional-calendar-source-1",
+      "source_url": "https://mars.jrc.ec.europa.eu/asap/files/crop_calendar_gaul1.zip",
+      "catalogue_url": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003",
+      "source_observed_on": "2026-10-24",
+      "archive_sha256": "f49b56942e00ec2927bb6b26212e07085a9d94f6779480e16251a6648b19dc73",
+      "expected_uganda_rows": 44,
+      "expected_zone_ids": 9,
+      "attribution": "European Commission, Joint Research Centre; Dimou, Maria. Crop calendar dataset compatible with satellite-derived land surface phenology. See source catalogue reuse notice and third-party rights.",
+      "usage": "Regional crop-season context only; no field calendar confirmation or retrospective operational-availability claim."
+    }
+  ],
+  "units": [
+    {
+      "label": "Iganga",
+      "bbox": [
+        33.4,
+        0.65,
+        33.5,
+        0.75
+      ],
+      "zone_label": "South Eastern",
+      "zone_id": "9988",
+      "calendars": [
+        {
+          "asap0_id": "209",
+          "asap1_id": "9988",
+          "zone_label": "South Eastern",
+          "crop_season_label": "Beans (South/Main)",
+          "source_dekads": {
+            "sos_s": 8,
+            "sos_e": 9,
+            "eos_s": 18,
+            "eos_e": 23
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-11",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-30"
+            },
+            "harvesting": {
+              "start": "2024-06-21",
+              "end": "2024-08-20"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9988",
+          "zone_label": "South Eastern",
+          "crop_season_label": "Maize (South/Main)",
+          "source_dekads": {
+            "sos_s": 8,
+            "sos_e": 9,
+            "eos_s": 18,
+            "eos_e": 23
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-11",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-30"
+            },
+            "harvesting": {
+              "start": "2024-06-21",
+              "end": "2024-08-20"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9988",
+          "zone_label": "South Eastern",
+          "crop_season_label": "Maize (South/Second)",
+          "source_dekads": {
+            "sos_s": 24,
+            "sos_e": 29,
+            "eos_s": 1,
+            "eos_e": 3
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-08-21",
+              "end": "2024-10-20"
+            },
+            "growing": {
+              "start": "2024-10-11",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-01-31"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9988",
+          "zone_label": "South Eastern",
+          "crop_season_label": "Millet (South/Main)",
+          "source_dekads": {
+            "sos_s": 8,
+            "sos_e": 9,
+            "eos_s": 18,
+            "eos_e": 23
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-11",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-30"
+            },
+            "harvesting": {
+              "start": "2024-06-21",
+              "end": "2024-08-20"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9988",
+          "zone_label": "South Eastern",
+          "crop_season_label": "Millet (South/Second)",
+          "source_dekads": {
+            "sos_s": 24,
+            "sos_e": 29,
+            "eos_s": 1,
+            "eos_e": 3
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-08-21",
+              "end": "2024-10-20"
+            },
+            "growing": {
+              "start": "2024-10-11",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-01-31"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        }
+      ]
+    },
+    {
+      "label": "Lira",
+      "bbox": [
+        32.85,
+        2.2,
+        32.95,
+        2.3
+      ],
+      "zone_label": "Mid Northen",
+      "zone_id": "9985",
+      "calendars": [
+        {
+          "asap0_id": "209",
+          "asap1_id": "9985",
+          "zone_label": "Mid Northen",
+          "crop_season_label": "Beans (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 22
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-08-10"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9985",
+          "zone_label": "Mid Northen",
+          "crop_season_label": "Maize (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 22
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-08-10"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9985",
+          "zone_label": "Mid Northen",
+          "crop_season_label": "Maize (South/Second)",
+          "source_dekads": {
+            "sos_s": 21,
+            "sos_e": 28,
+            "eos_s": 1,
+            "eos_e": 2
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-07-21",
+              "end": "2024-10-10"
+            },
+            "growing": {
+              "start": "2024-10-01",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-01-20"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9985",
+          "zone_label": "Mid Northen",
+          "crop_season_label": "Millet (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 22
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-08-10"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9985",
+          "zone_label": "Mid Northen",
+          "crop_season_label": "Millet (South/Second)",
+          "source_dekads": {
+            "sos_s": 21,
+            "sos_e": 28,
+            "eos_s": 1,
+            "eos_e": 2
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-07-21",
+              "end": "2024-10-10"
+            },
+            "growing": {
+              "start": "2024-10-01",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-01-20"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        }
+      ]
+    },
+    {
+      "label": "Kasese",
+      "bbox": [
+        30.05,
+        0.15,
+        30.15,
+        0.25
+      ],
+      "zone_label": "W. Highlands",
+      "zone_id": "9981",
+      "calendars": [
+        {
+          "asap0_id": "209",
+          "asap1_id": "9981",
+          "zone_label": "West Highlands",
+          "crop_season_label": "Beans (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 21
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-07-31"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9981",
+          "zone_label": "West Highlands",
+          "crop_season_label": "Maize (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 21
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-07-31"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9981",
+          "zone_label": "West Highlands",
+          "crop_season_label": "Maize (South/Second)",
+          "source_dekads": {
+            "sos_s": 23,
+            "sos_e": 30,
+            "eos_s": 1,
+            "eos_e": 4
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-08-11",
+              "end": "2024-10-31"
+            },
+            "growing": {
+              "start": "2024-10-21",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-02-10"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9981",
+          "zone_label": "West Highlands",
+          "crop_season_label": "Millet (South/Main)",
+          "source_dekads": {
+            "sos_s": 7,
+            "sos_e": 9,
+            "eos_s": 16,
+            "eos_e": 21
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": false,
+          "windows": {
+            "planting": {
+              "start": "2024-03-01",
+              "end": "2024-03-31"
+            },
+            "growing": {
+              "start": "2024-03-21",
+              "end": "2024-06-10"
+            },
+            "harvesting": {
+              "start": "2024-06-01",
+              "end": "2024-07-31"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        },
+        {
+          "asap0_id": "209",
+          "asap1_id": "9981",
+          "zone_label": "West Highlands",
+          "crop_season_label": "Millet (South/Second)",
+          "source_dekads": {
+            "sos_s": 23,
+            "sos_e": 30,
+            "eos_s": 1,
+            "eos_e": 4
+          },
+          "planting_anchor_year": 2024,
+          "crosses_calendar_year": true,
+          "windows": {
+            "planting": {
+              "start": "2024-08-11",
+              "end": "2024-10-31"
+            },
+            "growing": {
+              "start": "2024-10-21",
+              "end": "2025-01-10"
+            },
+            "harvesting": {
+              "start": "2025-01-01",
+              "end": "2025-02-10"
+            }
+          },
+          "confirmation_kind": "regional_prior",
+          "field_calendar_confirmed": false,
+          "crop_identity_confirmed": false,
+          "field_priorities_available": false,
+          "interpretation": "Recurring regional context anchored to a chosen year, not observed field dates or a forecast. Boundary dekads overlap across phase windows."
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,9 @@
 explains the work, architecture, satellite/ML findings, field tools, dashboard,
 run order, tests and remaining data dependencies in one place.
 
+[Dashboard regional context](docs/integration/REGIONAL_DASHBOARD.md) adds published
+crop-season windows for three Uganda study boxes, separate from confirmed field dates.
+
 [Uganda gap-closure research](docs/strategy/UGANDA_GAP_CLOSURE_RESEARCH.md)
 records the 24 October public-source investigation, inspected datasets,
 historical-event candidates and limits on what internet evidence can establish.
