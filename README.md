@@ -98,6 +98,11 @@ The [local CDSE export fetcher](docs/integration/CDSE_EXPORT_FETCH.md) is now
 implemented and dry-run tested. Authenticated processing is explicit, validates
 outputs before publishing local export folders and never saves OAuth secrets.
 No real provider request was submitted in this implementation run.
+The [Iganga radar training-cohort numerical sample](docs/integration/IGANGA_RADAR_PIXELS.md)
+now processes three fixed ascending passes with full numerical support. Four
+of six June optical dates have causal <=7-day pairs. These remain unverified
+research references; Iganga terrain/viewing checks and processor comparisons
+are pending, and no radar-assisted model is trained.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated

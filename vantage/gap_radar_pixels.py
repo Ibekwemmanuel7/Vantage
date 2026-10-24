@@ -3,6 +3,16 @@ import numpy as np
 from vantage.radar_values import decibels
 
 
+def fixed_track_candidates(candidates,plan):
+    if type(plan["max_passes"]) is not int or not 1<=plan["max_passes"]<=3:
+        raise ValueError("Fixed budget of one to three passes required")
+    selected=[r for r in candidates if r["track_id"]==plan["track_id"]]
+    if not 1<=len(selected)<=plan["max_passes"]:
+        raise ValueError("Fixed track cohort exceeds budget or is empty")
+    if len({r["item_id"] for r in selected})!=len(selected):raise ValueError("Duplicate radar identity")
+    return sorted(selected,key=lambda r:r["acquired_at"])
+
+
 def validate_asset(asset):
     bands=asset.get("raster:bands",[])
     if len(bands)!=1 or bands[0].get("nodata")!=-32768 or bands[0].get("data_type")!="float32":

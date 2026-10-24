@@ -1,4 +1,4 @@
-"""Bounded two-pass Lira RTC sample on the exact optical grid; no fusion."""
+"""Bounded fixed-track RTC samples on exact optical grids; no fusion."""
 import argparse
 from datetime import datetime,timezone
 import hashlib
@@ -10,7 +10,7 @@ sys.path.insert(0,str(ROOT))
 from scripts import build_uganda_demo as source
 from scripts.build_radar_series import native_clip
 from vantage.archive import fingerprint
-from vantage.gap_radar_pixels import validate_asset,whole_box_summary
+from vantage.gap_radar_pixels import validate_asset,whole_box_summary,fixed_track_candidates
 from vantage.planetary import ContainerSigner
 from vantage.radar_values import paired_change
 import numpy as np
@@ -19,8 +19,9 @@ import numpy as np
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--online",action="store_true")
+    parser.add_argument("--config",type=Path,default=ROOT/"configs/lira_gap_radar_pixels.json")
     args=parser.parse_args()
-    plan=json.loads((ROOT/"configs/lira_gap_radar_pixels.json").read_text())
+    plan=json.loads(args.config.read_text())
     catalog_root=ROOT/"outputs/africa/gap-radar"/plan["catalog_directory"]
     catalog_path=catalog_root/"catalog.json"
     if hashlib.sha256(catalog_path.read_bytes()).hexdigest()!=plan["catalog_sha256"]:
@@ -38,9 +39,7 @@ def main():
     with np.load(optical_path,allow_pickle=False) as optical:
         grid=dict(crs=str(optical["crs"]),transform=optical["transform"].tolist(),
                   height=optical["ndvi"].shape[0],width=optical["ndvi"].shape[1])
-    candidates=[r for r in report["candidates"] if r["track_id"]==plan["track_id"]]
-    if not 1<=len(candidates)<=plan["max_passes"] or plan["max_passes"]>2:
-        raise ValueError("Fixed two-pass budget required")
+    candidates=fixed_track_candidates(report["candidates"],plan)
     root=ROOT/"outputs/africa/gap-radar-pixels"/fingerprint(plan)[:20]
     root.mkdir(parents=True,exist_ok=True)
     native=root/"native"
@@ -80,13 +79,19 @@ def main():
         rows.append(row)
         print(json.dumps(row),flush=True)
     change=None
-    if len(powers)==2:
+    changes=[]
+    for first,last in zip(powers,powers[1:]) if len(powers)==len(candidates) else []:
+        summary=paired_change(first[1],last[1],np.ones((grid["height"],grid["width"]),dtype=bool),first[0]["track_id"],last[0]["track_id"])["summary"]
+        summary["comparable_whole_box_fraction"]=summary.pop("comparable_crop_fraction")
+        changes.append(dict(earlier_item_id=first[0]["item_id"],later_item_id=last[0]["item_id"],summary=summary))
+    if len(powers)==len(candidates)==2:
         first,last=powers
         paired=paired_change(first[1],last[1],np.ones((grid["height"],grid["width"]),dtype=bool),first[0]["track_id"],last[0]["track_id"])
         change=paired["summary"]
         change["comparable_whole_box_fraction"]=change.pop("comparable_crop_fraction")
         change["spatial_scope"]="Whole box, not confirmed crop area"
     result=dict(schema_version="gap-radar-pixels-1",plan=plan,grid=grid,observations=rows,same_track_change=change,
+                consecutive_same_track_changes=changes,
                 processed_at=datetime.now(timezone.utc).isoformat(),
                 source_catalog_sha256=plan["catalog_sha256"],
                 source_sequence_sha256=report["source_sequence_sha256"],

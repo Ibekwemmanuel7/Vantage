@@ -1,0 +1,11 @@
+{
+  "schema_version": "gap-radar-pixels-plan-1",
+  "catalog_directory": "a724a9a4e199846ec724",
+  "catalog_sha256": "0ae3a94c39d8462b4c40395250dffc71dfda7b3611f63cce3367de3f31b7634c",
+  "optical_sequence": "outputs/africa/recent/954abd0883653516f0d5/pixels/sequence-observations.json",
+  "track_id": "SENTINEL-1A-028-ascending-IW-VV-VH",
+  "max_passes": 3,
+  "minimum_native_valid_fraction": 0.8,
+  "selection": "All three eligible ascending orbit 028 passes in the archived June window, fixed before pixel inspection",
+  "scope": "Training-cohort numerical feasibility only; independent terrain/viewing/processor checks pending"
+}
