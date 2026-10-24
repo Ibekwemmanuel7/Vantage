@@ -16,6 +16,12 @@ The initial market definition is documented. Vantage is a new product and does n
 
 ## Current priority: Uganda
 
+The [field-pixel adapter](docs/integration/FIELD_PIXELS.md) now summarizes existing
+observed NDVI artifacts within declared Polygon/MultiPolygon field boundaries,
+including holes. It checks topology, full raster coverage, usable support and
+staleness. No real consented field boundary has been supplied; this remains an
+offline research adapter with no field priorities or customer UI integration.
+
 The [private field evidence intake](docs/integration/FIELD_EVIDENCE_INTAKE.md)
 now checks dated scouting, planting and harvest submissions, boundary references,
 provenance and harvest units. Public reports remain investigation leads; no
