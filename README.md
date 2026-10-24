@@ -22,6 +22,12 @@ provenance and harvest units. Public reports remain investigation leads; no
 submitted record automatically becomes a training or evaluation label. Actual
 independently verified field outcomes remain zero.
 
+The [frozen field visit protocol](docs/integration/FIELD_VISIT_PROTOCOL.md) now
+links a declared pre-visit cohort to score-hidden collection forms and returned
+scouting intake. Missing visits, duplicate records and changed field boundaries
+remain explicit. This private research workflow admits no labels and does not
+make the stratified sample compatible with the complete-cohort evaluator.
+
 The [partner-application integration brief](docs/integration/PARTNER_PLATFORM.md)
 defines the proposed Vantage maps/reporting component for David's broader
 application: Uganda first, with the Philippines and Nigeria as future candidate

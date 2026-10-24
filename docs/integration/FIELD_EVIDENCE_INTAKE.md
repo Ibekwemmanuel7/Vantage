@@ -5,6 +5,10 @@ This is an offline intake tool, not a collection service or a verified label reg
 Uganda is the first pilot; the contract contains no country-specific assumptions.
 Actual independently verified field outcomes remain **zero**.
 
+For prospective research rounds, the [frozen visit protocol](FIELD_VISIT_PROTOCOL.md)
+now supplies score-hidden collection forms and reconciles intake against the
+declared pre-visit cohort, including missing and conflicting visits.
+
 Start with `configs/field_evidence_template.json`, copy it into an ignored private
 directory, and populate `records` with objects using these fields:
 

@@ -1,0 +1,9 @@
+{
+  "cohort_id": "",
+  "prediction_frozen_at": "",
+  "rubric_ref": "",
+  "held_out_protocol_ref": "",
+  "capacity": 10,
+  "seed": 42,
+  "units": []
+}
