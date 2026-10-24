@@ -112,6 +112,10 @@ now contain four Iganga training-reference dates and three Lira validation-refer
 dates. Radar features, observed optical references and unlabeled gaps are separate;
 the manifest explicitly keeps training ineligible pending external processor
 outputs and independent evaluation. No optical values are imputed.
+The [local evidence review report](docs/integration/EVIDENCE_REVIEW.md) now combines
+dated optical coverage, sample readiness and negative model findings in one
+self-contained HTML/JSON export. It is an unreviewed research artifact, not a
+live farmer report or partner integration. The customer workspace is unchanged.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
