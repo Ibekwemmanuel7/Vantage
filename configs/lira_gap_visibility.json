@@ -1,0 +1,10 @@
+{
+  "schema_version": "lira-bounded-visibility-plan-1",
+  "parent_viewing_directory": "82fd966dcc318d43362f",
+  "distance_m": 5000,
+  "step_m": 15,
+  "clearance_guard_m": 5,
+  "padding_cells": 169,
+  "max_passes": 2,
+  "scope": "Sampled 5km terrain visibility only; no full illumination certification"
+}
