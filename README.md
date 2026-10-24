@@ -24,6 +24,11 @@ The initial market definition is documented. Vantage is a new product and does n
 
 ## Current priority: Uganda
 
+The [regional calendar import](docs/integration/REGIONAL_CALENDARS.md) now pins
+and replays 44 JRC Uganda crop/season contexts across nine zones. Date conversion
+handles leap years and cross-year seasons; these regional priors cannot pass
+the independent field-calendar confirmation gate. Spatial joins remain pending.
+
 The [field-pixel adapter](docs/integration/FIELD_PIXELS.md) now summarizes existing
 observed NDVI artifacts within declared Polygon/MultiPolygon field boundaries,
 including holes. It checks topology, full raster coverage, usable support and
