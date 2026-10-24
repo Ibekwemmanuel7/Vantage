@@ -113,3 +113,7 @@ and recipe rejection, GeoTIFF data/mask/tag/hash round-trip, valid zero change,
 input hash rejection and overwrite protection. CLI help and `git diff --check`
 passed. All field-change tests used synthetic inputs; no real field comparison
 or new agricultural accuracy result was produced.
+
+Follow-up: [private field evidence review](FIELD_REVIEW_UI.md) now packages the
+checked GeoTIFF and report for browser-local review from the workspace. It is
+not a live imagery service or an operational scouting queue.

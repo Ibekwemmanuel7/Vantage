@@ -28,6 +28,11 @@ private masked GeoTIFF and traceable report, withholding stale, low-overlap or
 unsupported fields. This is descriptive vegetation change, not a diagnosed
 cause, validated anomaly score or operational scouting priority.
 
+The workspace now includes a [private field evidence review page](docs/integration/FIELD_REVIEW_UI.md).
+It opens a locally prepared report/map packet in browser memory, shows UTC
+observation dates, support and withheld states, and retains source lineage.
+No private records are preloaded, uploaded or saved by the page.
+
 The [private field evidence intake](docs/integration/FIELD_EVIDENCE_INTAKE.md)
 now checks dated scouting, planting and harvest submissions, boundary references,
 provenance and harvest units. Public reports remain investigation leads; no
