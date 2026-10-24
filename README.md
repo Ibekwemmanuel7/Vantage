@@ -22,6 +22,12 @@ including holes. It checks topology, full raster coverage, usable support and
 staleness. No real consented field boundary has been supplied; this remains an
 offline research adapter with no field priorities or customer UI integration.
 
+The [dated field-change workflow](docs/integration/FIELD_CHANGE.md) now compares
+observed NDVI on common valid pixels across two aligned dates. It exports a
+private masked GeoTIFF and traceable report, withholding stale, low-overlap or
+unsupported fields. This is descriptive vegetation change, not a diagnosed
+cause, validated anomaly score or operational scouting priority.
+
 The [private field evidence intake](docs/integration/FIELD_EVIDENCE_INTAKE.md)
 now checks dated scouting, planting and harvest submissions, boundary references,
 provenance and harvest units. Public reports remain investigation leads; no

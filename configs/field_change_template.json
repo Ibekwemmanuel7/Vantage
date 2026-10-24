@@ -1,0 +1,20 @@
+{
+  "boundaries": "fields.geojson",
+  "cutoff": "",
+  "before": {
+    "pixels": "before.npz",
+    "sha256": "",
+    "acquired_at": "",
+    "available_at": "",
+    "source_ref": "",
+    "recipe_ref": ""
+  },
+  "after": {
+    "pixels": "after.npz",
+    "sha256": "",
+    "acquired_at": "",
+    "available_at": "",
+    "source_ref": "",
+    "recipe_ref": ""
+  }
+}

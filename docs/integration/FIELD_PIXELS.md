@@ -109,3 +109,7 @@ first sandboxed run could not open the existing feedback test's temporary
 SQLite database; the approved unrestricted rerun passed. CLI help and
 `git diff --check` also passed. Tests used synthetic fields only; no real
 field report, dashboard change, model training or performance claim was added.
+
+Follow-up: [dated field change](FIELD_CHANGE.md) now supplies paired observed
+NDVI differences and a masked GeoTIFF. Independently validated anomaly detection
+and customer UI linkage remain pending.
