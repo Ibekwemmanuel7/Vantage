@@ -90,6 +90,10 @@ The [bounded Lira visibility follow-up](docs/integration/LIRA_VISIBILITY.md) now
 finds no obstruction within the sampled 5km search for either pass. All 307,468
 whole-box pixels pass that bounded test; full illumination certification and
 independent processor agreement remain absent.
+The [Lira comparison requests and causal pairing table](docs/integration/LIRA_PAIRING.md)
+are now prepared. Three of six June optical dates match one of the two processed
+ascending passes within seven days. No external provider exports were supplied:
+zero independent comparisons and no radar-assisted model or gap-filled imagery.
 
 The [customer-workspace design and market research](docs/africa/CUSTOMER_WORKSPACE.md)
 now informs the default dashboard: a local field register, review plan, real dated
