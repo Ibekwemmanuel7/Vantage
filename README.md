@@ -5,6 +5,8 @@ workspace, responsive fieldwork navigation and a consistent evidence-review inte
 
 [Local report workspace](docs/integration/REPORT_WORKSPACE.md): preview and export
 dated historical evidence with an optional, clearly separated local-draft appendix.
+HTML briefs now embed verified local satellite and vegetation-reference previews
+for offline viewing; missing imagery stays explicitly unavailable.
 
 **Start here:** [Vantage step-by-step walkthrough](docs/VANTAGE_WALKTHROUGH.md)
 explains the work, architecture, satellite/ML findings, field tools, dashboard,

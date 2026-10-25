@@ -22,10 +22,21 @@ It is not a live portfolio report or a government-approved reporting format.
   preview and export, keeping the generation timestamp consistent.
 - Removing the appendix or reloading clears imported notes from page memory.
   No automatic local-storage read or note upload is performed.
+- Actual dated true-color and NDVI-reference PNGs embedded in the HTML brief.
+  Each local response is limited to 2 MB, checked for a PNG header and exact
+  snapshot grid dimensions, and verified with browser SHA-256 before inclusion.
+  The server independently checks the same pinned preview hash. A missing or
+  mismatched layer is explicitly unavailable; it does not block a text-only brief.
+  Report JSON contains image metadata/hashes, not the binary images. HTML keeps
+  the images as data URLs, so viewing the exported imagery requires no server.
 
-HTML contains no scripts, images or network dependencies. Dynamic strings are
+HTML contains no scripts or network dependencies. Dynamic strings are
 escaped, the preview iframe is sandboxed, and the exported document includes a
-restrictive content policy. This reduces active-content risk; it is not a digital
+restrictive content policy allowing only embedded data images. Captions identify
+the acquisition date, reference years, display range, unavailable pixels and
+locality scope. These are illustrative raster previews, not interactive GIS maps,
+new crop classifications or boundaries for imported fields.
+This reduces active-content risk; it is not a digital
 signature, independent provenance verification or authenticated author identity.
 The app displays only a self-entered preparer and source-consistency identifiers.
 
@@ -44,17 +55,23 @@ Uganda remains a pilot subset of Vantage, and the Lillie US backlink is retained
 
 ## Checks and limits
 
-`node --test tests/test_report_model.cjs tests/test_workspace_model.cjs`
-passes 15 selected tests, covering date separation, note isolation, stale-pack
-rejection, bounds and escaped export content. Browser QA loaded the real snapshot,
+`node --test tests/test_report_images.cjs tests/test_report_model.cjs tests/test_workspace_model.cjs`
+passes 18 selected tests, covering date separation, note isolation, stale-pack
+rejection, bounds, escaped export content, PNG identity/dimension checks, partial
+imagery and rejection of external image URLs. Browser QA loaded the real snapshot,
 opened a synthetic matching pack, verified both download actions, and checked
 that metadata edits disable export. The downloaded HTML/JSON were read back and
 confirmed to contain the synthetic draft without changing zero outcome counts.
+The imagery increment also downloaded a 1,224,412-byte HTML report containing two
+embedded images. Both decoded PNG hashes matched the snapshot exactly, with no
+external image URLs. The browser preview was visually checked at the imagery
+section; this is a software consistency check, not validation of agricultural
+interpretation. The source raster files remain local and outside Git.
 Main-page width was checked at 390 px without horizontal document overflow;
 desktop preview was visually inspected. These checks are not a full accessibility
 audit. The system print/PDF dialog was not exercised.
 
-Remaining scope: connected maps in reports, additional pinned research cohorts,
+Remaining scope: interactive geospatial maps, direct PDF generation, additional pinned research cohorts,
 actual farmer data, independently validated outcomes, team approvals, authenticated
 signatures, cloud report history and partner-specific reporting contracts. No
 external sharing, email delivery or public deployment is implemented.
