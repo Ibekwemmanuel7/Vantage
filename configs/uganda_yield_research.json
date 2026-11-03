@@ -1,0 +1,18 @@
+{
+  "schema_version": "vantage-yield-research-plan-1",
+  "task": "Exploratory retrospective Uganda 2020 maize yield estimation from published static environmental covariates",
+  "source_sha256": "f305a3d3e48015bd877dc9df5c53b1715c61f940d58383d57d4dfb68c59c6ff0",
+  "features": ["elev", "twi", "soil_rzpawhc", "soil_clay", "soil_pH", "soil_orgC", "soil_ECEC"],
+  "target": "yield_kg_ha",
+  "folds": 5,
+  "group_cell_degrees": 0.1,
+  "buffer_km": 5,
+  "minimum_training_rows": 30,
+  "random_seed": 42,
+  "models": {"median": {}, "ridge": {"alpha": 10}, "random_forest": {"n_estimators": 300, "max_depth": 6, "min_samples_leaf": 8}},
+  "selection": "Fixed candidates; no tuning on reported held-out scores. Compare pooled held-out MAE against train-fold median.",
+  "forecast_cutoff_verified": false,
+  "satellite_inputs_used": false,
+  "field_imagery_join_allowed": false,
+  "operational_promotion_allowed": false
+}

@@ -1,5 +1,9 @@
 # Vantage
 
+[Crop-condition and yield ML research](docs/ml/CROP_PROBLEMS_AND_YIELD.md): executed
+a buffered Uganda survey yield benchmark; results remain exploratory, with no
+satellite disease diagnosis or operational yield forecast established.
+
 [Platform design direction](docs/strategy/PLATFORM_DESIGN.md): refreshed imagery-led
 workspace, responsive fieldwork navigation and a consistent evidence-review interface.
 

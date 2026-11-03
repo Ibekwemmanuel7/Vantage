@@ -1,0 +1,217 @@
+{
+  "schema_version": "vantage-yield-research-1",
+  "task": "Exploratory retrospective Uganda 2020 maize yield estimation from published static environmental covariates",
+  "rows": 109,
+  "features": [
+    "elev",
+    "twi",
+    "soil_rzpawhc",
+    "soil_clay",
+    "soil_pH",
+    "soil_orgC",
+    "soil_ECEC"
+  ],
+  "metrics": {
+    "median": {
+      "mae_kg_ha": 1024.672652727348,
+      "rmse_kg_ha": 1257.291430237979,
+      "bias_kg_ha": -82.69416226267063,
+      "r2": -0.14828275406902103
+    },
+    "ridge": {
+      "mae_kg_ha": 970.9065051435765,
+      "rmse_kg_ha": 1216.100453974761,
+      "bias_kg_ha": -116.66584905903579,
+      "r2": -0.07427589917868582
+    },
+    "random_forest": {
+      "mae_kg_ha": 1012.8555187973454,
+      "rmse_kg_ha": 1258.9510464302825,
+      "bias_kg_ha": -64.94588238745948,
+      "r2": -0.15131620576908822
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 79,
+      "test_rows": 23,
+      "buffer_removed": 7,
+      "minimum_reported_coordinate_distance_km": 9.565662723252684,
+      "disjoint_group_ids": true,
+      "metrics": {
+        "median": {
+          "mae_kg_ha": 816.2830708488001,
+          "rmse_kg_ha": 954.9180580477577,
+          "bias_kg_ha": 497.33023106327846,
+          "r2": -0.3721982978181533
+        },
+        "ridge": {
+          "mae_kg_ha": 755.5598493471184,
+          "rmse_kg_ha": 902.6702523333231,
+          "bias_kg_ha": 301.9217780685853,
+          "r2": -0.22614808667945363
+        },
+        "random_forest": {
+          "mae_kg_ha": 891.376072626197,
+          "rmse_kg_ha": 1050.2329504330885,
+          "bias_kg_ha": 494.4511543357189,
+          "r2": -0.659800701098511
+        }
+      },
+      "split_sha256": "4259c1f6f1335965c1effaef13546ecae68b1a95b0240f412ff040efc36839df"
+    },
+    {
+      "fold": 1,
+      "train_rows": 75,
+      "test_rows": 22,
+      "buffer_removed": 12,
+      "minimum_reported_coordinate_distance_km": 5.038151175081305,
+      "disjoint_group_ids": true,
+      "metrics": {
+        "median": {
+          "mae_kg_ha": 943.5420748159547,
+          "rmse_kg_ha": 1061.7755835854864,
+          "bias_kg_ha": 733.5916251124545,
+          "r2": -0.9133518051948402
+        },
+        "ridge": {
+          "mae_kg_ha": 814.3693969334254,
+          "rmse_kg_ha": 901.2778020809785,
+          "bias_kg_ha": 346.00730458684325,
+          "r2": -0.3786267840158495
+        },
+        "random_forest": {
+          "mae_kg_ha": 827.5211906074429,
+          "rmse_kg_ha": 949.6570557096761,
+          "bias_kg_ha": 429.4600185846084,
+          "r2": -0.5306044115118209
+        }
+      },
+      "split_sha256": "e901cbfa8c7fa14b38604be04147ada516ba7380139db766d3f945ae361489e4"
+    },
+    {
+      "fold": 2,
+      "train_rows": 78,
+      "test_rows": 22,
+      "buffer_removed": 9,
+      "minimum_reported_coordinate_distance_km": 6.4998897291043045,
+      "disjoint_group_ids": true,
+      "metrics": {
+        "median": {
+          "mae_kg_ha": 1457.9206224256363,
+          "rmse_kg_ha": 1754.3991832031181,
+          "bias_kg_ha": -1101.0048203555455,
+          "r2": -0.6497338500398742
+        },
+        "ridge": {
+          "mae_kg_ha": 1289.6983451590406,
+          "rmse_kg_ha": 1689.3947508478834,
+          "bias_kg_ha": -1079.9650136152268,
+          "r2": -0.5297460254477733
+        },
+        "random_forest": {
+          "mae_kg_ha": 1446.8509242318644,
+          "rmse_kg_ha": 1769.155538522254,
+          "bias_kg_ha": -839.4271729040115,
+          "r2": -0.677602579992475
+        }
+      },
+      "split_sha256": "982313655a0c029c58ab5e6f232110833256acfb32957685030a362df058b61c"
+    },
+    {
+      "fold": 3,
+      "train_rows": 87,
+      "test_rows": 21,
+      "buffer_removed": 1,
+      "minimum_reported_coordinate_distance_km": 7.37989324105127,
+      "disjoint_group_ids": true,
+      "metrics": {
+        "median": {
+          "mae_kg_ha": 836.4496416609761,
+          "rmse_kg_ha": 1095.1758404855998,
+          "bias_kg_ha": 16.17271519816675,
+          "r2": -0.00021811869233223646
+        },
+        "ridge": {
+          "mae_kg_ha": 921.7650797531687,
+          "rmse_kg_ha": 1099.4198404999572,
+          "bias_kg_ha": 393.1462440805453,
+          "r2": -0.007985183069921575
+        },
+        "random_forest": {
+          "mae_kg_ha": 809.1235312367902,
+          "rmse_kg_ha": 1006.789252456824,
+          "bias_kg_ha": 227.8101207844558,
+          "r2": 0.15471307846209137
+        }
+      },
+      "split_sha256": "cf5bdb97c7dc225cc62a5a490b5c0a39bd3b348a00c7cfce354013c56d2b7240"
+    },
+    {
+      "fold": 4,
+      "train_rows": 64,
+      "test_rows": 21,
+      "buffer_removed": 24,
+      "minimum_reported_coordinate_distance_km": 5.125836474383457,
+      "disjoint_group_ids": true,
+      "metrics": {
+        "median": {
+          "mae_kg_ha": 1072.2469858839524,
+          "rmse_kg_ha": 1265.4450802917852,
+          "bias_kg_ha": -605.180748804762,
+          "r2": -0.29652782046428783
+        },
+        "ridge": {
+          "mae_kg_ha": 1085.9226440388256,
+          "rmse_kg_ha": 1316.857360857665,
+          "bias_kg_ha": -560.465712860923,
+          "r2": -0.40401810472338595
+        },
+        "random_forest": {
+          "mae_kg_ha": 1089.1343426700364,
+          "rmse_kg_ha": 1334.644726967488,
+          "bias_kg_ha": -676.9625176857774,
+          "r2": -0.4422036374801499
+        }
+      },
+      "split_sha256": "df7fe388fcb15ffc8f5514c183150944d35feee8d260d81d09910a44c4e23f63"
+    }
+  ],
+  "label_audit": {
+    "disease": {
+      "FALSE": 109
+    },
+    "pest": {
+      "FALSE": 109
+    },
+    "striga": {
+      "FALSE": 50,
+      "TRUE": 52,
+      "(missing)": 7
+    },
+    "water_excess": {
+      "FALSE": 105,
+      "TRUE": 4
+    }
+  },
+  "baseline_beaten": {
+    "ridge": true,
+    "random_forest": true
+  },
+  "crop_problem_classifier_fitted": false,
+  "satellite_model_fitted": false,
+  "forecast_validated": false,
+  "operational_promotion_allowed": false,
+  "source_sha256": "f305a3d3e48015bd877dc9df5c53b1715c61f940d58383d57d4dfb68c59c6ff0",
+  "plan_sha256": "05da5e6b0973ffecf376445d899da87cd9433a9880edf42ade44a6ac062ad2a1",
+  "implementation_sha256": {
+    "vantage/yield_research.py": "491a6ab9a08f6f5746bdb81c5067cce929d9e68a21c3de20383c67a7ed9fa05f",
+    "scripts/benchmark_uganda_yield.py": "836d6fdb0eae3025feac8bffeafaec5388b0f77340987594609e5fd38ed49306"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2"
+  }
+}
