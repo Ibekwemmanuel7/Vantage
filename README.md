@@ -4,6 +4,9 @@
 a buffered Uganda survey yield benchmark; results remain exploratory, with no
 satellite disease diagnosis or operational yield forecast established.
 
+[GROW-Africa Uganda source audit](docs/ml/GROW_UGANDA_REFERENCE.md) inventories
+multi-year yield references while preserving measurement and location limits.
+
 [Platform design direction](docs/strategy/PLATFORM_DESIGN.md): refreshed imagery-led
 workspace, responsive fieldwork navigation and a consistent evidence-review interface.
 

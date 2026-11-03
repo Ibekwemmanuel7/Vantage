@@ -1,0 +1,11 @@
+{
+  "schema_version": "vantage-grow-reference-1",
+  "source_url": "https://zenodo.org/records/16544448",
+  "methods_url": "https://www.nature.com/articles/s41597-025-05257-5",
+  "observed_on": "2026-11-02",
+  "license_metadata": "cc-by-4.0",
+  "archive_sha256": "1b574f98ec11f1b7a1f80070385235a8e15e110593cd5cf9901bfd9dff723b41",
+  "readme_sha256": "f62e9c78681d8791138bd07a70ac8ed7e2a6c5962ec468ebf90fde64d210e73f",
+  "expected_total_rows": 535844,
+  "interpretation": "Separate spatial support and measurement methods; no automatic field-label admission or independence claim. No GADM boundary geometry downloaded or redistributed."
+}

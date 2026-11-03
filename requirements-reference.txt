@@ -1,0 +1,2 @@
+# Read-only GROW-Africa audit; also available in the bundled workspace runtime.
+openpyxl==3.1.5
