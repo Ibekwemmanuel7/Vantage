@@ -10,7 +10,8 @@ FILES = ['index.html', 'dashboard.css', 'dashboard.js', 'platform.css', 'platfor
          'workspace-model.js', 'regional-context.js', 'reports.html', 'reports.css',
          'reports.js', 'report-model.js', 'report-images.js', 'field-review.html',
          'field-review.css', 'field-review.js', 'field-review-model.js',
-         'data/scouting.json', 'data/regional-context.json']
+         'data/scouting.json', 'data/regional-context.json',
+         'agriculture-backgrounds.css', 'assets/PHOTO_CREDITS.md']
 
 
 def build(destination):
@@ -23,6 +24,9 @@ def build(destination):
         target = destination / name
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text((ROOT / 'web' / name).read_text(encoding='utf-8'), encoding='utf-8', newline='\n')
+    (destination / 'assets').mkdir(exist_ok=True)
+    for name in ('farmland-aerial.jpg', 'crop-rows.jpg'):
+        shutil.copyfile(ROOT / 'web/assets' / name, destination / 'assets' / name)
     for layer in ('rgb', 'change'):
         source = ROOT / 'outputs/africa/dashboard' / f'kween-{layer}.png'
         if hashlib.sha256(source.read_bytes()).hexdigest() != snapshot['preview']['assets'][layer]['sha256']:

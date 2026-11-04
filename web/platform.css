@@ -1,4 +1,5 @@
 /* Vantage platform presentation. Data and scientific thresholds live elsewhere. */
+/* Stock backgrounds are decorative; scientific imagery remains in the explorer. */
 .mobile-tools{display:none}
 @media(max-width:720px){.mobile-tools{display:flex;width:100%;justify-content:space-between;gap:12px;border-top:1px solid #ffffff1c;padding-top:12px;font-size:10px;color:#c9d9c5}.mobile-tools a{padding:4px 0;min-height:24px}}
 :root{--green:#173f35;--ink:#20312e;--muted:#61716b;--line:#e0e6e1;--surface:#fff;--radius:14px;--accent:#d5eb94;--rail:#102d29}
