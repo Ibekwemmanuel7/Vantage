@@ -49,7 +49,14 @@ and vegetation-change layers; Reports verified 2/2 imagery checksums and built
 the brief. The static export test and 27 JavaScript tests passed. The mobile
 report preview had no document-width overflow.
 
-Public verification of `https://lillieearthintelligence.com/vantage/` returned
-HTTP 403, so successful Cloudflare deployment is **not confirmed**. Check that
-Cloudflare built hosting commit `931730ea` and inspect the public route/access
-rules before announcing availability. No access protections were changed.
+Initial public verification returned HTTP 403 and a user visit returned 404.
+Subsequent authenticated Cloudflare inspection confirmed hosting commit
+`931730ea`, version `a89754fd`, ready and serving 100% of production traffic.
+The public `/vantage/` workspace then loaded successfully, including its
+557-pixel-wide satellite preview. The public Reports page verified 2/2 imagery
+previews, built its brief and enabled HTML export. Cloudflare canonicalizes
+`reports.html` to `/vantage/reports`; relative asset paths work there.
+
+Public availability is now confirmed. No routing, authentication or security
+settings were changed. Deployment timing is the likely explanation for the
+earlier 404, but its exact cause was not independently established.
