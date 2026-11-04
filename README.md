@@ -1,5 +1,8 @@
 # Vantage
 
+[Satellite-agriculture dashboard benchmark](docs/strategy/DASHBOARD_BENCHMARK_2026_11_04.md)
+reviews six platforms and recommends the next field-workspace, scouting and SaaS priorities.
+
 [Crop-condition and yield ML research](docs/ml/CROP_PROBLEMS_AND_YIELD.md): executed
 a buffered Uganda survey yield benchmark; results remain exploratory, with no
 satellite disease diagnosis or operational yield forecast established.
