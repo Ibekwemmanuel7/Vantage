@@ -39,3 +39,17 @@ Verify the static build with `python -m unittest discover -s tests -p
 test_hosted_demo.py`, the existing JavaScript model tests, a local HTTP preview
 and the deployed `/vantage/`, imagery and reports routes. Never stage unrelated
 hosting-repository work as part of a release.
+
+## Release status · 4 November 2026
+
+Hosting commit `931730ea` was pushed to `pipelinewatch-ng/main`; the homepage
+change contains only the Vantage navigation entry. Existing uncommitted website
+and backend work was preserved. The local subpath preview loaded the satellite
+and vegetation-change layers; Reports verified 2/2 imagery checksums and built
+the brief. The static export test and 27 JavaScript tests passed. The mobile
+report preview had no document-width overflow.
+
+Public verification of `https://lillieearthintelligence.com/vantage/` returned
+HTTP 403, so successful Cloudflare deployment is **not confirmed**. Check that
+Cloudflare built hosting commit `931730ea` and inspect the public route/access
+rules before announcing availability. No access protections were changed.
