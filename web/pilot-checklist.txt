@@ -1,0 +1,41 @@
+VANTAGE — AGRICULTURE PILOT DISCUSSION CHECKLIST
+
+Purpose: define one useful field decision and the evidence needed to evaluate it.
+This is a planning checklist, not a service agreement or monitoring commitment.
+
+1. PEOPLE AND DECISION
+Who uses the observations? Who makes the field decision? Who would pay?
+Which fields are already due for inspection, and what would prioritisation change?
+
+2. LOCAL CONTEXT
+Proposed country, district and bounded study area:
+Crop, season and management system:
+Confirmed planting dates and crop-stage records available:
+
+3. CONSENT AND FIELD RECORDS
+Who can supply and authorise use of field boundaries?
+How will confidential records be stored and access controlled?
+Who can supply dated, independent scouting findings and outcomes?
+
+4. OBSERVATION FEASIBILITY
+Required decision cadence and maximum acceptable observation age:
+Expected cloud, small-field and mixed-pixel limitations:
+Public data available; commercial data costs and reuse permissions if needed:
+What happens when observations are missing, cloudy or stale?
+
+5. EVALUATION BEFORE CLAIMS
+Predefine the decision, baseline, independent outcomes and success criteria.
+Separate development and evaluation fields, locations and seasons.
+Measure usable coverage, lead time, false flags, missed outcomes and field usefulness.
+Do not infer disease causes or prescribe irrigation from imagery alone.
+
+6. CURRENT DEMONSTRATION
+Historical Kween/Ngenge locality context: evidence cutoff 5 June 2023.
+No verified field-level recommendations; zero independent field outcomes.
+Browser-local field register and draft notes; no account or cloud synchronization.
+Operational deployment requires security, current data and prospective validation.
+
+Product: https://github.com/Ibekwemmanuel7/Vantage
+Portfolio: https://github.com/Ibekwemmanuel7/Lillie_US
+Uganda is the first active pilot geography, not the product boundary.
+Texas is deferred and requires separate evaluation. Forestry remains with Vepris.

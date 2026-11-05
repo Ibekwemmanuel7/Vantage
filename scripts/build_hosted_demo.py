@@ -11,7 +11,8 @@ FILES = ['index.html', 'dashboard.css', 'dashboard.js', 'platform.css', 'platfor
          'reports.js', 'report-model.js', 'report-images.js', 'field-review.html',
          'field-review.css', 'field-review.js', 'field-review-model.js',
          'data/scouting.json', 'data/regional-context.json',
-         'agriculture-backgrounds.css', 'assets/PHOTO_CREDITS.md']
+         'agriculture-backgrounds.css', 'assets/PHOTO_CREDITS.md',
+         'landing.html', 'landing.css', 'landing.js', 'pilot-checklist.txt']
 
 
 def build(destination):
@@ -45,6 +46,21 @@ def build(destination):
         target.write_text(content.replace(old, new), encoding='utf-8', newline='\n')
     status = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vantage · Demonstration status</title><link rel="stylesheet" href="field-review.css"><main><p>VANTAGE · AGRICULTURE</p><h1>Evidence before action.</h1><p>This hosted historical demonstration uses public research context from Kween, Uganda, with an evidence cutoff of 5 June 2023. Uganda is the first pilot geography.</p><p>Field boundaries and notes stay in this browser. There is no account, cloud synchronization, live monitoring or independent field validation. Do not enter confidential records on a shared device.</p><p>Imagery highlights differences for investigation. It does not diagnose disease, prescribe irrigation or predict production yields.</p><p>The Python research tools run separately; this static host does not expose their API.</p><p><a href="./">Open scouting workspace</a> · <a href="reports.html">Create an evidence brief</a> · <a href="https://github.com/Ibekwemmanuel7/Vantage">Research and implementation</a> · <a href="https://github.com/Ibekwemmanuel7/Lillie_US">Lillie US</a> · <a href="/">Lillie Earth</a></p><p>Forestry remains with Vepris.</p></main></html>'''
     (destination / 'research.html').write_text(status, encoding='utf-8', newline='\n')
+    # Keep the original workspace assets in place while introducing a public front door.
+    (destination / 'index.html').rename(destination / 'workspace.html')
+    for name in ('workspace.html', 'reports.html', 'field-review.html', 'research.html'):
+        page = destination / name
+        content = page.read_text(encoding='utf-8').replace('href="./', 'href="workspace.html')
+        page.write_text(content, encoding='utf-8', newline='\n')
+    landing = (destination / 'landing.html').read_text(encoding='utf-8')
+    landing = landing.replace('href="index.html', 'href="workspace.html').replace('href="landing.html"', 'href="./"')
+    for layer in ('rgb', 'change'):
+        preview_url = '/api/scouting-preview?case=kween-2023&amp;layer=' + layer + '&amp;snapshot=' + snapshot['snapshot_id']
+        if landing.count(preview_url) != 1:
+            raise ValueError('Landing imagery must match the exported snapshot')
+        landing = landing.replace(preview_url, 'assets/kween-' + layer + '.png')
+    (destination / 'index.html').write_text(landing, encoding='utf-8', newline='\n')
+    (destination / 'landing.html').write_text(landing, encoding='utf-8', newline='\n')
     manifest = {'mode': 'historical_static_demo', 'snapshot_id': snapshot['snapshot_id'],
                 'files': {p.relative_to(destination).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
                           for p in sorted(destination.rglob('*')) if p.is_file()}}
