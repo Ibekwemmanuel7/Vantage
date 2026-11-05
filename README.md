@@ -1,5 +1,9 @@
 # Vantage
 
+[Hydrosat / IrriWatch supplier assessment](docs/strategy/HYDROSAT_ASSESSMENT_2026_11_05.md)
+distinguishes imagery from derived analytics, documents freshness/resolution limits,
+and lists commercial-access questions. No supplier integration or quote is confirmed.
+
 [Satellite-agriculture dashboard benchmark](docs/strategy/DASHBOARD_BENCHMARK_2026_11_04.md)
 reviews six platforms and recommends the next field-workspace, scouting and SaaS priorities.
 
