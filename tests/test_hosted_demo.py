@@ -38,7 +38,7 @@ class HostedDemoTests(unittest.TestCase):
             for script in base.glob('*.js'):
                 self.assertNotIn('/api/', script.read_text(encoding='utf-8'))
             self.assertFalse((base / 'qa').exists())
-            self.assertIn('Closer to the land.', (base / 'index.html').read_text(encoding='utf-8'))
+            self.assertIn('Vantage for agriculture', (base / 'index.html').read_text(encoding='utf-8'))
             self.assertIn('id="import-open"', (base / 'workspace.html').read_text(encoding='utf-8'))
             for name in ('reports.html', 'field-review.html'):
                 self.assertIn('href="workspace.html"', (base / name).read_text(encoding='utf-8'))
