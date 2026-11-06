@@ -1,0 +1,15 @@
+# Cloudflare Worker configuration for the landing site
+# (lillieearthintelligence.com served from landing/ as static assets)
+#
+# Every `git push origin main` triggers a new deploy.
+# demo_gate_worker.js runs for /demo/* and /vantage/* and asks for a passcode there.
+# The passcode is a Cloudflare secret named DEMO_PASSCODE (never stored in git).
+
+name = "sparkling-mode-afdd"
+compatibility_date = "2026-05-14"
+main = "demo_gate_worker.js"
+
+[assets]
+directory = "./landing"
+binding = "ASSETS"
+run_worker_first = ["/demo", "/demo/*", "/vantage", "/vantage/*"]
