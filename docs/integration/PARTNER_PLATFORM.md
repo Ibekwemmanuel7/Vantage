@@ -6,12 +6,12 @@
 ## Purpose and confirmed scope
 
 Vantage remains the agricultural geospatial product. Its maps, dated evidence
-and reviewed reports should appear inside David's broader application through
+and reviewed reports should appear inside a partner’s broader application through
 an integration boundary. Uganda is the first integration market. The Philippines
 and Nigeria are future candidates identified by the owner, not implemented
 markets or commitments. Texas remains deferred.
 
-The owner reports a meeting with David and a possible government proposal.
+The owner reports a meeting with a prospective partner and a possible government proposal.
 This establishes a development direction, not a government customer, awarded
 contract, formal IDEA/LiveBeyond partnership or approved integration. The target
 Ugandan institution, program owner, reviewers, platform technology, interface,
@@ -102,7 +102,7 @@ partner review capacity determine feasible delivery.
 
 ## Integration architecture
 
-David's application should call a versioned Vantage API and render authorized
+a partner’s application should call a versioned Vantage API and render authorized
 layers using its existing map component. Avoid rebuilding his user accounts or
 forcing a frontend framework before the platform stack is known. An iframe of
 the existing localhost prototype is not a production integration boundary.
@@ -145,7 +145,7 @@ Proposed endpoint families (design only; not implemented or advertised as live):
 - `POST /v1/field-observations`: private dated findings, provenance and review
   status; a submission is not automatically an independent training label.
 
-Agree the exact OpenAPI contract and sample payloads with David's developer
+Agree the exact OpenAPI contract and sample payloads with a partner’s developer
 before implementing routes. Authentication and area/tenant permissions must be
 enforced on the backend for records, jobs, reports, exports and map assets, not
 only through hidden frontend controls. Client-supplied organization IDs are not
@@ -249,3 +249,23 @@ Vantage endorsement, provider agreement or completed integration.
 Related: [customer-workspace research](../africa/CUSTOMER_WORKSPACE.md),
 [production architecture target](../strategy/PRODUCTION_ARCHITECTURE.md),
 [field evaluation contract](../africa/EVALUATION.md).
+
+## Pilot interpretation requirements
+
+Report per authorised area or grid cell unless usable interior pixels, boundary
+quality, crop identity and season support field-level statements. Native band
+resolution, resampling and mixed boundary pixels must be explicit.
+
+Align reporting cycles with confirmed local crop stages. A first-season 2027
+window is provisional for suitable bimodal locations, not a national calendar.
+Compare several eligible historical years at similar crop stages, disclose
+calendar-only alignment when stage is unknown, and show year-to-year spread.
+Withhold comparisons when support is insufficient. Rainfall is context only,
+never the sole source of a priority flag. The older Iganga rainfall-triggered
+research queue is not the proposed pilot scoring method.
+
+Six cycles over one area test feasibility, review workload, turnaround and cost;
+they are unlikely to establish accuracy. Independent outcomes in flagged and
+prespecified unflagged samples remain necessary. Initial delivery can use the
+partner's approved access-controlled storage or an agreed encrypted share.
+Weekly production is largely manual until scheduling and recovery are verified.

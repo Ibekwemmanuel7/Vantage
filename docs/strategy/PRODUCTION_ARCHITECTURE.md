@@ -7,8 +7,7 @@ Market rationale: [Texas assessment](TEXAS_MARKET.md).
 ## Additional Uganda research profile
 
 The independent Uganda extension demonstration added on 20 October 2026 is
-documented in [IDEA assessment](../idea/ASSESSMENT.md) and
-[operations](../idea/OPERATIONS.md). Shared concepts are source lineage, time,
+documented in [operations](../idea/OPERATIONS.md). Shared concepts are source lineage, time,
 quality states, geometry, review and feedback. Texas crop/pivot eligibility,
 thresholds and validation do not transfer to Uganda. The original Texas engine
 remains `vantage.core`; the area-level reconstruction uses `vantage.area` and

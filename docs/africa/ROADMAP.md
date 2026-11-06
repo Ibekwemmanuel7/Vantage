@@ -11,7 +11,7 @@ workflows remain Vantage-focused. Market-specific boundaries, calendars, data
 policies and validation are contextual subsets, not transferable claims.
 
 22 October integration direction: the owner wants Vantage maps and reviewed
-agricultural reports embedded in David's broader application, initially in
+agricultural reports embedded in a partner’s broader application, initially in
 Uganda, with possible government use. The Philippines and Nigeria are future
 candidates. See the [integration brief](../integration/PARTNER_PLATFORM.md) for
 module scope, standards, release gates and actual implementation status.

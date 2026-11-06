@@ -25,7 +25,7 @@ data and validation work; support is not implied by the broader product scope.
 profile and unpublished analyst interface now complement the original Texas
 synthetic slice. Real public-data retrospective measurements are implemented;
 independent field validation and partner engagement remain pending. See
-[IDEA assessment](../idea/ASSESSMENT.md). Neither scientific nor commercial claims
+[reconstruction operations](../idea/OPERATIONS.md). Neither scientific nor commercial claims
 transfer between profiles. No IDEA or LiveBeyond affiliation is implied.
 
 The initial market definition is documented. An independent offline slice imports rectangular boundaries and dated zone observations, produces quality-gated anomaly briefs and records scouting feedback. See [architecture](../mvp/ARCHITECTURE.md) and [evaluation](../mvp/EVALUATION.md). Vantage is a new product and does not copy CropSight or inherit its validation.

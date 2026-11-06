@@ -1,9 +1,5 @@
 # Vantage
 
-[Hydrosat / IrriWatch supplier assessment](docs/strategy/HYDROSAT_ASSESSMENT_2026_11_05.md)
-distinguishes imagery from derived analytics, documents freshness/resolution limits,
-and lists commercial-access questions. No supplier integration or quote is confirmed.
-
 [Satellite-agriculture dashboard benchmark](docs/strategy/DASHBOARD_BENCHMARK_2026_11_04.md)
 reviews six platforms and recommends the next field-workspace, scouting and SaaS priorities.
 
@@ -102,7 +98,7 @@ They use linked adjudication declarations, account for shared ranked units and
 report conditional bounds rather than confidence intervals or validated accuracy.
 
 The [partner-application integration brief](docs/integration/PARTNER_PLATFORM.md)
-defines the proposed Vantage maps/reporting component for David's broader
+defines the proposed Vantage maps/reporting component for a partner’s broader
 application: Uganda first, with the Philippines and Nigeria as future candidate
 markets. It separates current research capabilities from proposed weather,
 climate, agricultural land-cover-change and government-reporting modules.
@@ -301,11 +297,9 @@ Python standard library; scientific rebuilding needs `requirements-geo.txt`.
 Run `python scripts/build_dashboard.py` with the pinned Kween artifacts and
 `requirements-dashboard.txt` to rebuild the customer snapshot and local previews.
 
-- [IDEA fit assessment](docs/idea/ASSESSMENT.md)
-- [Bounded pilot proposal and cost assumptions](docs/idea/PILOT_PROPOSAL.md)
-- [Discussion brief for David S. Vanderpool](docs/idea/DISCUSSION_BRIEF.md)
-- [Demo script and discovery questions](docs/idea/DEMO_AND_DISCOVERY.md)
-- [Run/reproduction instructions, scientific limits and attribution](docs/idea/OPERATIONS.md)
+- [Reproduction instructions and scientific limits](docs/idea/OPERATIONS.md)
+
+Commercial proposals and discussion notes are maintained privately.
 
 The implemented reconstruction flags a rainfall difference while withholding
 vegetation assessments in three of four units for insufficient coverage. It

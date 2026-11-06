@@ -29,7 +29,7 @@ Read: [original market definition](portfolio/INITIAL_MARKET.md),
 ## 2. We investigated positioning and the partner opportunity
 
 We documented market hypotheses, a bounded pilot, historical-event research and
-how Vantage could contribute a geospatial component to David's broader platform.
+how Vantage could contribute a geospatial component to a partner’s broader platform.
 Uganda is the proposed first integration geography; Nigeria and the Philippines
 are future candidates, not implemented deployments.
 
@@ -40,7 +40,6 @@ not establish a paying customer, government contract, partner API or validated
 farmer benefit. No government engagement or production integration is established.
 
 Read: [partner platform brief](integration/PARTNER_PLATFORM.md),
-[IDEA fit assessment](idea/ASSESSMENT.md), [pilot proposal](idea/PILOT_PROPOSAL.md),
 [historical evidence program](strategy/HISTORICAL_EVIDENCE.md).
 
 ## 3. We designed the architecture and built local components

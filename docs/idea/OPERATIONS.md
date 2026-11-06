@@ -91,8 +91,7 @@ that is not a production timing guarantee. `DEMO_RUN.json` summarizes the execut
 run. Rainfall source files are regional rasters; transfer can dominate the first
 run. Measure cold/warm downloaded bytes, CPU/memory, storage and analyst effort
 before quoting a service. The observed local source/cache footprint was about
-35.4 MB (not a measurement of total network transfer). Pricing assumptions and exclusions are in
-[PILOT_PROPOSAL.md](PILOT_PROPOSAL.md), not presented as actual metered costs.
+35.4 MB (not a measurement of total network transfer). These cached timings are not delivery-cost estimates. Weekly preparation remains largely manual; commercial scoping is private.
 
 ## Checks and remaining validation
 

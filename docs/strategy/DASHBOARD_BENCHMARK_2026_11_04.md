@@ -133,7 +133,7 @@ Readers must be able to distinguish actual measurements from estimates.
 Provide portable data exports alongside a human-readable report. Draft and
 approved documents need different states; a typed author is not authentication.
 
-For David's application, define permissioned APIs and an embedded map/report
+For a partner’s application, define permissioned APIs and an embedded map/report
 module using the same records. Keep private farm data separate from public
 reference layers. Avoid manually maintaining a second copy of every field in
 another product. Do not promise SSO or integration until implemented and tested.

@@ -155,7 +155,7 @@ or organizations that endorsed Vantage:
 
 | Lead | Published relevance | What to ask through an authorized introduction |
 | --- | --- | --- |
-| IDEA / David | [Existing Uganda reports and AgriPortal](https://www.idea.ag/) | Which users and pilot districts, permissioned field records, report format, workflow and integration contract? |
+| Potential reporting partner | [Existing Uganda reports and AgriPortal](https://www.idea.ag/) | Which users and pilot districts, permissioned field records, report format, workflow and integration contract? |
 | Makerere MaRCCI | [Published digital advisory project](https://rcci.mak.ac.ug/projects/) | Is a relevant team active and able to support field access, crop calendars and prospective evaluation? |
 | NARO | [Agricultural discovery portal](https://databank.naro.go.ug/map.php) | Relevant zonal research team, agronomist review and data-sharing process? |
 | NASA Harvest / Uganda monitoring community | [Published Uganda collection/training work](https://www.nasaharvest.org/news/a-hrefhttpsnasaharvestorgnewsharvest-partner-dr-catherine-nakalembe-leads-training-uganda-crop-and-livestock-conditionsharvest-partner-leads-training-on-uganda-data-collectiona) | Appropriate public protocols, dataset custodians and possible technical evaluation routes? |
